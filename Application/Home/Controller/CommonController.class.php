@@ -10,11 +10,10 @@ namespace Home\Controller;
 use Think\Controller;
 
 class CommonController extends Controller{
-    public function __construct()
-    {
-
+    public function __construct(){
+        header("Content-type: text/html; charset=utf-8");
         parent::__construct();
-//        $this->_init();
+        $this->_init();
     }
 
     /**
@@ -28,6 +27,10 @@ class CommonController extends Controller{
         if (!$isLogin) {
             // 跳转到登录页面
             $this->redirect('/index.php?m=home&c=login');
+//            $url = '/index.php?c=login';
+//            echo "<script language=\"javascript\">";
+//            echo "location.href=\"$url\"";
+//            echo "</script>";
         }
     }
 
@@ -37,7 +40,7 @@ class CommonController extends Controller{
      */
     public function getLoginUser()
     {
-        return session("adminUser");
+        return session("AdminUser");
     }
 
     /**
@@ -52,5 +55,8 @@ class CommonController extends Controller{
         }
 
         return false;
+    }
+    public function _empty(){
+        echo "不存在的方法";
     }
 }

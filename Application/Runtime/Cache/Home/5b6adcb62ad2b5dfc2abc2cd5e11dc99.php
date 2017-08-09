@@ -38,10 +38,10 @@
 				<input type="hidden" name="flag" value="1">
 				<fieldset>
 					<div class="am-form-group">
-						<input type="text" class="" name="a_username" id="doc-ipt-email-1" placeholder="输入电子邮件">
+						<input type="text" class="" name="a_username" id="doc-ipt-email-1" placeholder="输入用户名">
 					</div>
 					<div class="am-form-group">
-						<input type="password" name="a_password" class="" id="doc-ipt-pwd-1" placeholder="设置个密码吧">
+						<input type="password" name="a_password" class="" id="doc-ipt-pwd-1" placeholder="输入密码">
 					</div>
 					<p><button type="submit"  class="am-btn am-btn-default">登录</button></p>
 				</fieldset>

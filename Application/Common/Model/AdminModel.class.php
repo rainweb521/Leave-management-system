@@ -16,13 +16,6 @@ class AdminModel extends Model{
     public function Validate_Login($a_username,$a_password){
         $where['a_username'] = $a_username;
         $data = $this->_db->where($where)->find();
-        if ($data==NULL){
-            return 1;
-        }
-        if ($data['a_password']!=$a_password){
-            return 0;
-        }
-        return 2;
-        session('AdminUser',$data['a_id']);
+        return $data;
     }
 }

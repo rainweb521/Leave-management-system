@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="/Public/assets/css/app.css">
     <script src="/Public/assets/js/echarts.min.js"></script>
 </head>
-
 <body data-type="index">
-
 
 <header class="am-topbar am-topbar-inverse admin-header">
     <div class="am-topbar-brand">
@@ -147,10 +145,6 @@
     </div>
 </header>
 
-
-
-
-
 <div class="tpl-page-container tpl-page-header-fixed">
 
 
@@ -161,7 +155,7 @@
         <div class="tpl-left-nav-list">
             <ul class="tpl-left-nav-menu">
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link active">
+                    <a href="/index.php?c=index" class="nav-link active">
                         <i class="am-icon-home"></i>
                         <span>系统首页</span>
                     </a>
@@ -204,7 +198,7 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-user"></i>
                         <span>学生信息</span>
                         <i class="tpl-left-nav-content tpl-badge-danger">
@@ -292,12 +286,6 @@
             </ul>
         </div>
     </div>
-
-
-
-
-
-
 
         <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title" align="center" >

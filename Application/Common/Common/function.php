@@ -14,6 +14,7 @@ function get_LoginState($state){
     if ($state==1){
         return "用户名不存在";
     }
+    return $state;
 }
 
 function  show($status, $message,$data=array()) {
