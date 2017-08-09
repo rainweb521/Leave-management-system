@@ -17,6 +17,10 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG',True);
 
+define('HTML_PATH', './');
+$_GET['m'] = (!isset($_GET['m']) || !$_GET['m']) ? 'home' : $_GET['m'];
+$_GET['c'] = (!isset($_GET['c']) || !$_GET['c'])  ? 'index' : $_GET['c'];
+$_GET['a'] = (!isset($_GET['a']) || !$_GET['a']) ? 'index' : $_GET['a'];
 // 定义应用目录
 define('APP_PATH','./Application/');
 
