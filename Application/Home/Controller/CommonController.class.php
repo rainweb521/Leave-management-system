@@ -32,6 +32,7 @@ class CommonController extends Controller{
 //            echo "location.href=\"$url\"";
 //            echo "</script>";
         }
+        $this->assign('header_name',get_HeaderName($_SESSION['AdminUser']));
     }
 
     /**

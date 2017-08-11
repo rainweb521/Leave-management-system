@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
-    <meta name="description" content="请假管理系统">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="/Public/assets/css/admin.css">
     <link rel="stylesheet" href="/Public/assets/css/app.css">
 </head>
-<body data-type="generalComponents">
 
+<body data-type="generalComponents">
 <header class="am-topbar am-topbar-inverse admin-header">
     <div class="am-topbar-brand">
         <a href="javascript:;" class="tpl-logo">
@@ -290,145 +290,121 @@
     </div>
 </div>
 
-
-<div class="tpl-content-wrapper">
+        <div class="tpl-content-wrapper">
             <!--<div class="tpl-content-page-title">-->
-                <!--Amaze UI 文字列表-->
+                <!--Amaze UI 表单-->
             <!--</div>-->
             <!--<ol class="am-breadcrumb">-->
                 <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
-                <!--<li><a href="#">Amaze UI CSS</a></li>-->
-                <!--<li class="am-active">文字列表</li>-->
+                <!--<li><a href="#">表单</a></li>-->
+                <!--<li class="am-active">Amaze UI 表单</li>-->
             <!--</ol>-->
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 学生信息
+                        <span class="am-icon-code"></span> 账户设置
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
                             <div class="input-icon right">
-                                <i class="am-icon-search"></i>
-                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                                <!--<i class="am-icon-search"></i>-->
+                                <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="tpl-block">
-                    <div class="am-g">
-                        <!--<div class="am-u-sm-12 am-u-md-6">-->
-                            <!--<div class="am-btn-toolbar">-->
-                                <!--<div class="am-btn-group am-btn-group-xs">-->
-                                    <!--<button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>&ndash;&gt;-->
+                <div class="tpl-block ">
 
+                    <div class="am-g tpl-amazeui-form">
+
+
+                        <div class="am-u-sm-12 am-u-md-9">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=class&a=apply">
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-name" class="am-u-sm-3 am-form-label">学号</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_s_card" id="user-card" placeholder="请输入学号">-->
+                                        <!--&lt;!&ndash;<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<small>输入学号点击查询，其他信息会自动填写。</small>&ndash;&gt;-->
+                                    <!--</div>-->
                                 <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <div class="am-u-sm-12 am-u-md-3">
-                            <div class="am-form-group" style="float: inherit" >
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">
-                                    <option value="0">选择级别</option>
-                                    <?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <div class="am-form-group" style="float: inherit">
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">
-                                    <option value="0">选择班级</option>
-                                    <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["c_id"]); ?>"><?php echo ($list["c_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <div class="am-u-sm-12 " style="width: 25%">
-                                <div class="am-input-group am-input-group-sm">
-                                    <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success" style="background-color: #1E9FFF" type="button" onclick="get_StudentList()">确定</button>
-          </span>
-                                </div>
-                            </div>
-                            <!--<div class="am-form-group" style="float: inherit">-->
-                                <!--<select data-am-selected="{btnSize: 'sm'}">-->
-                                    <!--<option value="option1">选择学生</option>-->
-                                <!--</select>-->
-                            <!--</div>-->
-                        </div>
-
-                        <div class="am-u-sm-12 " style="width: 25%">
-                            <div class="am-input-group am-input-group-sm">
-                                <input type="text" class="am-form-field">
-                                <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
-          </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="am-g">
-                        <div class="am-u-sm-12">
-                            <form class="am-form">
-                                <table class="am-table am-table-striped am-table-hover table-main">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
-                                            <th class="table-id">ID</th>
-                                            <th class="table-title">学号</th>
-                                            <th class="table-type">姓名</th>
-                                            <th class="table-author am-hide-sm-only">级别</th>
-                                            <th class="table-author am-hide-sm-only">班级</th>
-                                            <th class="table-author am-hide-sm-only">联系方式</th>
-                                            <th class="table-date am-hide-sm-only">最近请假日期</th>
-                                            <!--<th class="table-set">操作</th>-->
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php if(is_array($student_list)): $i = 0; $__LIST__ = $student_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
-                                            <td><input type="checkbox"></td>
-                                            <td><?php echo ($list["s_id"]); ?></td>
-                                            <td><a href="#"><?php echo ($list["s_card"]); ?></a></td>
-                                            <td><?php echo ($list["s_username"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_grade"]); ?>级</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_class"]); ?>班</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_phone"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_lastleave"]); ?></td>
-                                            <!--<td>-->
-                                                <!--<div class="am-btn-toolbar">-->
-                                                    <!--<div class="am-btn-group am-btn-group-xs">-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>-->
-                                                        <!--&lt;!&ndash;<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>&ndash;&gt;-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</td>-->
-                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-                                    </tbody>
-                                </table>
-                                <div class="am-cf">
-
-                                    <div class="am-fr">
-                                        <ul class="am-pagination tpl-pagination">
-                                            <li class="am-disabled"><a href="#">«</a></li>
-                                            <li class="am-active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li><a href="#">»</a></li>
-                                        </ul>
+                                <input type="hidden" value="1" name="flag">
+                                <!--<input type="hidden" value="" name="l_s_id" id="l_s_id">-->
+                                <!--<input type="hidden" value="" name="l_c_id" id="l_c_id">-->
+                                <input type="hidden" value="" name="l_g_id" id="l_g_id">
+                                <div class="am-form-group">
+                                    <label for="" class="am-u-sm-3 am-form-label"></label>
+                                    <div class="am-u-sm-9">
+                                        <!--<input type="text" name="l_s_username" id="user-name" placeholder="请输入姓名">-->
+                                        <small id="state" style="color: #F7B824;font-size: 16px;"><?php echo ($state); ?></small>
                                     </div>
                                 </div>
-                                <hr>
+                                <div class="am-form-group">
+                                    <label for="a_username" class="am-u-sm-3 am-form-label">管理员姓名</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="a_username" id="a_username" placeholder="请输入管理员姓名">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="a_status" class="am-u-sm-3 am-form-label">级别</label>
+                                    <div class="am-u-sm-9">
+                                        <select class="am-input-sm am-radius" id="a_status" name="a_status">
+                                            <option value="">请选择身份</option>
+                                            <option value="1">教师</option>
+                                            <option value="2">学工助理</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="email" id="user-email" placeholder="输入你的 / Email">-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
+
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">原密码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="输入原密码">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">新密码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="输入新密码">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">确认密码</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="再次输入新密码">
+                                    </div>
+                                </div>
+
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="begin_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_begintime" id="begin_time" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly/>-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">添加信息</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
-                <div class="tpl-alert"></div>
-            </div>
 
+            </div>
 
         </div>
 
@@ -439,23 +415,17 @@
     <script src="/Public/assets/js/amazeui.min.js"></script>
     <script src="/Public/assets/js/app.js"></script>
 <script>
+    function validate() {
 
-    function get_StudentList(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        var s_c_id = document.getElementById('s_c_id').value;
-        location.href = "/index.php?c=student&a=index&s_g_id="+s_g_id+"&s_c_id="+s_c_id;
-    }
-    function change_class(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
-            var str = '<option value="0">请选择班级</option>';
-
-            for (var i=0;i<res.length;i++){
-                str = str + '<option value="' + res[i].c_id + '">' + res[i].c_name + '</option>';
-            }
-            document.getElementById('s_c_id').innerHTML = str;
-        });
+        var c_name = document.getElementById('c_name').value;
+        var c_g_id = document.getElementById('c_g_id').value;
+        if (c_name == ''){
+            document.getElementById('state').innerHTML = '班级名称未填写';
+        }else if (c_g_id == ''){
+            document.getElementById('state').innerHTML = '级别未选择';
+        }else {
+            document.getElementById('my_form').submit();
+        }
     }
 </script>
 </body>

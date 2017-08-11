@@ -303,13 +303,14 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 学生信息
+                        <span class="am-icon-code"></span> 班级信息
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
                             <div class="input-icon right">
-                                <i class="am-icon-search"></i>
-                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                                <!--<i class="am-icon-search"></i>-->
+                                <!--<input type="text" class="form-control form-control-solid" placeholder="搜索..."> -->
+                            </div>
                         </div>
                     </div>
 
@@ -331,39 +332,41 @@
 
                         <div class="am-u-sm-12 am-u-md-3">
                             <div class="am-form-group" style="float: inherit" >
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">
+                                <select data-am-selected="{btnSize: 'sm'}" id="c_g_id" name="c_g_id" onchange="change_class()">
                                     <option value="0">选择级别</option>
                                     <?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
                             </div>
-                            <div class="am-form-group" style="float: inherit">
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">
-                                    <option value="0">选择班级</option>
-                                    <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["c_id"]); ?>"><?php echo ($list["c_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
+                            <!--<div class="am-form-group" style="float: inherit">-->
+                                <!--<select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">-->
+                                    <!--<option value="0">选择班级</option>-->
+                                    <!--<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>-->
+                                        <!--<option value="<?php echo ($list["c_id"]); ?>"><?php echo ($list["c_name"]); ?></option>-->
+                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                <!--</select>-->
+                            <!--</div>-->
                             <div class="am-u-sm-12 " style="width: 25%">
                                 <div class="am-input-group am-input-group-sm">
                                     <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success" style="background-color: #1E9FFF" type="button" onclick="get_StudentList()">确定</button>
+            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success" style="background-color: #1E9FFF" type="button" onclick="get_ClassList()">确定</button>
           </span>
                                 </div>
                             </div>
                             <!--<div class="am-form-group" style="float: inherit">-->
-                                <!--<select data-am-selected="{btnSize: 'sm'}">-->
-                                    <!--<option value="option1">选择学生</option>-->
-                                <!--</select>-->
+                            <!--<select data-am-selected="{btnSize: 'sm'}">-->
+                            <!--<option value="option1">选择学生</option>-->
+                            <!--</select>-->
                             <!--</div>-->
                         </div>
 
-                        <div class="am-u-sm-12 " style="width: 25%">
-                            <div class="am-input-group am-input-group-sm">
-                                <input type="text" class="am-form-field">
-                                <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
-          </span>
-                            </div>
-                        </div>
+                        <!--<div class="am-u-sm-12 " style="width: 25%">-->
+                            <!--<div class="am-input-group am-input-group-sm">-->
+                                <!--<input type="text" class="am-form-field">-->
+                                <!--<span class="am-input-group-btn">-->
+            <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>-->
+          <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="am-g">
                         <div class="am-u-sm-12">
@@ -373,25 +376,26 @@
                                         <tr>
                                             <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
                                             <th class="table-id">ID</th>
-                                            <th class="table-title">学号</th>
-                                            <th class="table-type">姓名</th>
-                                            <th class="table-author am-hide-sm-only">级别</th>
-                                            <th class="table-author am-hide-sm-only">班级</th>
-                                            <th class="table-author am-hide-sm-only">联系方式</th>
-                                            <th class="table-date am-hide-sm-only">最近请假日期</th>
+                                            <th class="table-title">班级名称</th>
+                                            <th class="table-type">级别</th>
+                                            <th class="table-author am-hide-sm-only">今日请假</th>
+                                            <th class="table-author am-hide-sm-only">昨日请假</th>
+                                            <th class="table-author am-hide-sm-only">本周请假</th>
+                                            <th class="table-date am-hide-sm-only">本月请假</th>
                                             <!--<th class="table-set">操作</th>-->
                                         </tr>
                                     </thead>
+
                                     <tbody>
-                                    <?php if(is_array($student_list)): $i = 0; $__LIST__ = $student_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
+                                    <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
                                             <td><input type="checkbox"></td>
-                                            <td><?php echo ($list["s_id"]); ?></td>
-                                            <td><a href="#"><?php echo ($list["s_card"]); ?></a></td>
-                                            <td><?php echo ($list["s_username"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_grade"]); ?>级</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_class"]); ?>班</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_phone"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_lastleave"]); ?></td>
+                                            <td><?php echo ($list["c_id"]); ?></td>
+                                            <td><a href="#"><?php echo ($list["c_name"]); ?></a></td>
+                                            <td><?php echo ($list["c_grade"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["day"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["last_day"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["week"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["month"]); ?></td>
                                             <!--<td>-->
                                                 <!--<div class="am-btn-toolbar">-->
                                                     <!--<div class="am-btn-group am-btn-group-xs">-->
@@ -405,20 +409,20 @@
 
                                     </tbody>
                                 </table>
-                                <div class="am-cf">
+                                <!--<div class="am-cf">-->
 
-                                    <div class="am-fr">
-                                        <ul class="am-pagination tpl-pagination">
-                                            <li class="am-disabled"><a href="#">«</a></li>
-                                            <li class="am-active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li><a href="#">»</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                    <!--<div class="am-fr">-->
+                                        <!--<ul class="am-pagination tpl-pagination">-->
+                                            <!--<li class="am-disabled"><a href="#">«</a></li>-->
+                                            <!--<li class="am-active"><a href="#">1</a></li>-->
+                                            <!--<li><a href="#">2</a></li>-->
+                                            <!--<li><a href="#">3</a></li>-->
+                                            <!--<li><a href="#">4</a></li>-->
+                                            <!--<li><a href="#">5</a></li>-->
+                                            <!--<li><a href="#">»</a></li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                                 <hr>
 
                             </form>
@@ -440,23 +444,11 @@
     <script src="/Public/assets/js/app.js"></script>
 <script>
 
-    function get_StudentList(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        var s_c_id = document.getElementById('s_c_id').value;
-        location.href = "/index.php?c=student&a=index&s_g_id="+s_g_id+"&s_c_id="+s_c_id;
+    function get_ClassList(){
+        var c_g_id = document.getElementById('c_g_id').value;
+        location.href = "/index.php?c=class&a=index&c_g_id="+c_g_id;
     }
-    function change_class(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
-            var str = '<option value="0">请选择班级</option>';
 
-            for (var i=0;i<res.length;i++){
-                str = str + '<option value="' + res[i].c_id + '">' + res[i].c_name + '</option>';
-            }
-            document.getElementById('s_c_id').innerHTML = str;
-        });
-    }
 </script>
 </body>
 

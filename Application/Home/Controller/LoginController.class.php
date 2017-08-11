@@ -11,6 +11,7 @@ use Think\Controller;
 
 class LoginController  extends Controller{
     public function index(){
+        // 提交表单的操作，判断是否有提交
         $flag = request('post','int','flag',0);
         if($flag==1){
             $a_username = request('post','str','a_username','');
@@ -22,6 +23,7 @@ class LoginController  extends Controller{
                 $state = "密码错误";
             }else{
                 session('AdminUser',$data);
+//                start_session(6000);
                 $this->redirect('/index.php?c=index');
                 exit();
             }
@@ -29,6 +31,16 @@ class LoginController  extends Controller{
         }
         $this->display();
 
+    }
+
+    /**
+     * 登出操作
+     */
+    public function logout() {
+        session('AdminUser', null);
+        $this->redirect('/index.php?c=index');
+        exit();
+//        $this->get_session();
     }
 
 }

@@ -130,14 +130,14 @@
 
             <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                 <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                    <span class="tpl-header-list-user-nick">学工助理：xxx</span><span class="tpl-header-list-user-ico">
+                    <span class="tpl-header-list-user-nick"><?php echo ($header_name); ?></span><span class="tpl-header-list-user-ico">
                     <!--<img src="/Public/assets/img/user01.png">-->
                 </span>
                 </a>
                 <ul class="am-dropdown-content">
                     <!--<li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>-->
-                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    <li><a href="/index.php?c=admin&a=apply"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="/index.php?c=login&a=logout"><span class="am-icon-power-off"></span> 退出</a></li>
                 </ul>
             </li>
             <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
@@ -168,32 +168,31 @@
                     </a>
                     <ul class="tpl-left-nav-sub-menu">
                         <li>
-                            <a href="">
+                            <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
-                                <span>请假申请</span>
+                                <span>假条申请</span>
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
 
-                            <a href="">
+                            <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
-                                <span>请假注销</span>
+                                <span>假条注销</span>
                                 <i class="tpl-left-nav-content tpl-badge-success">
                                     18
                                 </i>
-
-                                <a href="">
+                            </a>
+                                <a href="/index.php?c=leave&a=show">
                                     <i class="am-icon-angle-right"></i>
                                     <span>假条模板</span>
                                     <i class="tpl-left-nav-content tpl-badge-primary">
                                         5
                                     </i>
+                                </a>
 
-
-                                    <a href="">
-                                        <i class="am-icon-angle-right"></i>
-                                        <span>假条列表</span>
-
-                                    </a>
+                                    <!--<a href="">-->
+                                        <!--<i class="am-icon-angle-right"></i>-->
+                                        <!--<span>假条列表</span>-->
+                                    <!--</a>-->
                         </li>
                     </ul>
                 </li>
@@ -209,67 +208,71 @@
 
 
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-users"></i>
                         <span>班级信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-th-list"></i>
-                        <span>年级信息</span>
+                        <span>级别信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-th"></i>
                         <span>学期信息</span>
 
                     </a>
                 </li>
-                <!--<li class="tpl-left-nav-item">-->
-                    <!--<a href="javascript:;" class="nav-link tpl-left-nav-link-list">-->
-                        <!--<i class="am-icon-wpforms"></i>-->
-                        <!--<span>表单</span>-->
-                        <!--<i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>-->
-                    <!--</a>-->
-                    <!--<ul class="tpl-left-nav-sub-menu">-->
-                        <!--<li>-->
-                            <!--<a href="form-amazeui.html">-->
-                                <!--<i class="am-icon-angle-right"></i>-->
-                                <!--<span>Amaze UI 表单</span>-->
-                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
-                            <!--</a>-->
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-plus-square"></i>
+                        <span>添加信息</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu" >
+                        <li>
+                            <a href="/index.php?c=student&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加学生</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
 
-                            <!--<a href="form-line.html">-->
-                                <!--<i class="am-icon-angle-right"></i>-->
-                                <!--<span>线条表单</span>-->
-                            <!--</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</li>-->
+                            <a href="/index.php?c=class&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加班级</span>
+                            </a>
+                            <a href="/index.php?c=grade&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加级别</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                 <li class="tpl-left-nav-item">
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-cog"></i>
                         <span>系统设置</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
-                            <a href="">
+                            <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>用户管理</span>
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
 
-                            <a href="">
-                                <i class="am-icon-angle-right"></i>
-                                <span>新增用户</span>
-                            </a>
-                            <a href="">
+                            <!--<a href="/index.php?c=admin&a=apply">-->
+                                <!--<i class="am-icon-angle-right"></i>-->
+                                <!--<span>新增用户</span>-->
+                            <!--</a>-->
+                            <a href="/index.php?c=admin&a=log">
                                 <i class="am-icon-angle-right"></i>
                                 <span>登录日志</span>
                             </a>
@@ -286,6 +289,7 @@
             </ul>
         </div>
     </div>
+</div>
 
         <div class="tpl-content-wrapper">
             <div class="tpl-content-page-title" align="center" >
@@ -316,8 +320,8 @@
                             <i class="am-icon-comments-o"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 10 </div>
-                            <div class="desc"> 昨日请假人数 </div>
+                            <div class="number"> <?php echo ($top["now_day"]); ?> </div>
+                            <div class="desc"> 今日请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -330,8 +334,8 @@
                             <i class="am-icon-bar-chart-o"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 8 </div>
-                            <div class="desc"> 昨日销假人数</div>
+                            <div class="number"> <?php echo ($top["last_day"]); ?> </div>
+                            <div class="desc"> 昨日请假人数</div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -344,7 +348,7 @@
                             <i class="am-icon-apple"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 55 </div>
+                            <div class="number"> <?php echo ($top["now_week"]); ?> </div>
                             <div class="desc"> 本周请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
@@ -358,8 +362,8 @@
                             <i class="am-icon-android"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 60 </div>
-                            <div class="desc"> 本周销假人数 </div>
+                            <div class="number"> <?php echo ($top["last_week"]); ?> </div>
+                            <div class="desc"> 上周请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -412,12 +416,12 @@
                         <div class="tpl-scrollable">
                             <div class="number-stats">
                                 <div class="stat-number am-fl am-u-md-6">
-                                    <div class="title am-text-right"> Total </div>
-                                    <div class="number am-text-right am-text-warning"> 2460 </div>
+                                    <div class="title am-text-right"> 请假 </div>
+                                    <div class="number am-text-right am-text-warning"> 3 </div>
                                 </div>
                                 <div class="stat-number am-fr am-u-md-6">
-                                    <div class="title"> Total </div>
-                                    <div class="number am-text-success"> 2460 </div>
+                                    <div class="title"> 销假 </div>
+                                    <div class="number am-text-success"> 2 </div>
                                 </div>
 
                             </div>
@@ -434,7 +438,6 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user01.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">小张</a>
                                         </td>
                                         <td>2017-8-8</td>
@@ -443,7 +446,6 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user02.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Alex.</a>
                                         </td>
                                         <td>2017-8-8</td>
@@ -452,40 +454,13 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user03.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Tinker404</a>
                                         </td>
                                         <td>2017-8-8</td>
                                         <td>2017-8-8</td>
                                         <td class="font-green bold">未注销</td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user04.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Arron.y</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">未注销</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user05.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Yves</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">已注销</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user06.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">小黄鸡</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">已注销</td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -610,61 +585,7 @@
                                     <div id="wrapperA" class="wrapper">
                                         <div id="scroller" class="scroller">
                                             <ul class="tpl-task-list tpl-task-remind">
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--12分钟前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco">-->
-                        <!--<i class="am-icon-bell-o"></i>-->
-                      <!--</span>-->
 
-                                                        <!--<span> 注意：Chrome 和 Firefox 下， display: inline-block; 或 display: block; 的元素才会应用旋转动画。<span class="tpl-label-info"> 提取文件-->
-                                                            <!--<i class="am-icon-share"></i>-->
-                                                        <!--</span></span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--36分钟前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-danger">-->
-                        <!--<i class="am-icon-bolt"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> FontAwesome 在绘制图标的时候不同图标宽度有差异， 添加 .am-icon-fw 将图标设置为固定的宽度，解决宽度不一致问题（v2.3 新增）。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--2小时前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-info">-->
-                        <!--<i class="am-icon-bullhorn"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> 使用 flexbox 实现，只兼容 IE 10+ 及其他现代浏览器。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--1天前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-warning">-->
-                        <!--<i class="am-icon-plus"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> 部分用户反应在过长的 Tabs 中滚动页面时会意外触发 Tab 切换事件，用户可以选择禁用触控操作。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
                                                 <!--<li>-->
                                                     <!--<div class="cosB">-->
                                                         <!--12分钟前-->

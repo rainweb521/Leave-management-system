@@ -303,13 +303,14 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 学生信息
+                        <span class="am-icon-code"></span> 假条注销
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
                             <div class="input-icon right">
-                                <i class="am-icon-search"></i>
-                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                                <!--<i class="am-icon-search"></i>-->
+                                <!--<input type="text" class="form-control form-control-solid" placeholder="搜索..."> -->
+                            </div>
                         </div>
                     </div>
 
@@ -331,24 +332,14 @@
 
                         <div class="am-u-sm-12 am-u-md-3">
                             <div class="am-form-group" style="float: inherit" >
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">
-                                    <option value="0">选择级别</option>
-                                    <?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
+                                <!--<select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">-->
+                                    <!--<option value="0">选择级别</option>-->
+                                    <!--<?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>-->
+                                        <!--<option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option>-->
+                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
+                                <!--</select>-->
                             </div>
-                            <div class="am-form-group" style="float: inherit">
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">
-                                    <option value="0">选择班级</option>
-                                    <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["c_id"]); ?>"><?php echo ($list["c_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <div class="am-u-sm-12 " style="width: 25%">
-                                <div class="am-input-group am-input-group-sm">
-                                    <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success" style="background-color: #1E9FFF" type="button" onclick="get_StudentList()">确定</button>
-          </span>
-                                </div>
-                            </div>
+
                             <!--<div class="am-form-group" style="float: inherit">-->
                                 <!--<select data-am-selected="{btnSize: 'sm'}">-->
                                     <!--<option value="option1">选择学生</option>-->
@@ -358,7 +349,7 @@
 
                         <div class="am-u-sm-12 " style="width: 25%">
                             <div class="am-input-group am-input-group-sm">
-                                <input type="text" class="am-form-field">
+                                <input type="text" class="am-form-field" placeholder="请输入学号进行查找">
                                 <span class="am-input-group-btn">
             <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
           </span>
@@ -379,28 +370,37 @@
                                             <th class="table-author am-hide-sm-only">班级</th>
                                             <th class="table-author am-hide-sm-only">联系方式</th>
                                             <th class="table-date am-hide-sm-only">最近请假日期</th>
-                                            <!--<th class="table-set">操作</th>-->
+                                            <th class="table-date am-hide-sm-only">状态</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php if(is_array($student_list)): $i = 0; $__LIST__ = $student_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
+                                    <?php if(is_array($leave_list)): $i = 0; $__LIST__ = $leave_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
                                             <td><input type="checkbox"></td>
-                                            <td><?php echo ($list["s_id"]); ?></td>
-                                            <td><a href="#"><?php echo ($list["s_card"]); ?></a></td>
-                                            <td><?php echo ($list["s_username"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_grade"]); ?>级</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_class"]); ?>班</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_phone"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_lastleave"]); ?></td>
-                                            <!--<td>-->
-                                                <!--<div class="am-btn-toolbar">-->
-                                                    <!--<div class="am-btn-group am-btn-group-xs">-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>-->
-                                                        <!--&lt;!&ndash;<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>&ndash;&gt;-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>-->
+                                            <td><?php echo ($list["l_id"]); ?></td>
+                                            <td><a href="#"><?php echo ($list["l_s_card"]); ?></a></td>
+                                            <td><?php echo ($list["l_s_username"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_grade"]); ?>级</td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_class"]); ?>班</td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_phone"]); ?></td>
+                                            <td class="am-hide-sm-only"><?php echo ($list["l_addtime"]); ?></td>
+                                            <td class="am-hide-sm-only">
+                                                <a class="label label-sm " style="background-color: #ed6b75" id="state<?php echo ($list["l_id"]); ?>" onclick="set_State('<?php echo ($list["l_id"]); ?>')">未注销</a><span id="statt<?php echo ($list["l_id"]); ?>">&nbsp;点击注销</span>
+
+                                                <!--<div class="am-form-group">-->
+                                                    <!--<div class="am-u-sm-9">-->
+                                                        <!--<div class="tpl-switch">-->
+                                                            <!--<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" id="state'<?php echo ($list["l_id"]); ?>'" value=""  />-->
+                                                            <!--<div class="tpl-switch-btn-view" onclick="set_State('<?php echo ($list["l_id"]); ?>')">-->
+                                                                <!--<div>-->
+                                                                <!--</div>-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+
                                                     <!--</div>-->
                                                 <!--</div>-->
-                                            <!--</td>-->
+
+
+                                            </td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                                     </tbody>
@@ -440,22 +440,13 @@
     <script src="/Public/assets/js/app.js"></script>
 <script>
 
-    function get_StudentList(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        var s_c_id = document.getElementById('s_c_id').value;
-        location.href = "/index.php?c=student&a=index&s_g_id="+s_g_id+"&s_c_id="+s_c_id;
-    }
-    function change_class(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
-            var str = '<option value="0">请选择班级</option>';
 
-            for (var i=0;i<res.length;i++){
-                str = str + '<option value="' + res[i].c_id + '">' + res[i].c_name + '</option>';
-            }
-            document.getElementById('s_c_id').innerHTML = str;
-        });
+    function set_State(obj){
+
+        $.get("/index.php?c=leave&a=set_state&tip=641351484&l_id=" + obj);
+        document.getElementById('state'+obj).style.backgroundColor = "#1E9FFF";
+        document.getElementById('state'+obj).innerHTML = "已注销";
+        document.getElementById('statt'+obj).innerHTML = "";
     }
 </script>
 </body>

@@ -53,8 +53,8 @@
                             <i class="am-icon-comments-o"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 10 </div>
-                            <div class="desc"> 昨日请假人数 </div>
+                            <div class="number"> {$top.now_day} </div>
+                            <div class="desc"> 今日请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -67,8 +67,8 @@
                             <i class="am-icon-bar-chart-o"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 8 </div>
-                            <div class="desc"> 昨日销假人数</div>
+                            <div class="number"> {$top.last_day} </div>
+                            <div class="desc"> 昨日请假人数</div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -81,7 +81,7 @@
                             <i class="am-icon-apple"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 55 </div>
+                            <div class="number"> {$top.now_week} </div>
                             <div class="desc"> 本周请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
@@ -95,8 +95,8 @@
                             <i class="am-icon-android"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> 60 </div>
-                            <div class="desc"> 本周销假人数 </div>
+                            <div class="number"> {$top.last_week} </div>
+                            <div class="desc"> 上周请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>
@@ -149,12 +149,12 @@
                         <div class="tpl-scrollable">
                             <div class="number-stats">
                                 <div class="stat-number am-fl am-u-md-6">
-                                    <div class="title am-text-right"> Total </div>
-                                    <div class="number am-text-right am-text-warning"> 2460 </div>
+                                    <div class="title am-text-right"> 请假 </div>
+                                    <div class="number am-text-right am-text-warning"> 3 </div>
                                 </div>
                                 <div class="stat-number am-fr am-u-md-6">
-                                    <div class="title"> Total </div>
-                                    <div class="number am-text-success"> 2460 </div>
+                                    <div class="title"> 销假 </div>
+                                    <div class="number am-text-success"> 2 </div>
                                 </div>
 
                             </div>
@@ -171,7 +171,6 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user01.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">小张</a>
                                         </td>
                                         <td>2017-8-8</td>
@@ -180,7 +179,6 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user02.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Alex.</a>
                                         </td>
                                         <td>2017-8-8</td>
@@ -189,40 +187,13 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="/Public/assets/img/user03.png" alt="" class="user-pic">
                                             <a class="user-name" href="###">Tinker404</a>
                                         </td>
                                         <td>2017-8-8</td>
                                         <td>2017-8-8</td>
                                         <td class="font-green bold">未注销</td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user04.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Arron.y</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">未注销</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user05.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Yves</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">已注销</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="/Public/assets/img/user06.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">小黄鸡</a>
-                                        </td>
-                                        <td>2017-8-8</td>
-                                        <td>2017-8-8</td>
-                                        <td class="font-green bold">已注销</td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -347,61 +318,7 @@
                                     <div id="wrapperA" class="wrapper">
                                         <div id="scroller" class="scroller">
                                             <ul class="tpl-task-list tpl-task-remind">
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--12分钟前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco">-->
-                        <!--<i class="am-icon-bell-o"></i>-->
-                      <!--</span>-->
 
-                                                        <!--<span> 注意：Chrome 和 Firefox 下， display: inline-block; 或 display: block; 的元素才会应用旋转动画。<span class="tpl-label-info"> 提取文件-->
-                                                            <!--<i class="am-icon-share"></i>-->
-                                                        <!--</span></span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--36分钟前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-danger">-->
-                        <!--<i class="am-icon-bolt"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> FontAwesome 在绘制图标的时候不同图标宽度有差异， 添加 .am-icon-fw 将图标设置为固定的宽度，解决宽度不一致问题（v2.3 新增）。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--2小时前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-info">-->
-                        <!--<i class="am-icon-bullhorn"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> 使用 flexbox 实现，只兼容 IE 10+ 及其他现代浏览器。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
-                                                <!--<li>-->
-                                                    <!--<div class="cosB">-->
-                                                        <!--1天前-->
-                                                    <!--</div>-->
-                                                    <!--<div class="cosA">-->
-                                                        <!--<span class="cosIco label-warning">-->
-                        <!--<i class="am-icon-plus"></i>-->
-                      <!--</span>-->
-
-                                                        <!--<span> 部分用户反应在过长的 Tabs 中滚动页面时会意外触发 Tab 切换事件，用户可以选择禁用触控操作。</span>-->
-                                                    <!--</div>-->
-
-                                                <!--</li>-->
                                                 <!--<li>-->
                                                     <!--<div class="cosB">-->
                                                         <!--12分钟前-->

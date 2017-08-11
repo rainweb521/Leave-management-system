@@ -12,7 +12,14 @@ class AdminModel extends Model{
 
     public function __construct() {
         $this->_db = M('admin');
+
     }
+
+    /** 用于登录的验证
+     * @param $a_username
+     * @param $a_password
+     * @return array|false|mixed|\PDOStatement|string|Model
+     */
     public function Validate_Login($a_username,$a_password){
         $where['a_username'] = $a_username;
         $data = $this->_db->where($where)->find();

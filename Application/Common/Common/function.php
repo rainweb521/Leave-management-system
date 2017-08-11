@@ -17,6 +17,19 @@ function get_LoginState($state){
     return $state;
 }
 
+/** 用作添加级别，班级，学生信息的返回值判断
+ * @param $result 用于做判断的值
+ * @return string 返回要显示的值
+ */
+function get_addInfoState($result){
+    if ($result==1){
+        return '添加成功';
+    }else {
+        return '该记录在系统中有重复';
+    }
+}
+
+
 function  show($status, $message,$data=array()) {
     $reuslt = array(
         'status' => $status,
@@ -197,4 +210,127 @@ function sendMail($to, $title, $content) {
     $mail->AltBody = "这是一个纯文本的身体在非营利的HTML电子邮件客户端"; //邮件正文不支持HTML的备用显示
     return($mail->Send());
 }
+function start_session($expire = 0)
+{
+    if ($expire == 0) {
+        $expire = ini_get('session.gc_maxlifetime');
+    } else {
+        ini_set('session.gc_maxlifetime', $expire);
+    }
+    if (empty($_COOKIE['PHPSESSID'])) {
+        session_set_cookie_params($expire);
+        session_start();
+    } else {
+        session_start();
+        setcookie('PHPSESSID', session_id(), time() + $expire);
+    }
+}
+
+/** 计算两个日期相差天数的函数
+ * @param $date1 开始日期
+ * @param $date2 结束日期
+ * @return float 返回的天数
+ */
+function get_Num_Day($date1,$date2){
+    $date1=strtotime($date1);
+    $date2=strtotime($date2);
+    $value = round(($date1-$date2)/3600/24) + 1;
+    return $value;
+}
+
+/** 用于设置header的显示信息
+ * @param $data admin信息
+ * @return string 返回顶部显示的内容
+ */
+function get_HeaderName($data){
+    $name = '';
+    if ($data['a_status']==1){
+        $name = $name.'教师：'.$data['a_username'];
+    }else{
+        $name = $name.'学工助理：'.$data['a_username'];
+    }
+    return $name;
+}
+
+/** 用于查找本星期内所有的日期
+ * @return array 返回今天所在的星期内所有的日期数组
+ */
+function get_Week_All_Day(){
+    $begin = date("Y-m-d H:i:s",mktime(0, 0 , 0,date("m"),date("d")-date("w")+1,date("Y")));
+    $end = date("Y-m-d H:i:s",mktime(23,59,59,date("m"),date("d")-date("w")+7,date("Y")));
+    $now = date("Y-m-d");
+//    $begin = date("Y-m-d H:i:s",strtotime("2017-02-27 00:00:00"));
+    $week = array();
+    for ($i = 0;$i < 7;$i++){
+        $day = date('Y-m-d',strtotime($begin)+$i*24*60*60);
+        array_push($week,$day);
+        if ($day == $now){
+            break;
+        }
+    }
+    return $week;
+}
+/** 用于查找上一个星期内所有的日期
+ * @return array 返回上一个星期内所有的日期数组
+ */
+function get_Last_Week_All_Day(){
+    $begin = date("Y-m-d H:i:s",mktime(0, 0 , 0,date("m"),date("d")-date("w")+1-7,date("Y")));
+    $end = date("Y-m-d H:i:s",mktime(23,59,59,date("m"),date("d")-date("w")+7-7,date("Y")));
+    $end = date("Y-m-d",strtotime($end));
+//    $begin = date("Y-m-d H:i:s",strtotime("2017-02-27 00:00:00"));
+    $week = array();
+    for ($i = 0;$i < 7;$i++){
+        $day = date('Y-m-d',strtotime($begin)+$i*24*60*60);
+        array_push($week,$day);
+        if ($day == $end){
+            break;
+        }
+    }
+    return $week;
+}
+/** 用于查找上一个月月份内所有的日期
+ * @return array 返回上一个月份内所有的日期数组
+ */
+function get_Last_Month_All_Day(){
+    $begin = date("Y-m-d H:i:s",mktime(0, 0 , 0,date("m")-1,1,date("Y")));
+    $end = date("Y-m-d H:i:s",mktime(23,59,59,date("m") ,0,date("Y")));
+    $end = date("Y-m-d",strtotime($end));
+//    $begin = date("Y-m-d H:i:s",strtotime("2017-02-27 00:00:00"));
+    $month = array();
+    for ($i = 0;$i < 32;$i++){
+        $day = date('Y-m-d',strtotime($begin)+$i*24*60*60);
+        array_push($month,$day);
+        if ($day == $end){
+            break;
+        }
+    }
+    return $month;
+}
+/** 用于查找本月份内所有的日期
+ * @return array 返回今天所在的月份内所有的日期数组
+ */
+function get_Month_All_Day(){
+    $begin = date("Y-m-d H:i:s",mktime(0, 0 , 0,date("m"),1,date("Y")));
+    $end = date("Y-m-d H:i:s",mktime(23,59,59,date("m"),date("t"),date("Y")));
+    $now = date("Y-m-d");
+//    $begin = date("Y-m-d H:i:s",strtotime("2017-02-27 00:00:00"));
+    $month = array();
+    for ($i = 0;$i < 32;$i++){
+        $day = date('Y-m-d',strtotime($begin)+$i*24*60*60);
+        array_push($month,$day);
+        if ($day == $now){
+            break;
+        }
+    }
+    return $month;
+}
+/** 用于查找昨天的日期
+ * @return array 返回昨天的日期数组
+ */
+function get_Last_Day(){
+    $date = date("Y-m-d");
+    $time = strtotime($date) - 3600*24;
+    return date('Y-m-d',$time);
+}
+
 

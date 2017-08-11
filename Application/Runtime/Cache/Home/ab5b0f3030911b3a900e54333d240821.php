@@ -4,19 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
-    <meta name="description" content="请假管理系统">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css"/>
     <link rel="stylesheet" href="/Public/assets/css/admin.css">
     <link rel="stylesheet" href="/Public/assets/css/app.css">
 </head>
+
 <body data-type="generalComponents">
 
 <header class="am-topbar am-topbar-inverse admin-header">
@@ -292,172 +293,108 @@
 
 
 <div class="tpl-content-wrapper">
-            <!--<div class="tpl-content-page-title">-->
-                <!--Amaze UI 文字列表-->
-            <!--</div>-->
-            <!--<ol class="am-breadcrumb">-->
-                <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
-                <!--<li><a href="#">Amaze UI CSS</a></li>-->
-                <!--<li class="am-active">文字列表</li>-->
-            <!--</ol>-->
-            <div class="tpl-portlet-components">
-                <div class="portlet-title">
-                    <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 学生信息
-                    </div>
-                    <div class="tpl-portlet-input tpl-fz-ml">
-                        <div class="portlet-input input-small input-inline">
-                            <div class="input-icon right">
-                                <i class="am-icon-search"></i>
-                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="tpl-block">
-                    <div class="am-g">
-                        <!--<div class="am-u-sm-12 am-u-md-6">-->
-                            <!--<div class="am-btn-toolbar">-->
-                                <!--<div class="am-btn-group am-btn-group-xs">-->
-                                    <!--<button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>&ndash;&gt;-->
-
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <div class="am-u-sm-12 am-u-md-3">
-                            <div class="am-form-group" style="float: inherit" >
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">
-                                    <option value="0">选择级别</option>
-                                    <?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <div class="am-form-group" style="float: inherit">
-                                <select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">
-                                    <option value="0">选择班级</option>
-                                    <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><option value="<?php echo ($list["c_id"]); ?>"><?php echo ($list["c_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                                </select>
-                            </div>
-                            <div class="am-u-sm-12 " style="width: 25%">
-                                <div class="am-input-group am-input-group-sm">
-                                    <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success" style="background-color: #1E9FFF" type="button" onclick="get_StudentList()">确定</button>
-          </span>
-                                </div>
-                            </div>
-                            <!--<div class="am-form-group" style="float: inherit">-->
-                                <!--<select data-am-selected="{btnSize: 'sm'}">-->
-                                    <!--<option value="option1">选择学生</option>-->
-                                <!--</select>-->
-                            <!--</div>-->
-                        </div>
-
-                        <div class="am-u-sm-12 " style="width: 25%">
-                            <div class="am-input-group am-input-group-sm">
-                                <input type="text" class="am-form-field">
-                                <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
-          </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="am-g">
-                        <div class="am-u-sm-12">
-                            <form class="am-form">
-                                <table class="am-table am-table-striped am-table-hover table-main">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
-                                            <th class="table-id">ID</th>
-                                            <th class="table-title">学号</th>
-                                            <th class="table-type">姓名</th>
-                                            <th class="table-author am-hide-sm-only">级别</th>
-                                            <th class="table-author am-hide-sm-only">班级</th>
-                                            <th class="table-author am-hide-sm-only">联系方式</th>
-                                            <th class="table-date am-hide-sm-only">最近请假日期</th>
-                                            <!--<th class="table-set">操作</th>-->
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php if(is_array($student_list)): $i = 0; $__LIST__ = $student_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
-                                            <td><input type="checkbox"></td>
-                                            <td><?php echo ($list["s_id"]); ?></td>
-                                            <td><a href="#"><?php echo ($list["s_card"]); ?></a></td>
-                                            <td><?php echo ($list["s_username"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_grade"]); ?>级</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_class"]); ?>班</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_phone"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["s_lastleave"]); ?></td>
-                                            <!--<td>-->
-                                                <!--<div class="am-btn-toolbar">-->
-                                                    <!--<div class="am-btn-group am-btn-group-xs">-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>-->
-                                                        <!--&lt;!&ndash;<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>&ndash;&gt;-->
-                                                        <!--<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</td>-->
-                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-
-                                    </tbody>
-                                </table>
-                                <div class="am-cf">
-
-                                    <div class="am-fr">
-                                        <ul class="am-pagination tpl-pagination">
-                                            <li class="am-disabled"><a href="#">«</a></li>
-                                            <li class="am-active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li><a href="#">»</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <hr>
-
-                            </form>
-                        </div>
-
+    <!--<div class="tpl-content-page-title">-->
+    <!--Amaze UI 表单-->
+    <!--</div>-->
+    <!--<ol class="am-breadcrumb">-->
+    <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
+    <!--<li><a href="#">表单</a></li>-->
+    <!--<li class="am-active">Amaze UI 表单</li>-->
+    <!--</ol>-->
+    <div class="tpl-portlet-components">
+        <div class="portlet-title">
+            <div class="caption font-green bold">
+                <span class="am-icon-code"></span> 登录日志
+            </div>
+            <div class="tpl-portlet-input tpl-fz-ml">
+                <div class="portlet-input input-small input-inline">
+                    <div class="input-icon right">
+                        <!--<i class="am-icon-search"></i>-->
+                        <!--<input type="text" class="form-control form-control-solid" placeholder="搜索..."> -->
                     </div>
                 </div>
-                <div class="tpl-alert"></div>
             </div>
 
 
+        </div>
+        <div class="tpl-block">
+            <div class="am-g">
+                <!--<div class="am-u-sm-12 am-u-md-6">-->
+                    <!--<div class="am-btn-toolbar">-->
+                        <!--<div class="am-btn-group am-btn-group-xs">-->
+                            <!--<button type="button" class="am-btn am-btn-default am-btn-success"><span-->
+                                    <!--class="am-icon-plus"></span> 新增-->
+                            <!--</button>-->
+                            <!--<button type="button" class="am-btn am-btn-default am-btn-secondary"><span-->
+                                    <!--class="am-icon-save"></span> 保存-->
+                            <!--</button>-->
+                            <!--<button type="button" class="am-btn am-btn-default am-btn-warning"><span-->
+                                    <!--class="am-icon-archive"></span> 审核-->
+                            <!--</button>-->
+                            <!--<button type="button" class="am-btn am-btn-default am-btn-danger"><span-->
+                                    <!--class="am-icon-trash-o"></span> 删除-->
+                            <!--</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="am-u-sm-12 am-u-md-3">-->
+                    <!--<div class="am-form-group">-->
+                        <!--<select data-am-selected="{btnSize: 'sm'}">-->
+                            <!--<option value="option1">所有类别</option>-->
+                            <!--<option value="option2">IT业界</option>-->
+                            <!--<option value="option3">数码产品</option>-->
+                            <!--<option value="option3">笔记本电脑</option>-->
+                            <!--<option value="option3">平板电脑</option>-->
+                            <!--<option value="option3">只能手机</option>-->
+                            <!--<option value="option3">超极本</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="am-u-sm-12 am-u-md-3">-->
+                    <!--<div class="am-input-group am-input-group-sm">-->
+                        <!--<input type="text" class="am-form-field">-->
+                        <!--<span class="am-input-group-btn">-->
+            <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search"-->
+                    <!--type="button"></button>-->
+          <!--</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+
+            <ul class="tpl-task-list tpl-task-remind">
+                <li>
+                    <div class="cosB">
+                        12分钟前
+                    </div>
+                    <div class="cosA">
+                                <span class="cosIco">
+                        <i class="am-icon-bell-o"></i>
+                      </span>
+
+                        <span> 这里是用来显示登录日志的页面<span
+                                class="tpl-label-info"> 提取文件
+                                                            <i class="am-icon-share"></i>
+                                                        </span></span>
+                    </div>
+
+                </li>
+
+
+
+            </ul>
         </div>
 
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
-<script>
+</div>
 
-    function get_StudentList(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        var s_c_id = document.getElementById('s_c_id').value;
-        location.href = "/index.php?c=student&a=index&s_g_id="+s_g_id+"&s_c_id="+s_c_id;
-    }
-    function change_class(){
-        var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
-            var str = '<option value="0">请选择班级</option>';
+</div>
 
-            for (var i=0;i<res.length;i++){
-                str = str + '<option value="' + res[i].c_id + '">' + res[i].c_name + '</option>';
-            }
-            document.getElementById('s_c_id').innerHTML = str;
-        });
-    }
-</script>
+
+<script src="/Public/assets/js/jquery.min.js"></script>
+<script src="/Public/assets/js/amazeui.min.js"></script>
+<script src="/Public/assets/js/app.js"></script>
 </body>
 
 </html>

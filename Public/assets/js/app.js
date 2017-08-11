@@ -98,7 +98,7 @@ var pageData = {
                 trigger: 'axis',
             },
             legend: {
-                data: ['邮件', '媒体', '资源']
+                data: ['1', '2', '3']
             },
             grid: {
                 left: '3%',
@@ -116,7 +116,7 @@ var pageData = {
                 type: 'value'
             }],
             series: [{
-                    name: '邮件',
+                    name: '1',
                     type: 'line',
                     stack: '总量',
                     areaStyle: { normal: {} },
@@ -131,7 +131,7 @@ var pageData = {
                     }
                 },
                 {
-                    name: '媒体',
+                    name: '2',
                     type: 'line',
                     stack: '总量',
                     areaStyle: { normal: {} },
@@ -143,7 +143,7 @@ var pageData = {
                     }
                 },
                 {
-                    name: '资源',
+                    name: '3',
                     type: 'line',
                     stack: '总量',
                     areaStyle: { normal: {} },

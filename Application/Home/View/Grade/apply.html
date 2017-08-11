@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/admin.css">
+    <link rel="stylesheet" href="/Public/assets/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+<include file="Index/header"/>
+
+<include file="Index/left"/>
+
+        <div class="tpl-content-wrapper">
+            <!--<div class="tpl-content-page-title">-->
+                <!--Amaze UI 表单-->
+            <!--</div>-->
+            <!--<ol class="am-breadcrumb">-->
+                <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
+                <!--<li><a href="#">表单</a></li>-->
+                <!--<li class="am-active">Amaze UI 表单</li>-->
+            <!--</ol>-->
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 添加级别
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <!--<i class="am-icon-search"></i>-->
+                                <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="tpl-block ">
+
+                    <div class="am-g tpl-amazeui-form">
+
+
+                        <div class="am-u-sm-12 am-u-md-9">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=grade&a=apply">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label"></label>
+                                    <div class="am-u-sm-9">
+                                        <!--<input type="text" name="l_s_card" id="user-card" placeholder="请输入学号">-->
+                                        <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>-->
+                                        <small id="state" style="color: #F7B824;font-size: 16px;">{$state}</small>
+                                    </div>
+                                </div>
+                                <input type="hidden" value="1" name="flag">
+                                <!--<input type="hidden" value="" name="l_s_id" id="l_s_id">-->
+                                <!--<input type="hidden" value="" name="l_c_id" id="l_c_id">-->
+                                <!--<input type="hidden" value="" name="l_g_id" id="l_g_id">-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-name" class="am-u-sm-3 am-form-label">姓名</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_s_username" id="user-name" placeholder="请输入姓名">-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="am-form-group">
+                                    <label for="g_name" class="am-u-sm-3 am-form-label">级别名称</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="g_name" id="g_name" placeholder="请输入级别,例如2015,2016">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-class" class="am-u-sm-3 am-form-label">班级</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_s_class" id="user-class" placeholder="请输入班级">-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="email" id="user-email" placeholder="输入你的 / Email">-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-phone" class="am-u-sm-3 am-form-label">手机号</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="tel" name="l_s_phone" id="user-phone" placeholder="输入手机号">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="begin_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_begintime" id="begin_time" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly/>-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="end_time" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_endtime" id="end_time" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-QQ" class="am-u-sm-3 am-form-label">请假天数</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="number" name="l_day" pattern="[0-9]*" id="user-QQ" disabled placeholder="选择开始时间与结束时间后天数会自动填写">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-weibo" class="am-u-sm-3 am-form-label">前往地点</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_address" id="user-weibo" placeholder="输入请假去往地点">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-intro" class="am-u-sm-3 am-form-label">请假原因</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<textarea class="" name="l_cause" rows="5" id="user-intro" placeholder="输入请假原因"></textarea>-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="leave_manage" class="am-u-sm-3 am-form-label">请假负责人</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_charge" id="leave_manage" placeholder="{$l_charge}" disabled>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">添加级别</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="/Public/assets/js/jquery.min.js"></script>
+    <script src="/Public/assets/js/amazeui.min.js"></script>
+    <script src="/Public/assets/js/app.js"></script>
+<script>
+    function validate() {
+
+        var g_name = document.getElementById('g_name').value;
+        if (g_name == ''){
+            document.getElementById('state').innerHTML = '级别名称未填写';
+        }else {
+            document.getElementById('my_form').submit();
+        }
+    }
+</script>
+</body>
+
+</html>

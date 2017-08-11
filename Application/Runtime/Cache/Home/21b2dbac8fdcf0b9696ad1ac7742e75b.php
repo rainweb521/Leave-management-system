@@ -129,14 +129,14 @@
 
             <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                 <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                    <span class="tpl-header-list-user-nick">学工助理：xxx</span><span class="tpl-header-list-user-ico">
+                    <span class="tpl-header-list-user-nick"><?php echo ($header_name); ?></span><span class="tpl-header-list-user-ico">
                     <!--<img src="/Public/assets/img/user01.png">-->
                 </span>
                 </a>
                 <ul class="am-dropdown-content">
                     <!--<li><a href="#"><span class="am-icon-bell-o"></span> 资料</a></li>-->
-                    <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
-                    <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
+                    <li><a href="/index.php?c=admin&a=apply"><span class="am-icon-cog"></span> 设置</a></li>
+                    <li><a href="/index.php?c=login&a=logout"><span class="am-icon-power-off"></span> 退出</a></li>
                 </ul>
             </li>
             <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
@@ -173,26 +173,25 @@
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
 
-                            <a href="">
+                            <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
-                                <span>请假注销</span>
+                                <span>假条注销</span>
                                 <i class="tpl-left-nav-content tpl-badge-success">
                                     18
                                 </i>
-
-                                <a href="">
+                            </a>
+                                <a href="/index.php?c=leave&a=show">
                                     <i class="am-icon-angle-right"></i>
                                     <span>假条模板</span>
                                     <i class="tpl-left-nav-content tpl-badge-primary">
                                         5
                                     </i>
+                                </a>
 
-
-                                    <a href="">
-                                        <i class="am-icon-angle-right"></i>
-                                        <span>假条列表</span>
-
-                                    </a>
+                                    <!--<a href="">-->
+                                        <!--<i class="am-icon-angle-right"></i>-->
+                                        <!--<span>假条列表</span>-->
+                                    <!--</a>-->
                         </li>
                     </ul>
                 </li>
@@ -208,67 +207,71 @@
 
 
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-users"></i>
                         <span>班级信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-th-list"></i>
-                        <span>年级信息</span>
+                        <span>级别信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-th"></i>
                         <span>学期信息</span>
 
                     </a>
                 </li>
-                <!--<li class="tpl-left-nav-item">-->
-                    <!--<a href="javascript:;" class="nav-link tpl-left-nav-link-list">-->
-                        <!--<i class="am-icon-wpforms"></i>-->
-                        <!--<span>表单</span>-->
-                        <!--<i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>-->
-                    <!--</a>-->
-                    <!--<ul class="tpl-left-nav-sub-menu">-->
-                        <!--<li>-->
-                            <!--<a href="form-amazeui.html">-->
-                                <!--<i class="am-icon-angle-right"></i>-->
-                                <!--<span>Amaze UI 表单</span>-->
-                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
-                            <!--</a>-->
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-plus-square"></i>
+                        <span>添加信息</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu" >
+                        <li>
+                            <a href="/index.php?c=student&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加学生</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
 
-                            <!--<a href="form-line.html">-->
-                                <!--<i class="am-icon-angle-right"></i>-->
-                                <!--<span>线条表单</span>-->
-                            <!--</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</li>-->
+                            <a href="/index.php?c=class&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加班级</span>
+                            </a>
+                            <a href="/index.php?c=grade&a=apply" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>添加级别</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
                 <li class="tpl-left-nav-item">
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-cog"></i>
                         <span>系统设置</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
-                            <a href="">
+                            <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>用户管理</span>
                                 <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
                             </a>
 
-                            <a href="">
-                                <i class="am-icon-angle-right"></i>
-                                <span>新增用户</span>
-                            </a>
-                            <a href="">
+                            <!--<a href="/index.php?c=admin&a=apply">-->
+                                <!--<i class="am-icon-angle-right"></i>-->
+                                <!--<span>新增用户</span>-->
+                            <!--</a>-->
+                            <a href="/index.php?c=admin&a=log">
                                 <i class="am-icon-angle-right"></i>
                                 <span>登录日志</span>
                             </a>
@@ -285,6 +288,7 @@
             </ul>
         </div>
     </div>
+</div>
 
         <div class="tpl-content-wrapper">
             <!--<div class="tpl-content-page-title">-->
@@ -316,34 +320,44 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal">
+                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php?c=leave&a=show">
                                 <div class="am-form-group">
-                                    <label for="user-name" class="am-u-sm-3 am-form-label">学号</label>
+                                    <label  class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-card" placeholder="请输入学号">
-                                        <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
+                                        <small id="state" style="color: #F7B824;font-size: 16px;"><?php echo ($state); ?></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_s_card" class="am-u-sm-3 am-form-label">学号</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_s_card" id="l_s_card" value="" placeholder="请输入学号">
+                                        <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button" onclick="get_Student()"></button>
                                         <small>输入学号点击查询，其他信息会自动填写。</small>
                                     </div>
 
                                 </div>
+                                <input type="hidden" value="1" name="flag">
+                                <input type="hidden" value="" name="l_s_id" id="l_s_id">
+                                <input type="hidden" value="" name="l_c_id" id="l_c_id">
+                                <input type="hidden" value="" name="l_g_id" id="l_g_id">
                                 <div class="am-form-group">
-                                    <label for="user-name" class="am-u-sm-3 am-form-label">姓名</label>
+                                    <label for="l_s_username" class="am-u-sm-3 am-form-label">姓名</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-name" placeholder="请输入姓名">
+                                        <input type="text" name="l_s_username" value="" id="l_s_username" placeholder="请输入姓名">
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="user-grade" class="am-u-sm-3 am-form-label">级别</label>
+                                    <label for="l_s_grade" class="am-u-sm-3 am-form-label">级别</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-grade" placeholder="请输入级别,例如2015,2016">
+                                        <input type="text" name="l_s_grade" id="l_s_grade" value="" placeholder="请输入级别,例如2015,2016">
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="user-class" class="am-u-sm-3 am-form-label">班级</label>
+                                    <label for="l_s_class" class="am-u-sm-3 am-form-label">班级</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-class" placeholder="请输入班级">
+                                        <input type="text" name="l_s_class" id="l_s_class" value="" placeholder="请输入班级">
                                         <small></small>
                                     </div>
                                 </div>
@@ -357,50 +371,56 @@
 
 
                                 <div class="am-form-group">
-                                    <label for="user-phone" class="am-u-sm-3 am-form-label">手机号</label>
+                                    <label for="l_s_phone" class="am-u-sm-3 am-form-label">手机号</label>
                                     <div class="am-u-sm-9">
-                                        <input type="tel" id="user-phone" placeholder="输入你的手机号">
+                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="" placeholder="输入你的手机号">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="begin_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>
+                                    <label for="l_begintime" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="begin_time" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly/>
+                                        <input type="text" name="l_begintime" id="l_begintime" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly/>
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="end_time" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>
+                                    <label for="l_endtime" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="end_time" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>
+                                        <input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>
                                         <small></small>
                                     </div>
                                 </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="l_day" class="am-u-sm-3 am-form-label">请假天数</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="number" name="l_day" pattern="[0-9]*" id="l_day" value="" disabled placeholder="选择开始时间与结束时间后天数会自动填写">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
                                 <div class="am-form-group">
-                                    <label for="user-QQ" class="am-u-sm-3 am-form-label">请假天数</label>
+                                    <label for="l_address" class="am-u-sm-3 am-form-label">前往地点</label>
                                     <div class="am-u-sm-9">
-                                        <input type="number" pattern="[0-9]*" id="user-QQ" placeholder="输入请假天数">
+                                        <input type="text" name="l_address" id="l_address" value="" placeholder="输入请假去往地点">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
-                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">前往地点</label>
+                                    <label for="l_cause" class="am-u-sm-3 am-form-label">请假原因</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" id="user-weibo" placeholder="输入请假去往地点">
+                                        <textarea class="" name="l_cause" rows="5" id="l_cause"   placeholder="输入请假原因"></textarea>
+                                        <small></small>
                                     </div>
                                 </div>
-
                                 <div class="am-form-group">
-                                    <label for="user-intro" class="am-u-sm-3 am-form-label">请假原因</label>
+                                    <label for="l_charge" class="am-u-sm-3 am-form-label">请假负责人</label>
                                     <div class="am-u-sm-9">
-                                        <textarea class="" rows="5" id="user-intro" placeholder="输入请假原因"></textarea>
-                                        <small></small>
+                                        <input type="text" name="l_charge" id="l_charge" value="<?php echo ($l_charge); ?>" placeholder="" disabled>
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button" class="am-btn am-btn-primary">保存修改</button>
+                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">提交假条</button>
                                     </div>
                                 </div>
                             </form>
@@ -410,15 +430,6 @@
 
             </div>
 
-
-
-
-
-
-
-
-
-
         </div>
 
     </div>
@@ -427,6 +438,68 @@
     <script src="/Public/assets/js/jquery.min.js"></script>
     <script src="/Public/assets/js/amazeui.min.js"></script>
     <script src="/Public/assets/js/app.js"></script>
+<script>
+
+
+    function get_Student(){
+        var l_s_card = document.getElementById('l_s_card').value;
+        if (l_s_card == ''){
+            document.getElementById('state').innerHTML = '学号未填写';
+        }else{
+            document.getElementById('state').innerHTML = '';
+
+        }
+        $.get("/index.php?c=leave&a=apply_ajax&l_s_card=" + l_s_card, function(data){
+            var res = eval("(" + data + ")");//转为Object对象
+            var str = res[0].s_card;
+            if (str==null){
+                document.getElementById('state').innerHTML = '该学号输入有误，未在系统中找到，请先添加学生信息';
+            }else{
+                document.getElementById('state').innerHTML = '';
+                document.getElementById('l_s_username').value = res[0].s_username;
+                document.getElementById('l_s_grade').value = res[0].s_grade;
+                document.getElementById('l_s_class').value = res[0].s_class;
+                document.getElementById('l_s_phone').value = res[0].s_phone;
+                document.getElementById('l_s_id').value = res[0].s_id;
+                document.getElementById('l_c_id').value = res[0].s_c_id;
+                document.getElementById('l_g_id').value = res[0].s_g_id;
+            }
+        });
+    }
+    function validate() {
+        var l_s_username = document.getElementById('l_s_username').value;
+        var l_s_card = document.getElementById('l_s_card').value;
+        var l_s_phone = document.getElementById('l_s_phone').value;
+        var l_s_grade = document.getElementById('l_s_grade').value;
+        var l_s_class = document.getElementById('l_s_class').value;
+        var l_begintime = document.getElementById('l_begintime').value;
+        var l_endtime = document.getElementById('l_endtime').value;
+        var l_address = document.getElementById('l_address').value;
+        var l_cause = document.getElementById('l_cause').value;
+        if (l_s_card == ''){
+            document.getElementById('state').innerHTML = '学号未填写';
+        }else if (l_s_username == ''){
+            document.getElementById('state').innerHTML = '姓名未填写';
+        }else if (l_s_phone == ''){
+            document.getElementById('state').innerHTML = '手机号未填写';
+        }else if (l_s_grade == ''){
+            document.getElementById('state').innerHTML = '级别未选择';
+        }else if (l_s_class == ''){
+            document.getElementById('state').innerHTML = '班级未选择';
+        }else if (l_begintime == ''){
+            document.getElementById('state').innerHTML = '开始时间未选择';
+        }else if (l_endtime == ''){
+            document.getElementById('state').innerHTML = '结束时间未选择';
+        }else if (l_address == ''){
+            document.getElementById('state').innerHTML = '前往地点未填写';
+        }else if (l_cause == ''){
+            document.getElementById('state').innerHTML = '请假原因未填写';
+        }else {
+            document.getElementById('my_form').submit();
+        }
+    }
+
+</script>
 </body>
 
 </html>
