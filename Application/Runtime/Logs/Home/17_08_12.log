@@ -1,0 +1,33 @@
+[ 2017-08-12T18:42:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018906s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-12T18:42:32+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.142123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012367s ]
+
