@@ -8,13 +8,13 @@
         <div class="tpl-left-nav-list">
             <ul class="tpl-left-nav-menu">
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=index" class="nav-link active">
+                    <a href="/index.php?c=index" class="nav-link <if condition="$active eq '1'">active</if>">
                         <i class="am-icon-home"></i>
                         <span>系统首页</span>
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <if condition="$active eq 2">active</if>" >
                         <i class="am-icon-table"></i>
                         <span>请假管理</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -24,22 +24,22 @@
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条申请</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条注销</span>
-                                <i class="tpl-left-nav-content tpl-badge-success">
-                                    18
-                                </i>
+                                <!--<i class="tpl-left-nav-content tpl-badge-success">-->
+                                    <!--18-->
+                                <!--</i>-->
                             </a>
                                 <a href="/index.php?c=leave&a=show">
                                     <i class="am-icon-angle-right"></i>
                                     <span>假条模板</span>
-                                    <i class="tpl-left-nav-content tpl-badge-primary">
-                                        5
-                                    </i>
+                                    <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
+                                        <!--5-->
+                                    <!--</i>-->
                                 </a>
 
                                     <!--<a href="">-->
@@ -50,25 +50,25 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list <if condition="$active eq 3">active</if>">
                         <i class="am-icon-user"></i>
                         <span>学生信息</span>
-                        <i class="tpl-left-nav-content tpl-badge-danger">
-                            12
-                        </i>
+                        <!--<i class="tpl-left-nav-content tpl-badge-danger">-->
+                            <!--12-->
+                        <!--</i>-->
                     </a>
                 </li>
 
 
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list <if condition="$active eq 4">active</if>">
                         <i class="am-icon-users"></i>
                         <span>班级信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list <if condition="$active eq 5">active</if>">
                         <i class="am-icon-th-list"></i>
                         <span>级别信息</span>
 
@@ -82,17 +82,17 @@
                     <!--</a>-->
                 <!--</li>-->
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <if condition="$active eq 6">active</if>">
                         <i class="am-icon-plus-square"></i>
                         <span>添加信息</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
                             <a href="/index.php?c=student&a=apply" class="">
                                 <i class="am-icon-angle-right"></i>
                                 <span>添加学生</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=class&a=apply" class="">
@@ -111,17 +111,17 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <if condition="$active eq 7">active</if>">
                         <i class="am-icon-trash-o"></i>
                         <span>删除信息</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
                             <a href="/index.php?c=student&a=delete" class="">
                                 <i class="am-icon-angle-right"></i>
                                 <span>删除学生</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=class&a=delete" class="">
@@ -136,7 +136,7 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <if condition="$active eq 8">active</if>">
                         <i class="am-icon-cog"></i>
                         <span>系统设置</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -146,7 +146,7 @@
                             <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>用户管理</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <!--<a href="/index.php?c=admin&a=apply">-->

@@ -36,7 +36,9 @@
         <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
             <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                 <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                    <span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>
+                    <span class="am-icon-bell-o"></span> 提醒
+                    <!--<span class="am-badge tpl-badge-success am-round">5</span>-->
+                    </span>
                 </a>
                 <!--<ul class="am-dropdown-content tpl-dropdown-content">-->
                     <!--<li class="tpl-dropdown-content-external">-->
@@ -54,7 +56,9 @@
             </li>
             <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                 <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                    <span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>
+                    <span class="am-icon-comment-o"></span> 消息
+                    <!--<span class="am-badge tpl-badge-danger am-round">9</span>-->
+                    </span>
                 </a>
                 <!--<ul class="am-dropdown-content tpl-dropdown-content">-->
                     <!--<li class="tpl-dropdown-content-external">-->
@@ -84,46 +88,48 @@
             </li>
             <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
                 <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                    <span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>
+                    <span class="am-icon-calendar"></span> 进度
+                    <!--<span class="am-badge tpl-badge-primary am-round">4</span>-->
+                    </span>
                 </a>
-                <ul class="am-dropdown-content tpl-dropdown-content">
-                    <li class="tpl-dropdown-content-external">
-                        <h3>你有 <span class="tpl-color-primary">3</span> 个任务进度</h3><a href="###">全部</a></li>
-                    <li>
-                        <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">这是第一个</span>
-                                <span class="percent">45%</span>
-                                </span>
-                            <span class="progress">
-                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">这是第二个 </span>
-                                <span class="percent">30%</span>
-                                </span>
-                            <span class="progress">
-                       <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div></div>
-                    </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">这个第三个 </span>
-                                <span class="percent">60%</span>
-                                </span>
-                            <span class="progress">
-                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div></div>
-                    </span>
-                        </a>
-                    </li>
+                <!--<ul class="am-dropdown-content tpl-dropdown-content">-->
+                    <!--<li class="tpl-dropdown-content-external">-->
+                        <!--<h3>你有 <span class="tpl-color-primary">3</span> 个任务进度</h3><a href="###">全部</a></li>-->
+                    <!--<li>-->
+                        <!--<a href="javascript:;" class="tpl-dropdown-content-progress">-->
+                                <!--<span class="task">-->
+                        <!--<span class="desc">这是第一个</span>-->
+                                <!--<span class="percent">45%</span>-->
+                                <!--</span>-->
+                            <!--<span class="progress">-->
+                        <!--<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>-->
+                    <!--</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="javascript:;" class="tpl-dropdown-content-progress">-->
+                                <!--<span class="task">-->
+                        <!--<span class="desc">这是第二个 </span>-->
+                                <!--<span class="percent">30%</span>-->
+                                <!--</span>-->
+                            <!--<span class="progress">-->
+                       <!--<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div></div>-->
+                    <!--</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="javascript:;" class="tpl-dropdown-content-progress">-->
+                                <!--<span class="task">-->
+                        <!--<span class="desc">这个第三个 </span>-->
+                                <!--<span class="percent">60%</span>-->
+                                <!--</span>-->
+                            <!--<span class="progress">-->
+                        <!--<div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div></div>-->
+                    <!--</span>-->
+                        <!--</a>-->
+                    <!--</li>-->
 
-                </ul>
+                <!--</ul>-->
             </li>
             <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a></li>
 
@@ -154,13 +160,13 @@
         <div class="tpl-left-nav-list">
             <ul class="tpl-left-nav-menu">
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=index" class="nav-link active">
+                    <a href="/index.php?c=index" class="nav-link <?php if($active == 1): endif; ?>">
                         <i class="am-icon-home"></i>
                         <span>系统首页</span>
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 2): endif; ?>" >
                         <i class="am-icon-table"></i>
                         <span>请假管理</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -170,22 +176,22 @@
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条申请</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条注销</span>
-                                <i class="tpl-left-nav-content tpl-badge-success">
-                                    18
-                                </i>
+                                <!--<i class="tpl-left-nav-content tpl-badge-success">-->
+                                    <!--18-->
+                                <!--</i>-->
                             </a>
                                 <a href="/index.php?c=leave&a=show">
                                     <i class="am-icon-angle-right"></i>
                                     <span>假条模板</span>
-                                    <i class="tpl-left-nav-content tpl-badge-primary">
-                                        5
-                                    </i>
+                                    <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
+                                        <!--5-->
+                                    <!--</i>-->
                                 </a>
 
                                     <!--<a href="">-->
@@ -199,9 +205,9 @@
                     <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-user"></i>
                         <span>学生信息</span>
-                        <i class="tpl-left-nav-content tpl-badge-danger">
-                            12
-                        </i>
+                        <!--<i class="tpl-left-nav-content tpl-badge-danger">-->
+                            <!--12-->
+                        <!--</i>-->
                     </a>
                 </li>
 
@@ -231,14 +237,14 @@
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
                         <i class="am-icon-plus-square"></i>
                         <span>添加信息</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
                             <a href="/index.php?c=student&a=apply" class="">
                                 <i class="am-icon-angle-right"></i>
                                 <span>添加学生</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=class&a=apply" class="">
@@ -260,14 +266,14 @@
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
                         <i class="am-icon-trash-o"></i>
                         <span>删除信息</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
                     <ul class="tpl-left-nav-sub-menu" >
                         <li>
                             <a href="/index.php?c=student&a=delete" class="">
                                 <i class="am-icon-angle-right"></i>
                                 <span>删除学生</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <a href="/index.php?c=class&a=delete" class="">
@@ -292,7 +298,7 @@
                             <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>
                                 <span>用户管理</span>
-                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
                             <!--<a href="/index.php?c=admin&a=apply">-->
@@ -465,6 +471,7 @@
                         </div>
 
                     </div>
+                    <br><br><br><br><br><br><br>
                 </div>
                 <div class="tpl-alert"></div>
             </div>

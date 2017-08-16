@@ -28,6 +28,7 @@ class ClassController extends CommonController {
     }
 
     public function apply(){
+        $this->assign('active',6);
         // 提交表单的操作，判断是否有提交
         $flag = request('post','int','flag',0);
         if ($flag==1){
@@ -47,8 +48,11 @@ class ClassController extends CommonController {
         $this->assign('grade_list',$list);
         $this->display();
     }
-
+    public function menu_active(){
+        $this->assign('active',4);
+    }
     public function delete(){
+        $this->assign('active',7);
         /* c_g_id是班级表中的级别id字段，用于判断是否有查找班级的操作   */
         $c_g_id = request('get','int','c_g_id',0);
         $c_id = request('get','int','c_id',0);

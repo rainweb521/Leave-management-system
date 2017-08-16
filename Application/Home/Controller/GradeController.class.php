@@ -19,6 +19,7 @@ class GradeController extends CommonController {
     }
 
     public function apply(){
+        $this->assign('active',6);
         // 提交表单的操作，判断是否有提交
         $flag = request('post','int','flag',0);
         if ($flag==1){
@@ -33,8 +34,11 @@ class GradeController extends CommonController {
         $this->display();
 
     }
-
+    public function menu_active(){
+        $this->assign('active',5);
+    }
     public function delete(){
+        $this->assign('active',7);
         $g_id = request('get','int','g_id',0);
         if ($g_id != 0){
             $class_list = D('Class')->get_ClassList(array('c_g_id'=>$g_id));

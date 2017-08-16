@@ -10,7 +10,11 @@ namespace Home\Controller;
 use Think\Controller;
 
 class LeaveController extends CommonController {
+    public function menu_active(){
+        $this->assign('active',2);
+    }
     public function index(){
+
         /**
          * 进入销假列表时，自动显示最近的十条未销假记录。
          */

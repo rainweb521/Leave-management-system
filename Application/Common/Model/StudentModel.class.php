@@ -78,13 +78,13 @@ class StudentModel extends Model {
             $sum ++;
             if ($result == 0){
                 $success ++ ;
-                echo '<script>document.getElementById("state").innerHTML = "上传第'.$sum.'条数据成功"; </script>';
+//                echo '<script>document.getElementById("state").innerHTML = "上传第'.$sum.'条数据成功"; </script>';
             }else{
                 echo '<h5 align="center">上传第'.$sum.'条数据失败，该学生在系统中存在</h5>';
             }
 //            break;
         }
-        return $sum;
+        return $success;
     }
     public function del_StudentInfo($s_id){
         $where['s_id'] = $s_id;

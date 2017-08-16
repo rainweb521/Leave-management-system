@@ -50,6 +50,9 @@ class IndexController extends CommonController {
         $this->assign('top',$top);
         $this->display();
     }
+    public function menu_active(){
+        $this->assign('active',1);
+    }
     public function test(){
         $data = get_Last_Week_All_Day();
         echo sizeof($data);
@@ -108,7 +111,7 @@ class IndexController extends CommonController {
         // 删除Excel文件
 //        var_dump($exl);
         unlink($file_name);
-        $this->success('数据上传成功，共上传'.$sum.'条数据','/index.php?c=index&a=upload',5);
+        $this->success('数据上传成功，共上传'.$sum.'条数据','/index.php?c=index&a=upload',30);
 //        $this->display('info');
 
     }

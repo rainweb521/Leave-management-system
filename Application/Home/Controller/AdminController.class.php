@@ -31,4 +31,7 @@ class AdminController extends CommonController {
         $this->display();
 
     }
+    public function menu_active(){
+        $this->assign('active',8);
+    }
 }

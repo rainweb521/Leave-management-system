@@ -30,6 +30,7 @@ class StudentController extends CommonController {
     }
 
     public function apply(){
+        $this->assign('active',6);
         // 提交表单的操作，判断是否有提交
         $flag = request('post','int','flag',0);
         if ($flag==1){
@@ -56,7 +57,9 @@ class StudentController extends CommonController {
         $this->assign('grade_list',$list);
         $this->display();
     }
-
+    public function menu_active(){
+        $this->assign('active',3);
+    }
     /**
      * 表单中，选择级别下拉列表时，通过ajax去后台查找对应的班级信息
      */
@@ -71,6 +74,7 @@ class StudentController extends CommonController {
         }
     }
     public function delete(){
+        $this->assign('active',7);
         /* s_g_id是班级表中的级别id字段，用于判断是否有查找班级的操作   */
         $s_g_id = request('get','int','s_g_id',0);
         $s_id = request('get','int','s_id',0);

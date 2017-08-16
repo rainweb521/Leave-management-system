@@ -14,6 +14,7 @@ class CommonController extends Controller{
         header("Content-type: text/html; charset=utf-8");
         parent::__construct();
         $this->_init();
+        $this->menu_active();
     }
 
     /**
