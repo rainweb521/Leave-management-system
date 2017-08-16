@@ -25,4 +25,22 @@ class AdminModel extends Model{
         $data = $this->_db->where($where)->find();
         return $data;
     }
+    /** 返回单个数据对象
+     * @param $a_id
+     * @return array|false|mixed|\PDOStatement|string|Model
+     */
+    public function get_AdminInfo($a_id){
+        $where['a_id'] = $a_id;
+        $data = $this->_db->where($where)->find();
+        return $data;
+    }
+
+    public function save_AdminInfo($admin){
+        $where['a_id'] = $admin['a_id'];
+        $this->_db->where($where)->save($admin);
+//        var_dump($admin);
+//        exit();
+
+    }
+
 }

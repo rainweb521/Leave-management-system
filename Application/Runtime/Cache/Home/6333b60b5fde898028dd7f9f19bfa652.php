@@ -354,7 +354,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=class&a=apply">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=admin&a=apply">
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="user-name" class="am-u-sm-3 am-form-label">学号</label>-->
                                     <!--<div class="am-u-sm-9">-->
@@ -366,7 +366,7 @@
                                 <input type="hidden" value="1" name="flag">
                                 <!--<input type="hidden" value="" name="l_s_id" id="l_s_id">-->
                                 <!--<input type="hidden" value="" name="l_c_id" id="l_c_id">-->
-                                <input type="hidden" value="" name="l_g_id" id="l_g_id">
+                                <!--<input type="hidden" value="" name="l_g_id" id="l_g_id">-->
                                 <div class="am-form-group">
                                     <label for="" class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
@@ -377,7 +377,7 @@
                                 <div class="am-form-group">
                                     <label for="a_username" class="am-u-sm-3 am-form-label">管理员姓名</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="a_username" id="a_username" placeholder="请输入管理员姓名">
+                                        <input type="text" name="a_username" id="a_username" value="<?php echo ($admin["a_username"]); ?>" placeholder="请输入管理员姓名">
                                         <small></small>
                                     </div>
                                 </div>
@@ -385,9 +385,12 @@
                                     <label for="a_status" class="am-u-sm-3 am-form-label">级别</label>
                                     <div class="am-u-sm-9">
                                         <select class="am-input-sm am-radius" id="a_status" name="a_status">
-                                            <option value="">请选择身份</option>
-                                            <option value="1">教师</option>
-                                            <option value="2">学工助理</option>
+                                            <?php if($admin["a_status"] == 1): ?><option value="1" selected>教师</option>
+                                                <option value="2" >学工助理</option><?php endif; ?>
+                                            <?php if($admin["a_status"] == 2): ?><option value="2" selected>学工助理</option>
+                                                <option value="1" >教师</option><?php endif; ?>
+
+
                                         </select>
                                     </div>
                                 </div>
@@ -403,19 +406,19 @@
                                 <div class="am-form-group">
                                     <label for="user-phone" class="am-u-sm-3 am-form-label">原密码</label>
                                     <div class="am-u-sm-9">
-                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="输入原密码">
+                                        <input type="password" name="last_password" id="last_password" placeholder="输入原密码">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-phone" class="am-u-sm-3 am-form-label">新密码</label>
                                     <div class="am-u-sm-9">
-                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="输入新密码">
+                                        <input type="password" name="a_password" id="a_password" placeholder="输入新密码">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="user-phone" class="am-u-sm-3 am-form-label">确认密码</label>
                                     <div class="am-u-sm-9">
-                                        <input type="password" name="l_s_phone" id="user-phone" placeholder="再次输入新密码">
+                                        <input type="password" name="a_password2" id="a_password2" placeholder="再次输入新密码">
                                     </div>
                                 </div>
 
@@ -430,7 +433,7 @@
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">添加信息</button>
+                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">修改信息</button>
                                     </div>
                                 </div>
                             </form>
@@ -450,14 +453,11 @@
     <script src="/Public/assets/js/app.js"></script>
 <script>
     function validate() {
-
-        var c_name = document.getElementById('c_name').value;
-        var c_g_id = document.getElementById('c_g_id').value;
-        if (c_name == ''){
-            document.getElementById('state').innerHTML = '班级名称未填写';
-        }else if (c_g_id == ''){
-            document.getElementById('state').innerHTML = '级别未选择';
-        }else {
+        var a_password = document.getElementById('a_password').value;
+        var a_password2 = document.getElementById('a_password2').value;
+        if (a_password != a_password2){
+            document.getElementById('state').innerHTML = '新密码与确认密码输入不一致';
+        }else{
             document.getElementById('my_form').submit();
         }
     }

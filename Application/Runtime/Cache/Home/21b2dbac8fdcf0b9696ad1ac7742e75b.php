@@ -483,10 +483,11 @@
             document.getElementById('state').innerHTML = '';
 
         }
+
         $.get("/index.php?c=leave&a=apply_ajax&l_s_card=" + l_s_card, function(data){
             var res = eval("(" + data + ")");//转为Object对象
-            var str = res[0].s_card;
-            if (str==null){
+//            var str = res[0].s_card;
+            if (res == 0){
                 document.getElementById('state').innerHTML = '该学号输入有误，未在系统中找到，请先添加学生信息';
             }else{
                 document.getElementById('state').innerHTML = '';

@@ -72,6 +72,9 @@ class LeaveController extends CommonController {
             // 返回对应的学生信息
             $student = D('Student')->get_StudentList(array('s_card'=>$l_s_card));
 //            $ret = array(array('name'=>'123543'),array('name'=>'7894561423'));
+//            if ($student==NULL){
+//                $student = array();
+//            }
             echo json_encode($student);
         }
     }
