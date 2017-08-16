@@ -33,4 +33,24 @@ class GradeController extends CommonController {
         $this->display();
 
     }
+
+    public function delete(){
+        $g_id = request('get','int','g_id',0);
+        if ($g_id != 0){
+            $class_list = D('Class')->get_ClassList(array('c_g_id'=>$g_id));
+            foreach ($class_list as $class){
+                $student_list = D('Student')->get_StudentList(array('s_c_id'=>$class['c_id']));
+                foreach ($student_list as $student){
+                    D('Student')->del_StudentInfo($student['s_id']);
+                }
+                D('Class')->del_ClassInfo($class['c_id']);
+            }
+            D('Grade')->del_GradeInfo($g_id);
+            $this->success('删除成功','/index.php?c=grade&a=delete');
+            exit();
+        }
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
+        $this->display();
+    }
 }

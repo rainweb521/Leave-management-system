@@ -220,13 +220,13 @@
 
                     </a>
                 </li>
-                <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
-                        <i class="am-icon-th"></i>
-                        <span>学期信息</span>
+                <!--<li class="tpl-left-nav-item">-->
+                    <!--<a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">-->
+                        <!--<i class="am-icon-th"></i>-->
+                        <!--<span>学期信息</span>-->
 
-                    </a>
-                </li>
+                    <!--</a>-->
+                <!--</li>-->
                 <li class="tpl-left-nav-item">
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
                         <i class="am-icon-plus-square"></i>
@@ -249,10 +249,38 @@
                                 <i class="am-icon-angle-right"></i>
                                 <span>添加级别</span>
                             </a>
+                            <a href="/index.php?c=index&a=upload" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>批量导入</span>
+                            </a>
                         </li>
                     </ul>
                 </li>
+                <li class="tpl-left-nav-item">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                        <i class="am-icon-trash-o"></i>
+                        <span>删除信息</span>
+                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
+                    </a>
+                    <ul class="tpl-left-nav-sub-menu" >
+                        <li>
+                            <a href="/index.php?c=student&a=delete" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>删除学生</span>
+                                <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
+                            </a>
 
+                            <a href="/index.php?c=class&a=delete" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>删除班级</span>
+                            </a>
+                            <a href="/index.php?c=grade&a=delete" class="">
+                                <i class="am-icon-angle-right"></i>
+                                <span>删除级别</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="tpl-left-nav-item">
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
                         <i class="am-icon-cog"></i>
@@ -347,14 +375,14 @@
                             <!--</div>-->
                         </div>
 
-                        <div class="am-u-sm-12 " style="width: 25%">
-                            <div class="am-input-group am-input-group-sm">
-                                <input type="text" class="am-form-field" placeholder="请输入学号进行查找">
-                                <span class="am-input-group-btn">
-            <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>
-          </span>
-                            </div>
-                        </div>
+                        <!--<div class="am-u-sm-12 " style="width: 25%">-->
+                            <!--<div class="am-input-group am-input-group-sm">-->
+                                <!--<input type="text" class="am-form-field" placeholder="请输入学号进行查找">-->
+                                <!--<span class="am-input-group-btn">-->
+            <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>-->
+          <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="am-g">
                         <div class="am-u-sm-12">
@@ -405,20 +433,20 @@
 
                                     </tbody>
                                 </table>
-                                <div class="am-cf">
+                                <!--<div class="am-cf">-->
 
-                                    <div class="am-fr">
-                                        <ul class="am-pagination tpl-pagination">
-                                            <li class="am-disabled"><a href="#">«</a></li>
-                                            <li class="am-active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">4</a></li>
-                                            <li><a href="#">5</a></li>
-                                            <li><a href="#">»</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                    <!--<div class="am-fr">-->
+                                        <!--<ul class="am-pagination tpl-pagination">-->
+                                            <!--<li class="am-disabled"><a href="#">«</a></li>-->
+                                            <!--<li class="am-active"><a href="#">1</a></li>-->
+                                            <!--<li><a href="#">2</a></li>-->
+                                            <!--<li><a href="#">3</a></li>-->
+                                            <!--<li><a href="#">4</a></li>-->
+                                            <!--<li><a href="#">5</a></li>-->
+                                            <!--<li><a href="#">»</a></li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                                 <hr>
 
                             </form>

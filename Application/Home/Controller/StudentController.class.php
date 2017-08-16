@@ -70,4 +70,33 @@ class StudentController extends CommonController {
             echo json_encode($class_list);
         }
     }
+    public function delete(){
+        /* s_g_id是班级表中的级别id字段，用于判断是否有查找班级的操作   */
+        $s_g_id = request('get','int','s_g_id',0);
+        $s_id = request('get','int','s_id',0);
+        /**
+         * 删除学生信息的操作，先获取当前学生信息中的班级和级别，方便删除以后重新定位到该班级里
+         */
+        if ($s_id != 0){
+            $student = D('Student')->get_StudentInfo($s_id);
+            D('Student')->del_StudentInfo($s_id);
+            $this->success('删除成功','/index.php?c=student&a=delete&s_g_id='.$student['s_g_id'].'&s_c_id='.$student['s_c_id']);
+            exit();
+        }
+        if ($s_g_id != 0){
+            $where['s_c_id'] = request('get','int','s_c_id',0);
+            $where['s_g_id'] = $s_g_id;
+            // 查找学生，并将级别和班级的id传入作为条件查找
+            $student_list = D('Student')->get_StudentList($where);
+            // 查找到学生后，查找 班级，用于在顶部的班级下拉列表中显示
+            $class_list = D('Class')->get_ClassList(array('c_g_id'=>$s_g_id));
+            $this->assign('student_list',$student_list);
+            $this->assign('class_list',$class_list);
+        }
+
+        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
+        $this->display();
+    }
 }

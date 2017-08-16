@@ -60,4 +60,90 @@ class IndexController extends CommonController {
     public function leave(){
         $this->display();
     }
+
+    public function upload(){
+
+        $this->display();
+    }
+    /**
+     * 导入限制，只能在一张表里，即第一个Sheet1
+     *
+     */
+    public function handling(){
+        $files = $_FILES['exl'];
+        // exl格式，否则重新上传
+        if($files['type'] !='application/vnd.ms-excel'){
+            $this->error('不是Excel文件，请重新上传','/index.php?c=index&a=upload',5);
+        }
+        // 上传
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('xls');// 设置附件上传类型
+        $upload->rootPath  =     './Upload/'; // 设置附件上传根目录
+        $upload->savePath  =     'excel/'; // 设置附件上传（子）目录
+        //$upload->subName   =     array('date', 'Ym');
+        $upload->subName   =     '';
+        // 上传文件
+        $info   =   $upload->upload();
+        $file_name =  $upload->rootPath.$info['exl']['savepath'].$info['exl']['savename'];
+        $exl = $this->import_exl($file_name);
+        // 去掉第exl表格中第一行
+        unset($exl[1]);
+        // 清理空数组
+//        foreach($exl as $k=>$v){
+//            if(empty($v)){
+//                unset($exl[$k]);
+//            }
+//        };
+        // 重新排序
+//        sort($exl);
+        $count = count($exl);
+        // 检测表格导入成功后，是否有数据生成
+        if($count<1){
+            $this->error('未检测到有效数据','/index.php?c=index&a=upload',5);
+        }
+        echo '<h1 align="center">正在上传，不要关闭当前页面</h1>';
+
+        $sum = D('Student')->add_Excel($exl);
+        // 删除Excel文件
+//        var_dump($exl);
+        unlink($file_name);
+        $this->success('数据上传成功，共上传'.$sum.'条数据','/index.php?c=index&a=upload',5);
+//        $this->display('info');
+
+    }
+
+    /** 处理上传exl数据
+         * $file_name  文件路径
+    */
+
+    private function import_exl($file_name){
+//    $file_name= './Upload/upload.xls';
+        import("Org.Util.PHPExcel");
+        import("Org.Util.PHPExcel.IOFactory");
+        $objReader = \PHPExcel_IOFactory::createReader('Excel5');
+        $objPHPExcel = $objReader->load($file_name,$encode='utf-8');
+
+        // 获取表中的第一个工作表，如果要获取第二个，把0改为1，依次类推
+        $currentSheet = $objPHPExcel->getSheet(0);
+        // 取得总行数
+        $allRow = $currentSheet->getHighestRow();
+        // 取得总列数
+        $allColumn = $currentSheet->getHighestColumn();
+        // 循环获取表中的数据，$currentRow表示当前行，从哪行开始读取数据，索引值从0开始
+        for ($currentRow = 1; $currentRow <= $allRow; $currentRow ++) {
+            // 从哪列开始，A表示第一列
+            for ($currentColumn = 'A'; $currentColumn <= $allColumn; $currentColumn ++) {
+                // 数据坐标
+                $address = $currentColumn . $currentRow;
+                // 读取到的数据，保存到数组$arr中
+                $data[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+            }
+        }
+        return $data;
+//        $s = $objPHPExcel->getActiveSheet()->getCell("A2")->getValue();
+//        $this->display();
+    }
+
+
 }

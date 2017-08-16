@@ -36,9 +36,9 @@ class ClassModel extends Model {
         $result = $this->_db->where($where)->find();
         if ($result==NULL){
             $this->_db->add($data);
-            return 1;
-        }else {
             return 0;
+        }else {
+            return $result['c_id'];
         }
     }
 
@@ -50,6 +50,25 @@ class ClassModel extends Model {
         $data = $this->_db->where($where)->select();
         return $data;
     }
-
+    public function add_ExcleClass($c_name,$g_id,$g_name){
+        $time = date('Y-m-d');
+        $where['c_name'] = $c_name;
+        $where['c_g_id'] = $g_id;
+        $result = $this->_db->where($where)->find();
+        if ($result==NULL){
+            $data['c_name'] = $c_name;
+            $data['c_g_id'] = $g_id;
+            $data['c_grade'] = $g_name;
+            $data['c_addtime'] = $time;
+            $c_id = $this->_db->add($data);
+            return $c_id;
+        }else {
+            return $result['c_id'];
+        }
+    }
+    public function del_ClassInfo($c_id){
+        $where['c_id'] = $c_id;
+        $this->_db->where($where)->delete();
+    }
 
 }

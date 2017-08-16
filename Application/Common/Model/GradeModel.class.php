@@ -33,9 +33,9 @@ class GradeModel extends Model {
         $result = $this->_db->where($where)->find();
         if ($result==NULL){
             $this->_db->add($data);
-            return 1;
-        }else {
             return 0;
+        }else {
+            return $result['g_id'];
         }
     }
     /** 返回数据对象的列表
@@ -45,6 +45,24 @@ class GradeModel extends Model {
     public function get_GradeList(){
         $data = $this->_db->select();
         return $data;
+    }
+    public function add_ExcleGrade($g_name){
+        $time = date('Y-m-d');
+        $where['g_name'] = $g_name;
+        $result = $this->_db->where($where)->find();
+        if ($result==NULL){
+            $data['g_name'] = $g_name;
+            $data['g_addtime'] = $time;
+            $g_id = $this->_db->add($data);
+            return $g_id;
+        }else {
+            return $result['g_id'];
+        }
+    }
+
+    public function del_GradeInfo($g_id){
+        $where['g_id'] = $g_id;
+        $this->_db->where($where)->delete();
     }
 
 }

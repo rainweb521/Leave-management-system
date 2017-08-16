@@ -36,9 +36,9 @@ class StudentModel extends Model {
         $result = $this->_db->where($where)->find();
         if ($result==NULL){
             $this->_db->add($data);
-            return 1;
-        }else {
             return 0;
+        }else {
+            return $result['s_id'];
         }
     }
     /** 返回数据对象的列表，where的值可以不传参数，默认为空，这样这个函数的扩展性很高，适合很多地方调用
@@ -58,4 +58,36 @@ class StudentModel extends Model {
         $this->_db->where($where)->save($data);
     }
 
+    public function add_Excel($exl){
+        $time = date('Y-m-d');
+        $sum = 1;
+        $success = 0;
+//        echo '<h5 align="center" id="state">上传第'.$sum.'条数据中</h5>';
+        foreach ($exl as $value){
+
+            $student['s_g_id'] = D('Grade')->add_ExcleGrade($value['A']);
+            $student['s_grade'] = $value['A'];
+            $student['s_c_id'] = D('Class')->add_ExcleClass($value['B'],$student['s_g_id'],$student['s_grade'] );
+            $student['s_class'] = $value['B'];
+            $student['s_card'] = $value['C'];
+            $student['s_username'] = $value['D'];
+            $student['s_phone'] = $value['E'];
+            $student['s_addtime'] = $time;
+            $student['s_state'] = 1;
+            $result = $this->add_StudentInfo($student);
+            $sum ++;
+            if ($result == 0){
+                $success ++ ;
+                echo '<script>document.getElementById("state").innerHTML = "上传第'.$sum.'条数据成功"; </script>';
+            }else{
+                echo '<h5 align="center">上传第'.$sum.'条数据失败，该学生在系统中存在</h5>';
+            }
+//            break;
+        }
+        return $sum;
+    }
+    public function del_StudentInfo($s_id){
+        $where['s_id'] = $s_id;
+        $this->_db->where($where)->delete();
+    }
 }

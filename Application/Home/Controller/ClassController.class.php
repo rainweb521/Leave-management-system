@@ -47,4 +47,38 @@ class ClassController extends CommonController {
         $this->assign('grade_list',$list);
         $this->display();
     }
+
+    public function delete(){
+        /* c_g_id是班级表中的级别id字段，用于判断是否有查找班级的操作   */
+        $c_g_id = request('get','int','c_g_id',0);
+        $c_id = request('get','int','c_id',0);
+        /**
+         * 删除班级信息的操作
+         */
+        if ($c_id != 0){
+            $class = D('Class')->get_ClassInfo($c_id);
+            $student_list = D('Student')->get_StudentList(array('s_c_id'=>$c_id));
+            foreach ($student_list as $student){
+                D('Student')->del_StudentInfo($student['s_id']);
+            }
+            D('Class')->del_ClassInfo($class['c_id']);
+            /**
+             * ，先获取当前学生信息中的班级和级别，方便删除以后重新定位到该班级里
+             */
+            $this->success('删除成功','/index.php?c=class&a=delete&c_g_id='.$class['c_g_id']);
+            exit();
+        }
+        if ($c_g_id!=0){
+            // 如果有查找班级的操作，则先获取指定级别里，所有的班级
+            $class_list = D('Class')->get_ClassList(array('c_g_id'=>$c_g_id));
+            // 将获取到的所有班级列表穿入LeaveModel模型中，这时得到的class_list中，每个班级都包含了各种请假记录信息，今天，本周，本月的请假人数等
+            $class_list = D('Leave')->get_Class_Leave($class_list);
+            $this->assign('class_list',$class_list);
+        }
+        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
+        $this->display();
+
+    }
 }

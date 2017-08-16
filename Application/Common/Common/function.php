@@ -22,7 +22,7 @@ function get_LoginState($state){
  * @return string 返回要显示的值
  */
 function get_addInfoState($result){
-    if ($result==1){
+    if ($result==0){
         return '添加成功';
     }else {
         return '该记录在系统中有重复';
@@ -332,5 +332,6 @@ function get_Last_Day(){
     $time = strtotime($date) - 3600*24;
     return date('Y-m-d',$time);
 }
+
 
 
