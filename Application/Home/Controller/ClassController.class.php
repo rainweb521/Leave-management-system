@@ -21,9 +21,6 @@ class ClassController extends CommonController {
             $class_list = D('Leave')->get_Class_Leave($class_list);
             $this->assign('class_list',$class_list);
         }
-        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
-        $grade_list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$grade_list);
         $this->display();
     }
 
@@ -43,13 +40,13 @@ class ClassController extends CommonController {
             $state = get_addInfoState($result);
             $this->assign('state',$state);
         }
-        // 先将级别的信息传入前台，在下拉列表中显示
-        $list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$list);
         $this->display();
     }
     public function menu_active(){
         $this->assign('active',4);
+        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
     }
     public function delete(){
         $this->assign('active',7);
@@ -79,9 +76,6 @@ class ClassController extends CommonController {
             $class_list = D('Leave')->get_Class_Leave($class_list);
             $this->assign('class_list',$class_list);
         }
-        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
-        $grade_list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$grade_list);
         $this->display();
 
     }

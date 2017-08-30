@@ -36,6 +36,9 @@ class GradeController extends CommonController {
     }
     public function menu_active(){
         $this->assign('active',5);
+        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
     }
     public function delete(){
         $this->assign('active',7);
@@ -53,8 +56,6 @@ class GradeController extends CommonController {
             $this->success('删除成功','/index.php?c=grade&a=delete');
             exit();
         }
-        $grade_list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$grade_list);
         $this->display();
     }
 }

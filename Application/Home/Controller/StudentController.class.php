@@ -24,8 +24,8 @@ class StudentController extends CommonController {
             $this->assign('class_list',$class_list);
         }
         // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
-        $grade_list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$grade_list);
+//        $grade_list = D('Grade')->get_GradeList();
+//        $this->assign('grade_list',$grade_list);
         $this->display();
     }
 
@@ -53,12 +53,15 @@ class StudentController extends CommonController {
             $this->assign('state',$state);
         }
         // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
-        $list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$list);
+//        $list = D('Grade')->get_GradeList();
+//        $this->assign('grade_list',$list);
         $this->display();
     }
     public function menu_active(){
         $this->assign('active',3);
+        // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
+        $grade_list = D('Grade')->get_GradeList();
+        $this->assign('grade_list',$grade_list);
     }
     /**
      * 表单中，选择级别下拉列表时，通过ajax去后台查找对应的班级信息
@@ -97,10 +100,10 @@ class StudentController extends CommonController {
             $this->assign('student_list',$student_list);
             $this->assign('class_list',$class_list);
         }
-
         // 每次点击，都会先将级别的信息传入前台，在下拉列表中显示
-        $grade_list = D('Grade')->get_GradeList();
-        $this->assign('grade_list',$grade_list);
+//        $grade_list = D('Grade')->get_GradeList();
+//        $this->assign('grade_list',$grade_list);
+
         $this->display();
     }
 }

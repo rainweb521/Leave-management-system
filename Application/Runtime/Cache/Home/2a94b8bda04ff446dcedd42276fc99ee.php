@@ -146,7 +146,7 @@
                     <li><a href="/index.php?c=login&a=logout"><span class="am-icon-power-off"></span> 退出</a></li>
                 </ul>
             </li>
-            <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+            <li><a href="/index.php?c=login&a=logout" title="退出系统" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
         </ul>
     </div>
 </header>
@@ -396,8 +396,8 @@
                             <i class="am-icon-android"></i>
                         </div>
                         <div class="details">
-                            <div class="number"> <?php echo ($top["last_week"]); ?> </div>
-                            <div class="desc"> 上周请假人数 </div>
+                            <div class="number"> <?php echo ($top["now_month"]); ?> </div>
+                            <div class="desc"> 本月请假人数 </div>
                         </div>
                         <a class="more" href="#"> 查看更多
                     <i class="m-icon-swapright m-icon-white"></i>

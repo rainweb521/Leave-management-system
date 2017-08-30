@@ -46,7 +46,8 @@ class IndexController extends CommonController {
         $top['now_day'] = sizeof(D('Leave')->get_Day_Leave(date("Y-m-d")));
         $top['last_day'] = sizeof(D('Leave')->get_Day_Leave(get_Last_Day()));
         $top['now_week'] = sizeof(D('Leave')->get_Week_Leave(get_Week_All_Day()));
-        $top['last_week'] = sizeof(D('Leave')->get_Week_Leave(get_Last_Week_All_Day()));
+//        $top['last_week'] = sizeof(D('Leave')->get_Week_Leave(get_Last_Week_All_Day()));
+        $top['now_month'] = sizeof(D('Leave')->get_Month_Leave(get_Month_All_Day()));
         $this->assign('top',$top);
         $this->display();
     }

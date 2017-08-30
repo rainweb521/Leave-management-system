@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Admin index Examples</title>
+    <title>请假管理系统</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,7 +147,7 @@
                     <li><a href="/index.php?c=login&a=logout"><span class="am-icon-power-off"></span> 退出</a></li>
                 </ul>
             </li>
-            <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
+            <li><a href="/index.php?c=login&a=logout" title="退出系统" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
         </ul>
     </div>
 </header>
@@ -162,13 +162,13 @@
         <div class="tpl-left-nav-list">
             <ul class="tpl-left-nav-menu">
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=index" class="nav-link active">
+                    <a href="/index.php?c=index" class="nav-link <?php if($active == '1'): ?>active<?php endif; ?>">
                         <i class="am-icon-home"></i>
                         <span>系统首页</span>
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 2): ?>active<?php endif; ?>" >
                         <i class="am-icon-table"></i>
                         <span>请假管理</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -204,7 +204,7 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=student" class="nav-link tpl-left-nav-link-list <?php if($active == 3): ?>active<?php endif; ?>">
                         <i class="am-icon-user"></i>
                         <span>学生信息</span>
                         <!--<i class="tpl-left-nav-content tpl-badge-danger">-->
@@ -215,14 +215,14 @@
 
 
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=class" class="nav-link tpl-left-nav-link-list <?php if($active == 4): ?>active<?php endif; ?>">
                         <i class="am-icon-users"></i>
                         <span>班级信息</span>
 
                     </a>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list">
+                    <a href="/index.php?c=grade" class="nav-link tpl-left-nav-link-list <?php if($active == 5): ?>active<?php endif; ?>">
                         <i class="am-icon-th-list"></i>
                         <span>级别信息</span>
 
@@ -236,7 +236,7 @@
                     <!--</a>-->
                 <!--</li>-->
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 6): ?>active<?php endif; ?>">
                         <i class="am-icon-plus-square"></i>
                         <span>添加信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -265,7 +265,7 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list ">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 7): ?>active<?php endif; ?>">
                         <i class="am-icon-trash-o"></i>
                         <span>删除信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
@@ -290,7 +290,7 @@
                     </ul>
                 </li>
                 <li class="tpl-left-nav-item">
-                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                    <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 8): ?>active<?php endif; ?>">
                         <i class="am-icon-cog"></i>
                         <span>系统设置</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
