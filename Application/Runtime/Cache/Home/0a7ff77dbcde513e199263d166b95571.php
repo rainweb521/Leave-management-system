@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="/Public/assets/css/admin.css">
     <link rel="stylesheet" href="/Public/assets/css/app.css">
 </head>
-<body data-type="generalComponents">
 
+<body data-type="generalComponents">
 <header class="am-topbar am-topbar-inverse admin-header">
     <div class="am-topbar-brand">
         <a href="javascript:;" class="tpl-logo">
@@ -329,150 +329,168 @@
     </div>
 </div>
 
-
-<div class="tpl-content-wrapper">
+        <div class="tpl-content-wrapper">
             <!--<div class="tpl-content-page-title">-->
-                <!--Amaze UI 文字列表-->
+                <!--Amaze UI 表单-->
             <!--</div>-->
             <!--<ol class="am-breadcrumb">-->
                 <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
-                <!--<li><a href="#">Amaze UI CSS</a></li>-->
-                <!--<li class="am-active">文字列表</li>-->
+                <!--<li><a href="#">表单</a></li>-->
+                <!--<li class="am-active">Amaze UI 表单</li>-->
             <!--</ol>-->
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 假条注销
+                        <span class="am-icon-code"></span> 短期假条申请
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
                             <div class="input-icon right">
                                 <!--<i class="am-icon-search"></i>-->
-                                <!--<input type="text" class="form-control form-control-solid" placeholder="搜索..."> -->
-                            </div>
+                                <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="tpl-block">
-                    <div class="am-g">
-                        <!--<div class="am-u-sm-12 am-u-md-6">-->
-                            <!--<div class="am-btn-toolbar">-->
-                                <!--<div class="am-btn-group am-btn-group-xs">-->
-                                    <!--<button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>&ndash;&gt;-->
+                <div class="tpl-block ">
 
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
-                        <div class="am-u-sm-12 am-u-md-3">
-                            <div class="am-form-group" style="float: inherit" >
-                                <!--<select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">-->
-                                    <!--<option value="0">选择级别</option>-->
-                                    <!--<?php if(is_array($grade_list)): $i = 0; $__LIST__ = $grade_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>-->
-                                        <!--<option value="<?php echo ($list["g_id"]); ?>"><?php echo ($list["g_name"]); ?></option>-->
-                                    <!--<?php endforeach; endif; else: echo "" ;endif; ?>-->
-                                <!--</select>-->
-                            </div>
-
-                            <!--<div class="am-form-group" style="float: inherit">-->
-                                <!--<select data-am-selected="{btnSize: 'sm'}">-->
-                                    <!--<option value="option1">选择学生</option>-->
-                                <!--</select>-->
-                            <!--</div>-->
-                        </div>
-
-                        <!--<div class="am-u-sm-12 " style="width: 25%">-->
-                            <!--<div class="am-input-group am-input-group-sm">-->
-                                <!--<input type="text" class="am-form-field" placeholder="请输入学号进行查找">-->
-                                <!--<span class="am-input-group-btn">-->
-            <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>-->
-          <!--</span>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    </div>
-                    <div class="am-g">
-                        <div class="am-u-sm-12">
-                            <form class="am-form">
-                                <table class="am-table am-table-striped am-table-hover table-main">
-                                    <thead>
-                                        <tr>
-                                            <!--<th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>-->
-                                            <!--<th class="table-id">ID</th>-->
-                                            <th class="table-title">学号</th>
-                                            <th class="table-type">姓名</th>
-                                            <th class="table-author am-hide-sm-only">级别</th>
-                                            <th class="table-author am-hide-sm-only">班级</th>
-                                            <th class="table-author am-hide-sm-only">联系方式</th>
-                                            <th class="table-date am-hide-sm-only">最近请假日期</th>
-                                            <th class="table-date am-hide-sm-only">类型</th>
-                                            <th class="table-date am-hide-sm-only">操作</th>
-                                            <th class="table-date am-hide-sm-only">状态</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php if(is_array($leave_list)): $i = 0; $__LIST__ = $leave_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr>
-                                            <!--<td><input type="checkbox"></td>-->
-                                            <!--<td><?php echo ($list["l_id"]); ?></td>-->
-                                            <td><a href="#"><?php echo ($list["l_s_card"]); ?></a></td>
-                                            <td><?php echo ($list["l_s_username"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_grade"]); ?>级</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_class"]); ?>班</td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["l_s_phone"]); ?></td>
-                                            <td class="am-hide-sm-only"><?php echo ($list["l_addtime"]); ?></td>
-                                            <?php if($list["l_status"] == 1): ?><td class="am-hide-sm-only">长期假条</td><?php endif; ?>
-                                            <?php if($list["l_status"] == 2): ?><td class="am-hide-sm-only">短期假条</td><?php endif; ?>
-                                            <td class="am-hide-sm-only"><a class="label label-sm " style="background-color: #01AAED" onclick="Look_Leave('<?php echo ($list["l_id"]); ?>')">查看</a></td>
-                                            <td class="am-hide-sm-only">
-                                                <a class="label label-sm " style="background-color: #ed6b75" id="state<?php echo ($list["l_id"]); ?>" onclick="set_State('<?php echo ($list["l_id"]); ?>')">未注销</a><span id="statt<?php echo ($list["l_id"]); ?>">&nbsp;点击注销</span>
-
-                                                <!--<div class="am-form-group">-->
-                                                    <!--<div class="am-u-sm-9">-->
-                                                        <!--<div class="tpl-switch">-->
-                                                            <!--<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" id="state'<?php echo ($list["l_id"]); ?>'" value=""  />-->
-                                                            <!--<div class="tpl-switch-btn-view" onclick="set_State('<?php echo ($list["l_id"]); ?>')">-->
-                                                                <!--<div>-->
-                                                                <!--</div>-->
-                                                            <!--</div>-->
-                                                        <!--</div>-->
-
-                                                    <!--</div>-->
-                                                <!--</div>-->
+                    <div class="am-g tpl-amazeui-form">
 
 
-                                            </td>
-                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <div class="am-u-sm-12 am-u-md-9">
+                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php?c=leave&a=show">
+                                <div class="am-form-group">
+                                    <label  class="am-u-sm-3 am-form-label"></label>
+                                    <div class="am-u-sm-9">
+                                        <small id="state" style="color: #F7B824;font-size: 16px;"><?php echo ($state); ?></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_s_card" class="am-u-sm-3 am-form-label">学号</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_s_card" id="l_s_card" value="" placeholder="请输入学号">
+                                        <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button" onclick="get_Student()"></button>
+                                        <small>输入学号点击查询，其他信息会自动填写。</small>
+                                    </div>
 
-                                    </tbody>
-                                </table>
-                                <!--<div class="am-cf">-->
-
-                                    <!--<div class="am-fr">-->
-                                        <!--<ul class="am-pagination tpl-pagination">-->
-                                            <!--<li class="am-disabled"><a href="#">«</a></li>-->
-                                            <!--<li class="am-active"><a href="#">1</a></li>-->
-                                            <!--<li><a href="#">2</a></li>-->
-                                            <!--<li><a href="#">3</a></li>-->
-                                            <!--<li><a href="#">4</a></li>-->
-                                            <!--<li><a href="#">5</a></li>-->
-                                            <!--<li><a href="#">»</a></li>-->
-                                        <!--</ul>-->
+                                </div>
+                                <input type="hidden" value="1" name="flag">
+                                <input type="hidden" value="" name="l_s_id" id="l_s_id">
+                                <input type="hidden" value="" name="l_c_id" id="l_c_id">
+                                <input type="hidden" value="" name="l_g_id" id="l_g_id">
+                                <input type="hidden" value="2" name="l_status" id="l_status">
+                                <div class="am-form-group">
+                                    <label for="l_s_username" class="am-u-sm-3 am-form-label">姓名</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_s_username" value="" id="l_s_username" placeholder="请输入姓名">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_s_grade" class="am-u-sm-3 am-form-label">级别</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_s_grade" id="l_s_grade" value="" placeholder="请输入级别,例如2015,2016">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_s_class" class="am-u-sm-3 am-form-label">班级</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_s_class" id="l_s_class" value="" placeholder="请输入班级">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="email" id="user-email" placeholder="输入你的 / Email">-->
+                                        <!--<small></small>-->
                                     <!--</div>-->
                                 <!--</div>-->
-                                <hr>
+                                <div class="am-form-group">
+                                    <label for="l_s_phone" class="am-u-sm-3 am-form-label">手机号</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="" placeholder="输入手机号">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_night_begin_time" class="am-u-sm-3 am-form-label">夜假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_night_begin_time" id="l_night_begin_time" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_night_end_time" class="am-u-sm-3 am-form-label">夜假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_night_end_time" id="l_night_end_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_class_begin_time" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_class_begin_time" id="l_class_begin_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_class_end_time" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_class_end_time" id="l_class_end_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_endtime2" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" style="width: 30%;float: left;" name="l_begin_class" id="l_begin_class"  value="" class="" placeholder="第几大节"/>
+                                        <span style="float: left;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <input type="text" style="width: 30%;float: left;" name="l_end_class" id="l_end_class"  value="" class="" placeholder="第几大节"/>
 
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="l_day" class="am-u-sm-3 am-form-label">请假天数</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="number" name="l_day" pattern="[0-9]*" id="l_day" value="" disabled placeholder="选择开始时间与结束时间后天数会自动填写">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="l_address" class="am-u-sm-3 am-form-label">前往地点</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_address" id="l_address" value="" placeholder="输入请假去往地点">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                                <div class="am-form-group">
+                                    <label for="l_cause" class="am-u-sm-3 am-form-label">请假原因</label>
+                                    <div class="am-u-sm-9">
+                                        <textarea class="" name="l_cause" rows="5" id="l_cause"   placeholder="输入请假原因"></textarea>
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_charge" class="am-u-sm-3 am-form-label">请假负责人</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_charge" id="l_charge" value="<?php echo ($l_charge); ?>" placeholder="" disabled>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">提交假条</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
-
                     </div>
                 </div>
-                <div class="tpl-alert"></div>
-            </div>
 
+            </div>
 
         </div>
 
@@ -485,16 +503,59 @@
 <script>
 
 
-    function set_State(obj){
+    function get_Student(){
+        var l_s_card = document.getElementById('l_s_card').value;
+        if (l_s_card == ''){
+            document.getElementById('state').innerHTML = '学号未填写';
+        }else{
+            document.getElementById('state').innerHTML = '';
 
-        $.get("/index.php?c=leave&a=set_state&tip=641351484&l_id=" + obj);
-        document.getElementById('state'+obj).style.backgroundColor = "#1E9FFF";
-        document.getElementById('state'+obj).innerHTML = "已注销";
-        document.getElementById('statt'+obj).innerHTML = "";
+        }
+
+        $.get("/index.php?c=leave&a=apply_ajax&l_s_card=" + l_s_card, function(data){
+            var res = eval("(" + data + ")");//转为Object对象
+//            var str = res[0].s_card;
+            if (res == 0){
+                document.getElementById('state').innerHTML = '该学号输入有误，未在系统中找到，请先添加学生信息';
+            }else{
+                document.getElementById('state').innerHTML = '';
+                document.getElementById('l_s_username').value = res[0].s_username;
+                document.getElementById('l_s_grade').value = res[0].s_grade;
+                document.getElementById('l_s_class').value = res[0].s_class;
+                document.getElementById('l_s_phone').value = res[0].s_phone;
+                document.getElementById('l_s_id').value = res[0].s_id;
+                document.getElementById('l_c_id').value = res[0].s_c_id;
+                document.getElementById('l_g_id').value = res[0].s_g_id;
+            }
+        });
     }
-    function Look_Leave(obj){
-        location.href = "/index.php?c=leave&a=show&l_id=" + obj;
+    function validate() {
+        var l_s_username = document.getElementById('l_s_username').value;
+        var l_s_card = document.getElementById('l_s_card').value;
+        var l_s_phone = document.getElementById('l_s_phone').value;
+        var l_s_grade = document.getElementById('l_s_grade').value;
+        var l_s_class = document.getElementById('l_s_class').value;
+//        var l_begintime = document.getElementById('l_begintime').value;
+//        var l_endtime = document.getElementById('l_endtime').value;
+//        var l_address = document.getElementById('l_address').value;
+        var l_cause = document.getElementById('l_cause').value;
+        if (l_s_card == ''){
+            document.getElementById('state').innerHTML = '学号未填写';
+        }else if (l_s_username == ''){
+            document.getElementById('state').innerHTML = '姓名未填写';
+        }else if (l_s_phone == ''){
+            document.getElementById('state').innerHTML = '手机号未填写';
+        }else if (l_s_grade == ''){
+            document.getElementById('state').innerHTML = '级别未选择';
+        }else if (l_s_class == ''){
+            document.getElementById('state').innerHTML = '班级未选择';
+        }else if (l_cause == ''){
+            document.getElementById('state').innerHTML = '请假原因未填写';
+        }else {
+            document.getElementById('my_form').submit();
+        }
     }
+
 </script>
 </body>
 

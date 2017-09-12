@@ -174,9 +174,14 @@
                     </a>
                     <ul class="tpl-left-nav-sub-menu">
                         <li>
+                            <a href="/index.php?c=leave&a=apply2">
+                                <i class="am-icon-angle-right"></i>
+                                <span>短期假条</span>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            </a>
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
-                                <span>假条申请</span>
+                                <span>长期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
@@ -187,9 +192,9 @@
                                     <!--18-->
                                 <!--</i>-->
                             </a>
-                                <a href="/index.php?c=leave&a=show">
+                                <a href="/index.php?c=leave&a=printf">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>假条模板</span>
+                                    <span>模板打印</span>
                                     <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
                                         <!--5-->
                                     <!--</i>-->

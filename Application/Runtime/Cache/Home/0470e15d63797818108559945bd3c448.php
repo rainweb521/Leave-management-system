@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>Amaze UI Admin index Examples</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -173,9 +173,14 @@
                     </a>
                     <ul class="tpl-left-nav-sub-menu">
                         <li>
+                            <a href="/index.php?c=leave&a=apply2">
+                                <i class="am-icon-angle-right"></i>
+                                <span>短期假条</span>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            </a>
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
-                                <span>假条申请</span>
+                                <span>长期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
@@ -186,9 +191,9 @@
                                     <!--18-->
                                 <!--</i>-->
                             </a>
-                                <a href="/index.php?c=leave&a=show">
+                                <a href="/index.php?c=leave&a=printf">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>假条模板</span>
+                                    <span>模板打印</span>
                                     <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
                                         <!--5-->
                                     <!--</i>-->
@@ -324,31 +329,32 @@
     </div>
 </div>
 
-        <div class="tpl-content-wrapper">
-            <!--<div class="tpl-content-page-title">-->
-                <!--Amaze UI 表单-->
-            <!--</div>-->
-            <!--<ol class="am-breadcrumb">-->
-                <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
-                <!--<li><a href="#">表单</a></li>-->
-                <!--<li class="am-active">Amaze UI 表单</li>-->
-            <!--</ol>-->
-            <div class="tpl-portlet-components">
-                <div class="portlet-title">
-                    <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 假条申请
-                    </div>
-                    <div class="tpl-portlet-input tpl-fz-ml">
-                        <div class="portlet-input input-small input-inline">
-                            <div class="input-icon right">
-                                <!--<i class="am-icon-search"></i>-->
-                                <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
-                        </div>
-                    </div>
-
-
+<div class="tpl-content-wrapper">
+    <!--<div class="tpl-content-page-title">-->
+    <!--Amaze UI 表单-->
+    <!--</div>-->
+    <!--<ol class="am-breadcrumb">-->
+    <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
+    <!--<li><a href="#">表单</a></li>-->
+    <!--<li class="am-active">Amaze UI 表单</li>-->
+    <!--</ol>-->
+    <div class="tpl-portlet-components">
+        <div class="portlet-title">
+            <div class="caption font-green bold">
+                <span class="am-icon-code"></span> 假条申请
+                <a target="_blank" class="label label-sm " style="background-color: #01AAED" onclick="Look_Leave('<?php echo ($leave["l_id"]); ?>','<?php echo ($leave["l_status"]); ?>')">点击打印</a>
+            </div>
+            <div class="tpl-portlet-input tpl-fz-ml">
+                <div class="portlet-input input-small input-inline">
+                    <div class="input-icon right">
+                        <!--<i class="am-icon-search"></i>-->
+                        <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
                 </div>
-                <!DOCTYPE html>
+            </div>
+
+
+        </div>
+        <?php if($leave["l_status"] == 1): ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -379,26 +385,23 @@
 </style>
 <body>
 <div class="all" >
-    <h2>草原与资源环境学院长期请假条（存根）</h2>
+    <h2 style="margin-left: 28%;margin-bottom: -20px;">内蒙古农业大学</h2>
+    <h2 style="margin-left: 20%">草原与资源环境学院长期请假条（存根）</h2>
     <div class="line1" align="left">班主任、学办老师：</div>
     <table align="" width="90%" >
 
         <tr>
             <td colspan="2" >
                 <div  class="line2">您好！本人因
-                    <u><?php echo ($leave["l_cause"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        （请 假 原 因 ）</u>
+                    <u><?php echo ($leave["l_cause"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（请 假 原 因 ）</u>需向您请假<u><?php echo ($leave["l_day"]); ?>&nbsp;&nbsp;&nbsp;
+                    </u>天。
                 </div>
             </td>
         </tr>
-        <tr>
-            <td colspan="2" >
-                <div class="line3">
-                    <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>需向您请假<u><?php echo ($leave["l_day"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;
-                </u>天。
-                </div>
-            </td>
-        </tr>
+
         <tr>
             <td colspan="2" >
                 <div>请假时间为：<u>&nbsp;&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;&nbsp;</u> 日 至
@@ -408,13 +411,17 @@
         </tr>
         <tr>
             <td colspan="2" >
-                <div>学号：<u><?php echo ($leave["l_s_card"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班级：<u><?php echo ($leave["l_s_grade"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>级<u><?php echo ($leave["l_s_class"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班
+                <div>学号：<u><?php echo ($leave["l_s_card"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;</u>班级：<u><?php echo ($leave["l_s_grade"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </u>级<u><?php echo ($leave["l_s_class"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班
                 </div>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <div>联系方式: <u><?php echo ($leave["l_s_phone"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>请假去往地点:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>。  </div>
+                <div>联系方式: <u><?php echo ($leave["l_s_phone"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;</u>请假去往地点:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>。  </div>
             </td>
         </tr>
         <tr>
@@ -460,26 +467,24 @@
             <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
         </tr>
     </table>
-    <h2 >草原与资源环境学院长期请假条</h2>
+    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+    <h2 style="margin-left: 20%">草原与资源环境学院长期请假条</h2>
     <div class="line1" align="left">班主任、学办老师：</div>
     <table align="" width="90%" >
 
         <tr>
             <td colspan="2" >
                 <div  class="line2">您好！本人因
-                    <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        （请 假 原 因 ）</u>
+                    <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        （请 假 原 因 ）</u>需向您请假<u>&nbsp;&nbsp;&nbsp;
+                    </u>天。
                 </div>
             </td>
         </tr>
-        <tr>
-            <td colspan="2" >
-                <div class="line3">
-                    <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>需向您请假<u>&nbsp;&nbsp;&nbsp;&nbsp;
-                </u>天。
-                </div>
-            </td>
-        </tr>
+
         <tr>
             <td colspan="2" >
                 <div>请假时间为：<u>&nbsp;&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;&nbsp;</u> 日 至
@@ -547,7 +552,181 @@
 
 </div>
 </body>
-</html>
+</html><?php endif; ?>
+        <?php if($leave["l_status"] == 2): ?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请假管理系统</title>
+</head>
+<style>
+    .all{
+        margin: auto;
+        text-align: center;
+        width: 900px;
+    }
+    td{
+        text-align: left;
+    }
+    div{
+        font-size: 22px;
+        font-family:"宋体";
+        font-weight:bold;
+    }
+    .line1{
+        margin-left: -5px;
+
+    }
+    h2{
+        margin-left: 40px;
+        text-align: left;
+    }
+</style>
+<body>
+<div class="all" >
+    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+    <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
+
+    <table align="" width="90%" >
+
+
+
+        <tr>
+            <td>
+                <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+            </td>
+            <td >
+                <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
+            </td>
+            <td >
+                <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>夜假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
+            </td>
+        </tr>
+        <tr>
+            <td  colspan="2">
+                <div>
+                    请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <div style="margin-left: 26%;"> <br>请假必填</div>
+            </td>
+            <td >
+                <div style="margin-left: 38%;"><br>销假必填</div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" rowspan="1" width="50%" >
+
+                <table width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                    <tr><td>准假老师：（盖章）</td></tr>
+                    <tr><td>学生签字：</td></tr>
+                </table>
+            </td>
+            <td align="right" rowspan="1" width="50%" >
+
+                <table align="right" width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                    <tr><td>销假时间：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日  </td></tr>
+                    <tr><td>学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <div align="right"><br>草原与资源环境学院
+                    <br>
+                    <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+    <h2 style="margin-left: 20%">草原与资源环境学院学生请假单</h2>
+
+    <table align="" width="90%" >
+        <tr>
+            <td>
+                <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+            </td>
+            <td >
+                <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
+            </td>
+            <td >
+                <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>夜假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
+            </td>
+        </tr>
+        <tr>
+            <td  colspan="2">
+                <div>
+                    请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+
+                准假老师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>（盖章）学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <div align="right"><br>草原与资源环境学院
+                    <br>
+                    <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+</div>
+</body>
+</html><?php endif; ?>
 
 
 
@@ -557,15 +736,24 @@
 
 
 
-
-        </div>
 
     </div>
 
+</div>
+<script>
+    function Look_Leave(obj,status){
+        if (status == '1'){
+            window.open("/index.php?c=leave&a=form&l_id=" + obj);
+        }else{
+            window.open("/index.php?c=leave&a=form2&l_id=" + obj);
+        }
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+    }
+</script>
+
+<script src="/Public/assets/js/jquery.min.js"></script>
+<script src="/Public/assets/js/amazeui.min.js"></script>
+<script src="/Public/assets/js/app.js"></script>
 </body>
 
 </html>

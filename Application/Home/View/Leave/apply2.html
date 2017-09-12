@@ -35,7 +35,7 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 长期假条申请
+                        <span class="am-icon-code"></span> 短期假条申请
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -73,7 +73,7 @@
                                 <input type="hidden" value="" name="l_s_id" id="l_s_id">
                                 <input type="hidden" value="" name="l_c_id" id="l_c_id">
                                 <input type="hidden" value="" name="l_g_id" id="l_g_id">
-                                <input type="hidden" value="1" name="l_status" id="l_status">
+                                <input type="hidden" value="2" name="l_status" id="l_status">
                                 <div class="am-form-group">
                                     <label for="l_s_username" class="am-u-sm-3 am-form-label">姓名</label>
                                     <div class="am-u-sm-9">
@@ -102,8 +102,6 @@
                                         <!--<small></small>-->
                                     <!--</div>-->
                                 <!--</div>-->
-
-
                                 <div class="am-form-group">
                                     <label for="l_s_phone" class="am-u-sm-3 am-form-label">手机号</label>
                                     <div class="am-u-sm-9">
@@ -111,26 +109,43 @@
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="l_begintime" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>
+                                    <label for="l_night_begin_time" class="am-u-sm-3 am-form-label">夜假 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_begintime" id="l_begintime" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
+                                        <input type="text" name="l_night_begin_time" id="l_night_begin_time" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="l_endtime" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>
+                                    <label for="l_night_end_time" class="am-u-sm-3 am-form-label">夜假 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
+                                        <input type="text" name="l_night_end_time" id="l_night_end_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
                                         <small></small>
                                     </div>
                                 </div>
-                                <!--<div class="am-form-group">-->
-                                    <!--<label for="l_endtime" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>-->
-                                    <!--<div class="am-u-sm-9">-->
-                                        <!--<input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>-->
-                                        <!--<small></small>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                                <div class="am-form-group">
+                                    <label for="l_class_begin_time" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_class_begin_time" id="l_class_begin_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_class_end_time" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="l_class_end_time" id="l_class_end_time"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="l_endtime2" class="am-u-sm-3 am-form-label">课假 <span class="tpl-form-line-small-title"></span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" style="width: 30%;float: left;" name="l_begin_class" id="l_begin_class"  value="" class="" placeholder="第几大节"/>
+                                        <span style="float: left;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <input type="text" style="width: 30%;float: left;" name="l_end_class" id="l_end_class"  value="" class="" placeholder="第几大节"/>
+
+                                        <small></small>
+                                    </div>
+                                </div>
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="l_day" class="am-u-sm-3 am-form-label">请假天数</label>-->
                                     <!--<div class="am-u-sm-9">-->
@@ -138,12 +153,12 @@
                                     <!--</div>-->
                                 <!--</div>-->
 
-                                <div class="am-form-group">
-                                    <label for="l_address" class="am-u-sm-3 am-form-label">前往地点</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="text" name="l_address" id="l_address" value="" placeholder="输入请假去往地点">
-                                    </div>
-                                </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="l_address" class="am-u-sm-3 am-form-label">前往地点</label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_address" id="l_address" value="" placeholder="输入请假去往地点">-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
                                 <div class="am-form-group">
                                     <label for="l_cause" class="am-u-sm-3 am-form-label">请假原因</label>
@@ -214,9 +229,9 @@
         var l_s_phone = document.getElementById('l_s_phone').value;
         var l_s_grade = document.getElementById('l_s_grade').value;
         var l_s_class = document.getElementById('l_s_class').value;
-        var l_begintime = document.getElementById('l_begintime').value;
-        var l_endtime = document.getElementById('l_endtime').value;
-        var l_address = document.getElementById('l_address').value;
+//        var l_begintime = document.getElementById('l_begintime').value;
+//        var l_endtime = document.getElementById('l_endtime').value;
+//        var l_address = document.getElementById('l_address').value;
         var l_cause = document.getElementById('l_cause').value;
         if (l_s_card == ''){
             document.getElementById('state').innerHTML = '学号未填写';
@@ -228,12 +243,6 @@
             document.getElementById('state').innerHTML = '级别未选择';
         }else if (l_s_class == ''){
             document.getElementById('state').innerHTML = '班级未选择';
-        }else if (l_begintime == ''){
-            document.getElementById('state').innerHTML = '开始时间未选择';
-        }else if (l_endtime == ''){
-            document.getElementById('state').innerHTML = '结束时间未选择';
-        }else if (l_address == ''){
-            document.getElementById('state').innerHTML = '前往地点未填写';
         }else if (l_cause == ''){
             document.getElementById('state').innerHTML = '请假原因未填写';
         }else {

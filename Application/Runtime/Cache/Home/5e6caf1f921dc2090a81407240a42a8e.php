@@ -175,10 +175,19 @@
                         <li>
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
-                                <span>假条申请</span>
+                                <span>短期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
-
+                            <a href="/index.php?c=leave&a=apply">
+                                <i class="am-icon-angle-right"></i>
+                                <span>长期假条</span>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            </a>
+                            <a href="/index.php?c=leave&a=apply">
+                                <i class="am-icon-angle-right"></i>
+                                <span>外出申请</span>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            </a>
                             <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条注销</span>
@@ -186,13 +195,13 @@
                                     <!--18-->
                                 <!--</i>-->
                             </a>
-                                <a href="/index.php?c=leave&a=show">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>假条模板</span>
-                                    <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
-                                        <!--5-->
-                                    <!--</i>-->
-                                </a>
+                                <!--<a href="/index.php?c=leave&a=show">-->
+                                    <!--<i class="am-icon-angle-right"></i>-->
+                                    <!--<span>假条模板</span>-->
+                                    <!--&lt;!&ndash;<i class="tpl-left-nav-content tpl-badge-primary">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;5&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</i>&ndash;&gt;-->
+                                <!--</a>-->
 
                                     <!--<a href="">-->
                                         <!--<i class="am-icon-angle-right"></i>-->

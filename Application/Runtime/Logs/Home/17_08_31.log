@@ -1,0 +1,831 @@
+[ 2017-08-31T16:23:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-31T16:23:25+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.195896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.195950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007224s ]
+
+[ 2017-08-31T16:23:32+08:00 ] 127.0.0.1 /index.php?m=home&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1484s ]
+SQL: SELECT * FROM `admin` WHERE `a_username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-31T16:23:32+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0578s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-28'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-29'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-05'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-06'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-07'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-09'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-10'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-12'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-15'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-21'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-23'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-26'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-27'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003138s ]
+
+[ 2017-08-31T16:23:59+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\21b2dbac8fdcf0b9696ad1ac7742e75b.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2017-08-31T16:24:06+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0309s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 376 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 422 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2017-08-31T16:24:10+08:00 ] 127.0.0.1 /index.php?c=student&a=apply_ajax&s_g_id=12
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0288s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 12  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2017-08-31T16:24:13+08:00 ] 127.0.0.1 /index.php?c=student&a=index&s_g_id=12&s_c_id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `student` WHERE `s_c_id` = 23 AND `s_g_id` = 12  [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 12  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-08-31T16:24:23+08:00 ] 127.0.0.1 /index.php?c=class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 377 行.
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 424 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-08-31T16:24:36+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: grade_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\78ed1e545b0c3b8f40acf61593016fb2.php 第 371 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-08-31T16:24:40+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 376 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 422 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2017-08-31T16:24:42+08:00 ] 127.0.0.1 /index.php?c=student&a=apply_ajax&s_g_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0237s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 13  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-08-31T16:24:46+08:00 ] 127.0.0.1 /index.php?c=student&a=index&s_g_id=13&s_c_id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `student` WHERE `s_c_id` = 27 AND `s_g_id` = 13  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 13  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2017-08-31T16:24:53+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\21b2dbac8fdcf0b9696ad1ac7742e75b.php 第 361 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2017-08-31T16:24:57+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply_ajax&l_s_card=122713010198
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `student` WHERE `s_card` = '122713010198'  [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2017-08-31T16:25:14+08:00 ] 127.0.0.1 /index.php?c=leave&a=show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0291s ]
+SQL: INSERT INTO `leave` (`l_s_card`,`l_s_username`,`l_s_grade`,`l_s_class`,`l_s_phone`,`l_begintime`,`l_endtime`,`l_day`,`l_address`,`l_cause`,`l_charge`,`l_addtime`,`l_state`,`l_status`,`l_s_id`,`l_c_id`,`l_g_id`) VALUES ('122713010198','段圆圆','2016','数学','13947732200','2017-08-26','2017-09-02','-6','123','12312','','2017-08-31','0','0','780','27','13') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `student` WHERE `s_id` = 780 LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `student` SET `s_id`='780',`s_card`='122713010198',`s_username`='段圆圆',`s_phone`='13947732200',`s_addtime`='2017-08-16',`s_grade`='2016',`s_class`='数学',`s_lastleave`='2017-08-31',`s_state`='1',`s_c_id`='27',`s_g_id`='13' WHERE `s_id` = 780 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2017-08-31T16:25:21+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: grade_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\78ed1e545b0c3b8f40acf61593016fb2.php 第 371 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2017-08-31T16:25:27+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 376 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 422 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2017-08-31T16:25:28+08:00 ] 127.0.0.1 /index.php?c=class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 377 行.
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 424 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2017-08-31T16:25:32+08:00 ] 127.0.0.1 /index.php?c=class&a=index&c_g_id=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0356s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 13  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-05'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-06'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-07'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-09'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-10'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-12'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-15'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-21'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-23'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-26'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-27'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 28 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-05'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-06'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-07'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-09'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-10'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-12'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-15'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-21'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-23'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-26'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-27'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 27 AND `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2017-08-31T16:25:35+08:00 ] 127.0.0.1 /index.php?c=grade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-05'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-06'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-07'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-09'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-10'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-12'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-13'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-15'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-21'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-23'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-26'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-27'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 13 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-02'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-03'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-04'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-05'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-06'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-07'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-08'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-09'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-10'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-12'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-15'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-21'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-23'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-26'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-27'  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-29'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 12 AND `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-08-31T16:25:38+08:00 ] 127.0.0.1 /index.php?c=student&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\bc9df78a4b02579df502fe60401eeb33.php 第 363 行.
+NOTIC: [8] Undefined variable: l_charge D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\bc9df78a4b02579df502fe60401eeb33.php 第 471 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2017-08-31T16:25:41+08:00 ] 127.0.0.1 /index.php?c=index&a=upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-08-31T16:25:50+08:00 ] 127.0.0.1 /index.php?c=student&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 377 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 423 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2017-08-31T16:26:23+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: grade_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\78ed1e545b0c3b8f40acf61593016fb2.php 第 371 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-08-31T16:26:25+08:00 ] 127.0.0.1 /index.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-29'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-05'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-06'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-07'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-09'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-10'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-12'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-15'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-16'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-17'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-18'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-19'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-20'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-21'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-22'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-23'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-24'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-25'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-26'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-27'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-28'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-29'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-30'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-08-31'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-08-31T16:26:31+08:00 ] 127.0.0.1 /index.php?c=login&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-31T16:26:31+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-08-31T16:26:31+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+

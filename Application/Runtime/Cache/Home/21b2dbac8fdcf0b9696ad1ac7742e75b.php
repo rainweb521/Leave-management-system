@@ -173,9 +173,14 @@
                     </a>
                     <ul class="tpl-left-nav-sub-menu">
                         <li>
+                            <a href="/index.php?c=leave&a=apply2">
+                                <i class="am-icon-angle-right"></i>
+                                <span>短期假条</span>
+                                <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
+                            </a>
                             <a href="/index.php?c=leave&a=apply">
                                 <i class="am-icon-angle-right"></i>
-                                <span>假条申请</span>
+                                <span>长期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
 
@@ -186,9 +191,9 @@
                                     <!--18-->
                                 <!--</i>-->
                             </a>
-                                <a href="/index.php?c=leave&a=show">
+                                <a href="/index.php?c=leave&a=printf">
                                     <i class="am-icon-angle-right"></i>
-                                    <span>假条模板</span>
+                                    <span>模板打印</span>
                                     <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
                                         <!--5-->
                                     <!--</i>-->
@@ -336,7 +341,7 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 假条申请
+                        <span class="am-icon-code"></span> 长期假条申请
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -374,6 +379,7 @@
                                 <input type="hidden" value="" name="l_s_id" id="l_s_id">
                                 <input type="hidden" value="" name="l_c_id" id="l_c_id">
                                 <input type="hidden" value="" name="l_g_id" id="l_g_id">
+                                <input type="hidden" value="1" name="l_status" id="l_status">
                                 <div class="am-form-group">
                                     <label for="l_s_username" class="am-u-sm-3 am-form-label">姓名</label>
                                     <div class="am-u-sm-9">
@@ -407,23 +413,30 @@
                                 <div class="am-form-group">
                                     <label for="l_s_phone" class="am-u-sm-3 am-form-label">手机号</label>
                                     <div class="am-u-sm-9">
-                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="" placeholder="输入你的手机号">
+                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="" placeholder="输入手机号">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="l_begintime" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_begintime" id="l_begintime" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly/>
+                                        <input type="text" name="l_begintime" id="l_begintime" value="" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" />
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="l_endtime" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>
+                                        <input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" />
                                         <small></small>
                                     </div>
                                 </div>
+                                <!--<div class="am-form-group">-->
+                                    <!--<label for="l_endtime" class="am-u-sm-3 am-form-label">结束时间 <span class="tpl-form-line-small-title"></span></label>-->
+                                    <!--<div class="am-u-sm-9">-->
+                                        <!--<input type="text" name="l_endtime" id="l_endtime"  value="" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly/>-->
+                                        <!--<small></small>-->
+                                    <!--</div>-->
+                                <!--</div>-->
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="l_day" class="am-u-sm-3 am-form-label">请假天数</label>-->
                                     <!--<div class="am-u-sm-9">-->
