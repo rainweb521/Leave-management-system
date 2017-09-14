@@ -332,6 +332,26 @@ function get_Last_Day(){
     $time = strtotime($date) - 3600*24;
     return date('Y-m-d',$time);
 }
+function get_Split_DateArr($data){
+//    $date = '2017-09-28';
+    $data['l_begintime'] = get_Split_DateStr($data['l_begintime']);
+    $data['l_endtime'] = get_Split_DateStr($data['l_endtime']);
+    $data['l_class_begin_time'] = get_Split_DateStr($data['l_class_begin_time']);
+    $data['l_class_end_time'] = get_Split_DateStr($data['l_class_end_time']);
+    $data['l_night_begin_time'] = get_Split_DateStr($data['l_night_begin_time']);
+    $data['l_night_end_time'] = get_Split_DateStr($data['l_night_end_time']);
+    $data['l_logout'] = get_Split_DateStr($data['l_logout']);
+    return $data;
+}
+function get_Split_DateStr($date){
+    if ($date != ''){
+        $date_arr = split('-',$date);
+        $date_str = '<u>'.$date_arr[0].'</u>年<u>'.$date_arr[1].'</u>月<u>'.$date_arr[2].'</u>日';
+        return $date_str;
+    }else{
+        return '';
+    }
+}
 
 
 

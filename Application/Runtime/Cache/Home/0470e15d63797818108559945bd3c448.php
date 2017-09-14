@@ -364,13 +364,14 @@
     .all{
         margin: auto;
         text-align: center;
-        width: 1000px;
+        width: 95%;
+        height: 100%;
     }
     td{
         text-align: left;
     }
     div{
-        font-size: 22px;
+        font-size: 19px;
         font-family:"宋体";
         font-weight:bold;
     }
@@ -382,21 +383,27 @@
         margin-left: 40px;
         text-align: left;
     }
+
 </style>
 <body>
 <div class="all" >
-    <h2 style="margin-left: 28%;margin-bottom: -20px;">内蒙古农业大学</h2>
-    <h2 style="margin-left: 20%">草原与资源环境学院长期请假条（存根）</h2>
+    <!--<h2 style="margin-left: 28%;margin-bottom: -20px;">内蒙古农业大学</h2>-->
+    <h2 style="margin-left: 14%">草原与资源环境学院长期请假条(存根)</h2>
     <div class="line1" align="left">班主任、学办老师：</div>
-    <table align="" width="90%" >
+    <table align="" width="100%" >
 
         <tr>
             <td colspan="2" >
                 <div  class="line2">您好！本人因
-                    <u><?php echo ($leave["l_cause"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（请 假 原 因 ）</u>需向您请假<u><?php echo ($leave["l_day"]); ?>&nbsp;&nbsp;&nbsp;
+                    <u>
+                        <?php if($leave["l_cause"] == ''): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
+                        <?php if($leave["l_cause"] != ''): echo ($leave["l_cause"]); endif; ?>
+
+                        （请假原因）<br></u>需向您请假<u>
+                        <?php if($leave["l_day"] == ''): ?>&nbsp;&nbsp;&nbsp;<?php endif; ?>
+                        <?php if($leave["l_day"] != ''): echo ($leave["l_day"]); endif; ?>
+
                     </u>天。
                 </div>
             </td>
@@ -404,24 +411,35 @@
 
         <tr>
             <td colspan="2" >
-                <div>请假时间为：<u>&nbsp;&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;&nbsp;</u> 日 至
-                    <u>&nbsp;&nbsp;&nbsp;</u> 年 <u>&nbsp;&nbsp;&nbsp;</u>  月  <u>&nbsp;&nbsp;&nbsp;</u>   日  </div>
+                <div>请假时间为：
+                    <?php if($leave["l_begintime"] == ''): ?><u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u> 日 至
+                        <u>&nbsp;&nbsp;</u> 年 <u>&nbsp;&nbsp;</u>  月  <u>&nbsp;&nbsp;</u>   日<?php endif; ?>
+                    <?php if($leave["l_begintime"] != ''): echo ($leave["l_begintime"]); ?>至
+                        <?php echo ($leave["l_endtime"]); endif; ?>
+                     </div>
 
             </td>
         </tr>
         <tr>
             <td colspan="2" >
-                <div>学号：<u><?php echo ($leave["l_s_card"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;</u>班级：<u><?php echo ($leave["l_s_grade"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </u>级<u><?php echo ($leave["l_s_class"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班
+                <div>学号：
+                    <?php if($leave["l_s_card"] == ''): ?><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                        班级：<u>&nbsp;&nbsp;&nbsp;
+                    </u>级<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班<?php endif; ?>
+                    <?php if($leave["l_s_card"] != ''): ?><u><?php echo ($leave["l_s_card"]); ?></u>&nbsp;班级：<u>&nbsp;<?php echo ($leave["l_s_grade"]); ?>
+                    </u>级&nbsp;<u><?php echo ($leave["l_s_class"]); ?>&nbsp;</u>班<?php endif; ?>
+
                 </div>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <div>联系方式: <u><?php echo ($leave["l_s_phone"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;</u>请假去往地点:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>。  </div>
+                <div>
+                <?php if($leave["l_s_card"] == ''): ?>联系方式: <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </u>请假去往地点:<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u><?php endif; ?>
+                <?php if($leave["l_s_card"] != ''): ?>联系方式: <u><?php echo ($leave["l_s_phone"]); ?>
+                    </u>&nbsp;请假去往地点:<u><?php echo ($leave["l_address"]); ?></u><?php endif; ?>
+                </div>
             </td>
         </tr>
         <tr>
@@ -435,8 +453,8 @@
         </tr>
         <tr>
             <td><div>承诺人（请假人）：</div></td>
-            <td align="left" rowspan="8" width="65%" >
-                <table style="font-size: 20px;font-family:'宋体';font-weight:400;border:1px solid #000000;" >
+            <td align="right" rowspan="8" width="65%" >
+                <table style="font-size: 18px;font-family:'宋体';font-weight:400;border:1px solid #000000;" >
                     <tr><td style="font-size: 22px;font-family:'宋体';font-weight:bold;">本人承诺：</td></tr>
                     <tr><td>&nbsp;&nbsp;请假期间本人保证遵纪守法，和学校保持信</td></tr>
                     <tr><td>息畅通，保证不因为请假耽误完成毕业论文和其</td></tr>
@@ -445,41 +463,63 @@
                 </table>
             </td>
         </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
-        <tr>
-            <td><div>班主任同意签名：</div></td>
-        </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
-        <tr>
-            <td><div>学办老师同意签名：</div></td>
-        </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
+        <?php if($leave["l_s_card"] == ''): ?><tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr>
+            <tr>
+                <td><div>班主任同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr>
+            <tr>
+                <td><div>学办老师同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr><?php endif; ?>
+        <?php if($leave["l_s_card"] != ''): ?><tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr>
+            <tr>
+                <td><div>班主任同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr>
+            <tr>
+                <td><div>学办老师同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr><?php endif; ?>
+
+
+
         <tr>
             <td><div>返校销假签字：</div></td>
         </tr>
         <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
+            <td><div>2017年<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
         </tr>
     </table>
-    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+    <!--<h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>-->
     <h2 style="margin-left: 20%">草原与资源环境学院长期请假条</h2>
     <div class="line1" align="left">班主任、学办老师：</div>
-    <table align="" width="90%" >
+    <table align="" width="100%" >
 
         <tr>
             <td colspan="2" >
                 <div  class="line2">您好！本人因
-                    <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        （请 假 原 因 ）</u>需向您请假<u>&nbsp;&nbsp;&nbsp;
+                    <u>
+                        <?php if($leave["l_cause"] == ''): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
+                        <?php if($leave["l_cause"] != ''): echo ($leave["l_cause"]); endif; ?>
+
+                        （请假原因）<br></u>需向您请假<u>
+                        <?php if($leave["l_day"] == ''): ?>&nbsp;&nbsp;&nbsp;<?php endif; ?>
+                        <?php if($leave["l_day"] != ''): echo ($leave["l_day"]); endif; ?>
+
                     </u>天。
                 </div>
             </td>
@@ -487,20 +527,35 @@
 
         <tr>
             <td colspan="2" >
-                <div>请假时间为：<u>&nbsp;&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;&nbsp;</u> 日 至
-                    <u>&nbsp;&nbsp;&nbsp;</u> 年 <u>&nbsp;&nbsp;&nbsp;</u>  月  <u>&nbsp;&nbsp;&nbsp;</u>   日  </div>
+                <div>请假时间为：
+                    <?php if($leave["l_begintime"] == ''): ?><u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u> 日 至
+                        <u>&nbsp;&nbsp;</u> 年 <u>&nbsp;&nbsp;</u>  月  <u>&nbsp;&nbsp;</u>   日<?php endif; ?>
+                    <?php if($leave["l_begintime"] != ''): echo ($leave["l_begintime"]); ?>至
+                        <?php echo ($leave["l_endtime"]); endif; ?>
+                </div>
 
             </td>
         </tr>
         <tr>
             <td colspan="2" >
-                <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班级：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班
+                <div>学号：
+                    <?php if($leave["l_s_card"] == ''): ?><u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                        班级：<u>&nbsp;&nbsp;&nbsp;
+                    </u>级<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>班<?php endif; ?>
+                    <?php if($leave["l_s_card"] != ''): ?><u><?php echo ($leave["l_s_card"]); ?></u>&nbsp;班级：<u>&nbsp;<?php echo ($leave["l_s_grade"]); ?>
+                    </u>级&nbsp;<u><?php echo ($leave["l_s_class"]); ?>&nbsp;</u>班<?php endif; ?>
+
                 </div>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <div>联系方式: <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>请假去往地点:<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>。  </div>
+                <div>
+                    <?php if($leave["l_s_card"] == ''): ?>联系方式: <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </u>请假去往地点:<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u><?php endif; ?>
+                    <?php if($leave["l_s_card"] != ''): ?>联系方式: <u><?php echo ($leave["l_s_phone"]); ?>
+                    </u>&nbsp;请假去往地点:<u><?php echo ($leave["l_address"]); ?></u><?php endif; ?>
+                </div>
             </td>
         </tr>
         <tr>
@@ -514,8 +569,8 @@
         </tr>
         <tr>
             <td><div>承诺人（请假人）：</div></td>
-            <td align="left" rowspan="8" width="65%" >
-                <table style="font-size: 20px;font-family:'宋体';font-weight:400;border:1px solid #000000;" >
+            <td align="right" rowspan="8" width="65%" >
+                <table style="font-size: 18px;font-family:'宋体';font-weight:400;border:1px solid #000000;" >
                     <tr><td style="font-size: 22px;font-family:'宋体';font-weight:bold;">本人承诺：</td></tr>
                     <tr><td>&nbsp;&nbsp;请假期间本人保证遵纪守法，和学校保持信</td></tr>
                     <tr><td>息畅通，保证不因为请假耽误完成毕业论文和其</td></tr>
@@ -524,26 +579,44 @@
                 </table>
             </td>
         </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
-        <tr>
-            <td><div>班主任同意签名：</div></td>
-        </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
-        <tr>
-            <td><div>学办老师同意签名：</div></td>
-        </tr>
-        <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
-        </tr>
+        <?php if($leave["l_s_card"] == ''): ?><tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr>
+            <tr>
+                <td><div>班主任同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr>
+            <tr>
+                <td><div>学办老师同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div>&nbsp;<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
+            </tr><?php endif; ?>
+        <?php if($leave["l_s_card"] != ''): ?><tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr>
+            <tr>
+                <td><div>班主任同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr>
+            <tr>
+                <td><div>学办老师同意签名：</div></td>
+            </tr>
+            <tr>
+                <td><div><?php echo ($leave["l_begintime"]); ?></div></td>
+            </tr><?php endif; ?>
+
+
+
         <tr>
             <td><div>返校销假签字：</div></td>
         </tr>
         <tr>
-            <td><div>2017年<u>&nbsp;&nbsp;&nbsp;</u> 月 <u>&nbsp;&nbsp;&nbsp;</u>  日</div></td>
+            <td><div>2017年<u>&nbsp;</u> 月 <u>&nbsp;</u>  日</div></td>
         </tr>
     </table>
 
@@ -563,13 +636,13 @@
     .all{
         margin: auto;
         text-align: center;
-        width: 900px;
+        width: 100%;
     }
     td{
         text-align: left;
     }
     div{
-        font-size: 22px;
+        font-size: 19px;
         font-family:"宋体";
         font-weight:bold;
     }
@@ -583,148 +656,290 @@
     }
 </style>
 <body>
-<div class="all" >
-    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
-    <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
 
-    <table align="" width="90%" >
+<?php if($leave["l_s_username"] == ''): ?><div class="all" >
+        <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+        <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
 
-
-
-        <tr>
-            <td>
-                <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
-            </td>
-            <td >
-                <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
-            </td>
-        </tr>
-        <tr>
-            <td >
-                <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
-            </td>
-            <td >
-                <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>夜假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
-            </td>
-        </tr>
-        <tr>
-            <td  colspan="2">
-                <div>
-                    请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td >
-                <div style="margin-left: 26%;"> <br>请假必填</div>
-            </td>
-            <td >
-                <div style="margin-left: 38%;"><br>销假必填</div>
-            </td>
-        </tr>
-        <tr>
-            <td align="left" rowspan="1" width="50%" >
-
-                <table width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
-                    <tr><td>准假老师：（盖章）</td></tr>
-                    <tr><td>学生签字：</td></tr>
-                </table>
-            </td>
-            <td align="right" rowspan="1" width="50%" >
-
-                <table align="right" width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
-                    <tr><td>销假时间：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日  </td></tr>
-                    <tr><td>学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></td></tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" >
-                <div align="right"><br>草原与资源环境学院
-                    <br>
-                    <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
-                </div>
-            </td>
-        </tr>
-    </table>
-    <br><br><br>
-    <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
-    <h2 style="margin-left: 20%">草原与资源环境学院学生请假单</h2>
-
-    <table align="" width="90%" >
-        <tr>
-            <td>
-                <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
-            </td>
-            <td >
-                <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
-            </td>
-        </tr>
-        <tr>
-            <td >
-                <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
-            </td>
-            <td >
-                <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>夜假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
-            </td>
-        </tr>
-        <tr>
-            <td  colspan="2">
-                <div>
-                    请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <td colspan="2">
-
-                准假老师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>（盖章）学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" >
-                <div align="right"><br>草原与资源环境学院
-                    <br>
-                    <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
-                </div>
-            </td>
-        </tr>
-    </table>
+        <table align="" width="100%" >
 
 
 
-</div>
+            <tr>
+                <td>
+                    <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+                </td>
+                <td >
+                    <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
+                </td>
+                <td >
+                    <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>夜假：<u>2017</u>年<u style="width: 20em;">7</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <div>
+                        请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div style="margin-left: 26%;"> <br>请假必填</div>
+                </td>
+                <td >
+                    <div style="margin-left: 38%;"><br>销假必填</div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" rowspan="1" width="50%" >
+
+                    <table width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                        <tr><td>准假老师：（盖章）</td></tr>
+                        <tr><td>学生签字：</td></tr>
+                    </table>
+                </td>
+                <td align="right" rowspan="1" width="50%" >
+
+                    <table align="right" width="80%" style="font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                        <tr><td>销假时间：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日  </td></tr>
+                        <tr><td>学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div align="right"><br>草原与资源环境学院
+                        <br>
+                        <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+        <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+        <h2 style="margin-left: 20%">草原与资源环境学院学生请假单</h2>
+
+        <table align="" width="100%" >
+            <tr>
+                <td>
+                    <div>姓名：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+                </td>
+                <td >
+                    <div>学号：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div>班级：<u>&nbsp;&nbsp;&nbsp;</u>级<u>&nbsp;&nbsp;&nbsp;</u>班 </div>
+                </td>
+                <td >
+                    <div>电话：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>请假类型: <?php echo ($leave["l_s_phone"]); ?></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>夜假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>课假：<u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;&nbsp;</u>大节 至 <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日 第<u>&nbsp;&nbsp;</u>大节 </div>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <div>
+                        请假原因（具体情况说明）:<u><?php echo ($leave["l_address"]); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+
+                    准假老师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>（盖章）学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div align="right"><br>草原与资源环境学院
+                        <br>
+                        <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div><?php endif; ?>
+<?php if($leave["l_s_username"] != ''): ?><div class="all" >
+        <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+        <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
+        <table align="" width="100%" >
+            <tr>
+                <td>
+                    <div>姓名：<u><?php echo ($leave["l_s_username"]); ?></u></div>
+                </td>
+                <td >
+                    <div>学号：<u><?php echo ($leave["l_s_card"]); ?></u> </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div>班级：<u>&nbsp;<?php echo ($leave["l_s_grade"]); ?>&nbsp;</u>级<u>&nbsp;<?php echo ($leave["l_s_class"]); ?>&nbsp;</u>班 </div>
+                </td>
+                <td >
+                    <div>电话：<u><?php echo ($leave["l_s_phone"]); ?></u></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>请假类型: 夜假&nbsp;课假</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>夜假：<?php echo ($leave["l_night_begin_time"]); ?> 至 <?php echo ($levae["l_night_end_time"]); ?> </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>课假：<?php echo ($leave["l_class_begin_time"]); ?> 第<u><?php echo ($leave["l_begin_class"]); ?></u>大节 至 <?php echo ($leave["l_class_end_time"]); ?> 第<u><?php echo ($leave["l_end_class"]); ?></u>大节 </div>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <div>
+                        请假原因（具体情况说明）:<u>
+                        &nbsp;&nbsp;<?php echo ($leave["l_cause"]); ?>&nbsp;&nbsp;
+                    </u>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div style="margin-left: 26%;"> <br>请假必填</div>
+                </td>
+                <td >
+                    <div style="margin-left: 38%;"><br>销假必填</div>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" rowspan="1" width="50%" >
+
+                    <table width="80%" style="font-size: 20px;font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                        <tr><td>准假老师：（盖章）</td></tr>
+                        <tr><td>学生签字：</td></tr>
+                    </table>
+                </td>
+                <td align="right" rowspan="1" width="50%" >
+
+                    <table align="right" width="80%" style="font-family:'宋体';font-weight:400;border:2px solid #000000;" >
+                        <tr><td>销假时间：<u>&nbsp;</u>年<u>&nbsp;</u>月<u>&nbsp;</u>日  </td></tr>
+                        <tr><td>学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;</u></td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div align="right"><br>草原与资源环境学院
+                        <br>
+                        <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
+        <h2 style="margin-left: 20%">草原与资源环境学院学生请假单</h2>
+
+        <table align="" width="100%" >
+            <tr>
+                <td>
+                    <div>姓名：<u><?php echo ($leave["l_s_username"]); ?></u></div>
+                </td>
+                <td >
+                    <div>学号：<u><?php echo ($leave["l_s_card"]); ?></u> </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <div>班级：<u>&nbsp;<?php echo ($leave["l_s_grade"]); ?>&nbsp;</u>级<u>&nbsp;<?php echo ($leave["l_s_class"]); ?>&nbsp;</u>班 </div>
+                </td>
+                <td >
+                    <div>电话：<u><?php echo ($leave["l_s_phone"]); ?></u></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>请假类型: 夜假&nbsp;课假</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>夜假：<?php echo ($leave["l_night_begin_time"]); ?> 至 <?php echo ($levae["l_night_end_time"]); ?> </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>课假：<?php echo ($leave["l_class_begin_time"]); ?> 第<u><?php echo ($leave["l_begin_class"]); ?></u>大节 至 <?php echo ($leave["l_class_end_time"]); ?> 第<u><?php echo ($leave["l_end_class"]); ?></u>大节 </div>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <div>
+                        请假原因（具体情况说明）:<u>&nbsp;&nbsp;<?php echo ($leave["l_cause"]); ?>&nbsp;&nbsp;
+                        </u>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+
+                    准假老师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>（盖章）学生签字：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div align="right"><br>草原与资源环境学院
+                        <br>
+                        <u>&nbsp;&nbsp;</u>年<u>&nbsp;&nbsp;</u>月<u>&nbsp;&nbsp;</u>日
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div><?php endif; ?>
 </body>
 </html><?php endif; ?>
 

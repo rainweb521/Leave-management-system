@@ -101,6 +101,7 @@ class LeaveController extends CommonController {
             $l_id = request('get','int','l_id',1);
             $data = D('Leave')->get_LeaveInfo($l_id);
         }
+        $data = get_Split_DateArr($data);
         $this->assign('leave',$data);
         $this->display();
     }
@@ -153,13 +154,23 @@ class LeaveController extends CommonController {
         }
     }
     public function form(){
-        $l_id = request('get','int','l_id',1);
-        $data = D('Leave')->get_LeaveInfo($l_id);
+        $l_id = request('get','int','l_id',0);
+        $data = array();
+        if ($l_id != 0){
+            $data = D('Leave')->get_LeaveInfo($l_id);
+            $data = get_Split_DateArr($data);
+        }
+        $this->assign('leave',$data);
         $this->display();
     }
     public function form2(){
-        $l_id = request('get','int','l_id',1);
-        $data = D('Leave')->get_LeaveInfo($l_id);
+        $l_id = request('get','int','l_id',0);
+        $data = array();
+        if ($l_id != 0){
+            $data = D('Leave')->get_LeaveInfo($l_id);
+            $data = get_Split_DateArr($data);
+        }
+        $this->assign('leave',$data);
         $this->display();
     }
 

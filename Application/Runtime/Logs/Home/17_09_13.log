@@ -1,0 +1,180 @@
+[ 2017-09-13T11:02:49+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026804s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 43 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 58 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 66 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.241261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.241327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053739s ]
+
+[ 2017-09-13T11:04:04+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0355s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 43 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 58 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 66 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-09-13T11:04:06+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0491s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 43 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 58 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 66 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2017-09-13T11:04:07+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0999s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 43 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 58 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 66 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2017-09-13T11:04:43+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.1265s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 44 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 61 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-09-13T11:04:46+08:00 ] 127.0.0.1 /index.php?c=leave&a=form&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.7846s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 40 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 44 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 59 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 60 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 61 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 67 行.
+NOTIC: [8] Undefined variable: leave D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\3bec698b625aeb5cbfa4a04c3d81db3b.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
