@@ -5199,3 +5199,346 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
 
+[ 2017-09-14T16:04:39+08:00 ] 127.0.0.1 /index.php?c=student&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 382 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 428 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2017-09-14T16:04:43+08:00 ] 127.0.0.1 /index.php?c=class&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\640035d712ebe4e3bfc1b016bbc0ca9f.php 第 384 行.
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\640035d712ebe4e3bfc1b016bbc0ca9f.php 第 432 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-09-14T16:05:25+08:00 ] 127.0.0.1 /index.php?c=student&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 382 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\d89add365fb43c0af4d19e46e3a2df8f.php 第 428 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-09-14T16:05:27+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\0a7ff77dbcde513e199263d166b95571.php 第 366 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2017-09-14T16:05:39+08:00 ] 127.0.0.1 /index.php?c=admin&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\6333b60b5fde898028dd7f9f19bfa652.php 第 379 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2017-09-14T16:05:57+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 381 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 427 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2017-09-14T16:05:59+08:00 ] 127.0.0.1 /index.php?c=class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0171s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 382 行.
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\7fde59dcc6730b00f0ea2d8c62973961.php 第 429 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2017-09-14T16:06:00+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 381 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 427 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-09-14T16:06:01+08:00 ] 127.0.0.1 /index.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-14'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-12'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-14'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-05'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-06'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-07'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-08'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-09'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-10'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-11'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-12'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-13'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2017-09-14'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-09-14T16:06:11+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\0a7ff77dbcde513e199263d166b95571.php 第 366 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-09-14T16:06:18+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+NOTIC: [2048] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\phpStudy\WWW\leave\Application\Home\Controller\LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: grade_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\78ed1e545b0c3b8f40acf61593016fb2.php 第 376 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-09-14T16:06:23+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: class_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 381 行.
+NOTIC: [8] Undefined variable: student_list D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5e6caf1f921dc2090a81407240a42a8e.php 第 427 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-09-14T16:09:37+08:00 ] 127.0.0.1 /index.php?c=login&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-09-14T16:09:37+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Undefined variable: module D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\phpStudy\WWW\leave\ThinkPHP\Common\functions.php 第 990 行.
+
+[ 2017-09-14T16:09:38+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: state D:\phpStudy\WWW\leave\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+

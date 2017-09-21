@@ -95,10 +95,11 @@ class LeaveController extends CommonController {
                 $student['s_lastleave'] = date("Y-m-d");
                 // 修改保存学生的信息
                 D('Student')->save_StudentInfo($student);
-
             }
+            $data = D('Leave')->get_LeaveList($data);
+            $data = $data[0];
         } else {
-            $l_id = request('get','int','l_id',1);
+            $l_id = request('get','int','l_id',0);
             $data = D('Leave')->get_LeaveInfo($l_id);
         }
         $data = get_Split_DateArr($data);

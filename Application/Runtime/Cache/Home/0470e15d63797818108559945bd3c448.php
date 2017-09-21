@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Admin index Examples</title>
+    <title>请假管理系统</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -169,9 +169,9 @@
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 2): ?>active<?php endif; ?>" >
                         <i class="am-icon-table"></i>
                         <span>请假管理</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu">
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 2): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=leave&a=apply2">
                                 <i class="am-icon-angle-right"></i>
@@ -244,7 +244,7 @@
                         <span>添加信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 6): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=apply" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -273,7 +273,7 @@
                         <span>删除信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 7): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=delete" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -298,7 +298,7 @@
                         <span>系统设置</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 8): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>

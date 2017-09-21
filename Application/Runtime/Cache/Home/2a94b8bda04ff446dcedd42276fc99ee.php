@@ -245,7 +245,7 @@
                         <span>添加信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 2): ?>style="display: block;"<?php endif; ?>>
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 6): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=apply" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -274,7 +274,7 @@
                         <span>删除信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 2): ?>style="display: block;"<?php endif; ?>>
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 7): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=delete" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -299,7 +299,7 @@
                         <span>系统设置</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 2): ?>style="display: block;"<?php endif; ?>>
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 8): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>
