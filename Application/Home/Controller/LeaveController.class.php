@@ -22,6 +22,15 @@ class LeaveController extends CommonController {
         $this->assign('leave_list',$leave_list);
         $this->display();
     }
+    public function audit(){
+
+        /**
+         * 进入审核列表时，自动显示最近的十条未审核记录。
+         */
+        $leave_list = D('Leave')->get_Num_LeaveList(array('l_state'=>2),10);
+        $this->assign('leave_list',$leave_list);
+        $this->display();
+    }
     public function apply(){
         // 用于显示表单中的负责人信息
         $this->assign('l_charge',$_SESSION['AdminUser']['a_username']);
