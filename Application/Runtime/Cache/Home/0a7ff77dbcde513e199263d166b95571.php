@@ -183,7 +183,7 @@
                                 <span>长期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
-                <a href="/index.php?c=leave&a=index">
+                <a href="/index.php?c=leave&a=audit">
                     <i class="am-icon-angle-right"></i>
                     <span>假条审核</span>
                     <!--<i class="tpl-left-nav-content tpl-badge-success">-->
