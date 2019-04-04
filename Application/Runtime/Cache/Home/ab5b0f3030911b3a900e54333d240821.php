@@ -170,11 +170,11 @@
                     <a href="javascript:;" class="nav-link tpl-left-nav-link-list <?php if($active == 2): ?>active<?php endif; ?>" >
                         <i class="am-icon-table"></i>
                         <span>请假管理</span>
-                        <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                    <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu">
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 2): ?>style="display: block;"<?php endif; ?>>
                         <li>
-                            <a href="/index.php?c=leave&a=apply">
+                            <a href="/index.php?c=leave&a=apply2">
                                 <i class="am-icon-angle-right"></i>
                                 <span>短期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
@@ -184,7 +184,13 @@
                                 <span>长期假条</span>
                                 <!--<i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>-->
                             </a>
-
+                <a href="/index.php?c=leave&a=audit">
+                    <i class="am-icon-angle-right"></i>
+                    <span>假条审核</span>
+                    <!--<i class="tpl-left-nav-content tpl-badge-success">-->
+                    <!--18-->
+                    <!--</i>-->
+                </a>
                             <a href="/index.php?c=leave&a=index">
                                 <i class="am-icon-angle-right"></i>
                                 <span>假条注销</span>
@@ -192,7 +198,7 @@
                                     <!--18-->
                                 <!--</i>-->
                             </a>
-                                <a href="/index.php?c=leave&a=show">
+                                <a href="/index.php?c=leave&a=printf">
                                     <i class="am-icon-angle-right"></i>
                                     <span>模板打印</span>
                                     <!--<i class="tpl-left-nav-content tpl-badge-primary">-->
@@ -245,7 +251,7 @@
                         <span>添加信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 6): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=apply" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -274,7 +280,7 @@
                         <span>删除信息</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 7): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=student&a=delete" class="">
                                 <i class="am-icon-angle-right"></i>
@@ -299,7 +305,7 @@
                         <span>系统设置</span>
                         <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
                     </a>
-                    <ul class="tpl-left-nav-sub-menu" >
+                    <ul class="tpl-left-nav-sub-menu" <?php if($active == 8): ?>style="display: block;"<?php endif; ?>>
                         <li>
                             <a href="/index.php?c=admin&a=apply">
                                 <i class="am-icon-angle-right"></i>

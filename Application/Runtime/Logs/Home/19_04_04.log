@@ -1,0 +1,1890 @@
+[ 2019-04-04T14:41:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T14:41:34+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2019-04-04T14:41:36+08:00 ] 127.0.0.1 /index.php?m=home&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `admin` WHERE `a_username` = 'admin' LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T14:41:36+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2019-04-04T14:41:42+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2019-04-04T14:41:44+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2019-04-04T14:41:44+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2019-04-04T14:41:46+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000257s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2019-04-04T14:41:53+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2019-04-04T14:41:55+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/21b2dbac8fdcf0b9696ad1ac7742e75b.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2019-04-04T14:41:56+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2019-04-04T14:41:59+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009591s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2019-04-04T14:42:00+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 387 行.
+NOTIC: [8] Undefined variable: student_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-04-04T14:42:17+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2019-04-04T14:42:21+08:00 ] 127.0.0.1 /index.php?c=login&a=logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T14:42:21+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T14:42:21+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2019-04-04T14:45:17+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000824s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2019-04-04T14:45:34+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2019-04-04T14:45:40+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-04-04T14:45:54+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2019-04-04T14:47:49+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2019-04-04T14:47:49+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2019-04-04T14:47:50+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2019-04-04T14:48:22+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2019-04-04T14:48:24+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+ERR: 模板不存在:./Application/Home/View/Login/index2.html
+
+[ 2019-04-04T14:48:42+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2019-04-04T14:49:34+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2019-04-04T14:49:59+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2019-04-04T14:50:09+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2019-04-04T14:50:26+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2019-04-04T14:50:41+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2019-04-04T14:50:53+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2019-04-04T14:51:01+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000264s ]
+
+[ 2019-04-04T14:51:52+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2019-04-04T14:51:54+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-04-04T14:51:56+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2019-04-04T14:51:58+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2019-04-04T14:51:59+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2019-04-04T14:51:59+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2019-04-04T14:52:00+08:00 ] 127.0.0.1 /index.php?m=&&m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6583be3820155de6c15778e4dd1ad47c.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2019-04-04T14:53:11+08:00 ] 127.0.0.1 /index.php?m=home&c=login&a=index2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `admin` WHERE `a_username` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T14:53:11+08:00 ] 127.0.0.1 /index.php?m=&&c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2019-04-04T15:01:08+08:00 ] 127.0.0.1 /index.php?c=admin&a=log
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2019-04-04T15:01:11+08:00 ] 127.0.0.1 /index.php?c=admin&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6333b60b5fde898028dd7f9f19bfa652.php 第 385 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2019-04-04T15:01:56+08:00 ] 127.0.0.1 /index.php?c=class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/7fde59dcc6730b00f0ea2d8c62973961.php 第 388 行.
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/7fde59dcc6730b00f0ea2d8c62973961.php 第 435 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-04-04T15:01:57+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 387 行.
+NOTIC: [8] Undefined variable: student_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2019-04-04T15:01:58+08:00 ] 127.0.0.1 /index.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2019-04-04T15:03:17+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-04-04T15:03:21+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2019-04-04T15:03:23+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2019-04-04T15:05:03+08:00 ] 127.0.0.1 /index.php?c=student&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/d89add365fb43c0af4d19e46e3a2df8f.php 第 388 行.
+NOTIC: [8] Undefined variable: student_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/d89add365fb43c0af4d19e46e3a2df8f.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2019-04-04T15:05:05+08:00 ] 127.0.0.1 /index.php?c=student&a=apply_ajax&s_g_id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 15  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2019-04-04T15:05:07+08:00 ] 127.0.0.1 /index.php?c=student&a=delete&s_g_id=15&s_c_id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student` WHERE `s_c_id` = 38 AND `s_g_id` = 15  [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 15  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2019-04-04T15:05:13+08:00 ] 127.0.0.1 /index.php?c=student&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/d89add365fb43c0af4d19e46e3a2df8f.php 第 388 行.
+NOTIC: [8] Undefined variable: student_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/d89add365fb43c0af4d19e46e3a2df8f.php 第 434 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2019-04-04T15:05:14+08:00 ] 127.0.0.1 /index.php?c=class&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/640035d712ebe4e3bfc1b016bbc0ca9f.php 第 390 行.
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/640035d712ebe4e3bfc1b016bbc0ca9f.php 第 438 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2019-04-04T15:05:17+08:00 ] 127.0.0.1 /index.php?c=class&a=delete&c_g_id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `class` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `class` WHERE `c_g_id` = 14  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 33 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 35 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 34 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 32 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 31 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 30 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_c_id` = 29 AND `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2019-04-04T15:05:23+08:00 ] 127.0.0.1 /index.php?c=grade&a=delete
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 448 行.
+NOTIC: [8] Undefined index: last_day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 449 行.
+NOTIC: [8] Undefined index: month /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 451 行.
+NOTIC: [8] Undefined index: day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 448 行.
+NOTIC: [8] Undefined index: last_day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 449 行.
+NOTIC: [8] Undefined index: month /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 451 行.
+NOTIC: [8] Undefined index: day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 448 行.
+NOTIC: [8] Undefined index: last_day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 449 行.
+NOTIC: [8] Undefined index: month /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 451 行.
+NOTIC: [8] Undefined index: day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 448 行.
+NOTIC: [8] Undefined index: last_day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 449 行.
+NOTIC: [8] Undefined index: month /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 451 行.
+NOTIC: [8] Undefined index: day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 448 行.
+NOTIC: [8] Undefined index: last_day /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 449 行.
+NOTIC: [8] Undefined index: month /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/727e983bf9ce33ed1378be4ca2995cc4.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2019-04-04T15:05:32+08:00 ] 127.0.0.1 /index.php?c=index&a=upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2019-04-04T15:05:55+08:00 ] 127.0.0.1 /index.php?c=grade
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 15 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 14 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 16 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 17 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-01'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-02'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-03'  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `leave` WHERE `l_g_id` = 18 AND `l_addtime` = '2019-04-04'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2019-04-04T15:05:56+08:00 ] 127.0.0.1 /index.php?c=class
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/7fde59dcc6730b00f0ea2d8c62973961.php 第 388 行.
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/7fde59dcc6730b00f0ea2d8c62973961.php 第 435 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2019-04-04T15:05:57+08:00 ] 127.0.0.1 /index.php?c=student
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `grade` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `grade`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: class_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 387 行.
+NOTIC: [8] Undefined variable: student_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/5e6caf1f921dc2090a81407240a42a8e.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2019-04-04T15:09:44+08:00 ] 127.0.0.1 /index.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-01'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-02'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-03'  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `leave` WHERE `l_addtime` = '2019-04-04'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2019-04-04T15:10:05+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/0a7ff77dbcde513e199263d166b95571.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2019-04-04T15:32:02+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/0a7ff77dbcde513e199263d166b95571.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2019-04-04T15:32:03+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/21b2dbac8fdcf0b9696ad1ac7742e75b.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2019-04-04T15:32:03+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2019-04-04T15:32:05+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2019-04-04T15:32:06+08:00 ] 127.0.0.1 /index.php?c=leave&a=printf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2019-04-04T15:32:06+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2019-04-04T15:39:21+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/0a7ff77dbcde513e199263d166b95571.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2019-04-04T16:36:32+08:00 ] 127.0.0.1 /index.php?c=leave&a=printf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2019-04-04T16:36:35+08:00 ] 127.0.0.1 /index.php?c=leave&a=printf&tip=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+NOTIC: [8] Undefined variable: module /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [8] Undefined variable: var /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Library/WebServer/Documents/leave/ThinkPHP/Common/functions.php 第 990 行.
+
+[ 2019-04-04T16:36:35+08:00 ] 127.0.0.1 /index.php?m=&&c=leave&a=form2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined index: l_s_username /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 32 行.
+NOTIC: [8] Undefined index: l_s_phone /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 58 行.
+NOTIC: [8] Undefined index: l_address /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 74 行.
+NOTIC: [8] Undefined index: l_s_phone /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 134 行.
+NOTIC: [8] Undefined index: l_address /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 150 行.
+NOTIC: [8] Undefined index: l_s_username /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/e5adf8d1c8518cab10975d764e9196d3.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2019-04-04T16:36:38+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2019-04-04T16:36:39+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/0a7ff77dbcde513e199263d166b95571.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2019-04-04T16:36:40+08:00 ] 127.0.0.1 /index.php?c=leave&a=apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000256s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: state /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/21b2dbac8fdcf0b9696ad1ac7742e75b.php 第 372 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2019-04-04T16:36:42+08:00 ] 127.0.0.1 /index.php?c=leave&a=audit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 2 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/6b5f26bef2d5487d3322a7cc66680420.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2019-04-04T16:36:43+08:00 ] 127.0.0.1 /index.php?c=leave&a=show&l_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 2 LIMIT 1   [ RunTime:0.0022s ]
+ERR: Call to undefined function split()
+
+[ 2019-04-04T16:36:50+08:00 ] 127.0.0.1 /index.php?c=leave&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `leave` WHERE `l_state` = 0 LIMIT 0,9   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: grade_list /Library/WebServer/Documents/leave/Application/Runtime/Cache/Home/78ed1e545b0c3b8f40acf61593016fb2.php 第 382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2019-04-04T16:36:51+08:00 ] 127.0.0.1 /index.php?c=leave&a=show&l_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] Declaration of Home\Controller\LeaveController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /Library/WebServer/Documents/leave/Application/Home/Controller/LeaveController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `leave` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `leave` WHERE `l_id` = 3 LIMIT 1   [ RunTime:0.0011s ]
+ERR: Call to undefined function split()
+

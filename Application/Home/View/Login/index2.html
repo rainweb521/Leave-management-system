@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<!doctype html>
 <html>
 
 <head>
@@ -30,22 +30,21 @@
 		</div>
 
 		<div class="login-font">
-			<i><?php echo ($state); ?> </i>
-			<span style="font-size: 25px;"> 教师登陆页面</span>
-			<!--<span> Sign Up</span>-->
+			<i>{$state} </i>
+			<span style="font-size: 25px;"> 学生登陆页面</span>
 		</div>
 		<div class="am-u-sm-10 login-am-center">
-			<form class="am-form" method="post" action="/index.php?m=home&c=login&a=index">
+			<form class="am-form" method="post" action="/index.php?m=home&c=login&a=index2">
 				<input type="hidden" name="flag" value="1">
 				<fieldset>
 					<div class="am-form-group">
-						<input type="text" class="" name="a_username" id="doc-ipt-email-1" placeholder="输入用户名">
+						<input type="text" class="" name="a_username" id="doc-ipt-email-1" placeholder="输入学号">
 					</div>
 					<div class="am-form-group">
 						<input type="password" name="a_password" class="" id="doc-ipt-pwd-1" placeholder="输入密码">
 					</div>
 					<p><button type="submit"  class="am-btn am-btn-default">登录</button></p>
-					<p><button type="button" onclick="location.href='/index.php?m=&&m=home&c=login&a=index2';"  class="am-btn am-btn-default">学生登录</button></p>
+					<p><button type="button" onclick="location.href='/index.php?m=&&m=home&c=login&a=index';"  class="am-btn am-btn-default">教师登录</button></p>
 				</fieldset>
 			</form>
 		</div>
