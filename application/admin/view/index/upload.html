@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>请假管理系统</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/Public/assets/css/admin.css">
+    <link rel="stylesheet" href="/Public/assets/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+
+{include file="Index/header"/}
+
+{include file="Index/left"/}
+
+
+
+    <div class="tpl-content-wrapper">
+        <!--<div class="tpl-content-page-title">-->
+            <!--Amaze UI 表单-->
+        <!--</div>-->
+        <!--<ol class="am-breadcrumb">-->
+            <!--<li><a href="#" class="am-icon-home">首页</a></li>-->
+            <!--<li><a href="#">表单</a></li>-->
+            <!--<li class="am-active">Amaze UI 表单</li>-->
+        <!--</ol>-->
+        <div class="tpl-portlet-components">
+            <div class="portlet-title">
+                <div class="caption font-green bold">
+                    <span class="am-icon-code"></span> 批量导入
+                </div>
+                <div class="tpl-portlet-input tpl-fz-ml">
+                    <div class="portlet-input input-small input-inline">
+                        <div class="input-icon right">
+                            <!--<i class="am-icon-search"></i>-->
+                            <input type="hidden" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="tpl-block">
+
+                <div class="am-g">
+                    <div class="tpl-form-body tpl-form-line">
+                        <form class="am-form tpl-form-line-form" action="{:U('Index/handling')}" method="post" enctype="multipart/form-data">
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">下载模板 <span class="tpl-form-line-small-title"></span></label>
+                                <div class="am-u-sm-9">
+                                    <!--<input type="" class="tpl-form-input" id="user-name" placeholder="">-->
+                                    <a href="/Upload/excel/template.xls"><small style="font-size: 20px;">template.xls</small></a>
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="user-name" class="am-u-sm-3 am-form-label">注意事项 <span class="tpl-form-line-small-title"></span></label>
+                                <div class="am-u-sm-9">
+                                    <!--<input type="" class="tpl-form-input" id="user-name" placeholder="">-->
+                                    <small style="font-size: 16px;color: red">1. 必须使用模板文件上传</small><br>
+                                    <small style="font-size: 16px;color: red">2. 上传的Excel必须是xls格式的</small><br>
+                                    <small style="font-size: 16px;color: red">3. 上传的数据必须按照模板中的格式</small><br>
+                                    <small style="font-size: 16px;color: red">4. 一次上传数据不得超过两千行，否则系统会崩溃</small><br>
+                                    <small style="font-size: 16px;color: red">5. 使用tenplate.xls模板时需要将第一条测试数据删掉</small><br>
+                                    <small style="font-size: 16px;color: red">6. 如果上传错误，会使整个系统中的数据出错，并清空</small><br>
+                                    <small style="font-size: 16px;color: red">7. 上传有风险，操作需谨慎</small><br>
+                                </div>
+                            </div>
+
+                            <div class="am-form-group">
+                                <label for="user-weibo" class="am-u-sm-3 am-form-label">上传文件 <span class="tpl-form-line-small-title"></span></label>
+                                <div class="am-u-sm-9">
+                                    <div class="am-form-group am-form-file">
+                                        <div class="tpl-form-file-img">
+                                            <!--<img src="/Public/assets/img/a5.png" alt="">-->
+                                        </div>
+                                        <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                            <i class="am-icon-cloud-upload"></i> 添加Excel文件</button>
+                                        <input id="doc-form-file" type="file" name="exl" multiple>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <div class="am-u-sm-9 am-u-sm-push-3">
+                                    <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">上传</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+<script src="/Public/assets/js/jquery.min.js"></script>
+<script src="/Public/assets/js/amazeui.min.js"></script>
+<script src="/Public/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,76 +1,129 @@
-## 请假管理系统   
+ThinkPHP 5.0
+===============
 
-## 很高兴的在这里宣布我要重构请假管理系统了，这个想法已经思考了很久，有很多朋友联系我觉得目前的功能太少，不能完全满足生产需要，而且项目是使用tp3构建，语法陈旧难以维护，今天终于决定去重写，为了跟着时代的步伐，我决定使用Springboot框架，再加入权限管理的思想迎合更多人的需求。
+[![Total Downloads](https://poser.pugx.org/topthink/think/downloads)](https://packagist.org/packages/topthink/think)
+[![Latest Stable Version](https://poser.pugx.org/topthink/think/v/stable)](https://packagist.org/packages/topthink/think)
+[![Latest Unstable Version](https://poser.pugx.org/topthink/think/v/unstable)](https://packagist.org/packages/topthink/think)
+[![License](https://poser.pugx.org/topthink/think/license)](https://packagist.org/packages/topthink/think)
 
-## 如果你是旧版系统的使用者可以关注这个项目[SpringBoot-Leave-management-system](https://github.com/rainweb521/SpringBoot-Leave-management-system)，我会不断完善让它更加完美。
+ThinkPHP5在保持快速开发和大道至简的核心理念不变的同时，PHP版本要求提升到5.4，对已有的CBD模式做了更深的强化，优化核心，减少依赖，基于全新的架构思想和命名空间实现，是ThinkPHP突破原有框架思路的颠覆之作，其主要特性包括：
 
-## 如果你是新关注到这个项目的，可以继续使用这个版本的系统，它仍然是完美的。
+ + 基于命名空间和众多PHP新特性
+ + 核心功能组件化
+ + 强化路由功能
+ + 更灵活的控制器
+ + 重构的模型和数据库类
+ + 配置文件可分离
+ + 重写的自动验证和完成
+ + 简化扩展机制
+ + API支持完善
+ + 改进的Log类
+ + 命令行访问支持
+ + REST支持
+ + 引导文件支持
+ + 方便的自动生成定义
+ + 真正惰性加载
+ + 分布式环境支持
+ + 更多的社交类库
 
-# # 数据库文件我可以免费提供给大家，但需要保证不随意传播，有需要的请加QQ群：226520254
-# 我还在上学，这个项目是给学院写的一个请假管理系统，他们正在使用，您如果感兴趣，可以访问测试网址，http://leave.rain1024.com，测试账号：admin，admin
+> ThinkPHP5的运行环境要求PHP5.4以上。
 
-## 受朋友之托，写了一个请假管理系统，使用PHP作为开发语言，使用ThinkPHP作为开发框架，使用了大量的ajax进行数据的传输验证，当然还有很多细节，有时间会一一讲解，下面是整个系统的截图，功能都已经实现，包括首页近期请假情况的显示，请假条的申请，学生信息的自动填写，自动生成假条模板可以直接打印，可以预览，假条有两种，短期和长期假条，在申请的时候可以选择，还有请假条的注销，学生信息的显示，班级每天每周每月的请假情况，年级的总体请假情况，级别，班级和学生的信息添加，并且支持使用Excel文件来大批量添加学生信息，还有学生信息的删除功能，可以一次性选择删除班级，年级等，在系统设置中，还可以修改管理员的权限，密码，用户名什么的，还可以查看系统使用的日志等等功能。
+详细开发文档参考 [ThinkPHP5完全开发手册](http://www.kancloud.cn/manual/thinkphp5)
 
-### 开发日志：   
+## 目录结构
 
-##### 更新说明：修复了在服务器上无法上传文件，因为没有给权限，修改了在添加完假条后点击打印，显示的是空白页面的问题，因为在添加完以后，data数组中并无id字段，所以没有查找到这个假条
+初始的目录结构如下：
 
-##### 更新说明：完善了长期假条和短期假条的显示方式，使整个页面更加整洁，添加了数据的显示功能，优化两种假条上数据的显示格式，使打印的时候比较好看，在function函数中增加了数字格式日期转换为中文日期的功能，修改了UI界面，在有下拉列表的菜单栏里，下拉列表能够保持下去，不再需要每次都点击开下拉列表，使得用户交互比较友好
+~~~
+www  WEB部署目录（或者子目录）
+├─application           应用目录
+│  ├─common             公共模块目录（可以更改）
+│  ├─module_name        模块目录
+│  │  ├─config.php      模块配置文件
+│  │  ├─common.php      模块函数文件
+│  │  ├─controller      控制器目录
+│  │  ├─model           模型目录
+│  │  ├─view            视图目录
+│  │  └─ ...            更多类库目录
+│  │
+│  ├─command.php        命令行工具配置文件
+│  ├─common.php         公共函数文件
+│  ├─config.php         公共配置文件
+│  ├─route.php          路由配置文件
+│  ├─tags.php           应用行为扩展定义文件
+│  └─database.php       数据库配置文件
+│
+├─public                WEB目录（对外访问目录）
+│  ├─index.php          入口文件
+│  ├─router.php         快速测试文件
+│  └─.htaccess          用于apache的重写
+│
+├─thinkphp              框架系统目录
+│  ├─lang               语言文件目录
+│  ├─library            框架类库目录
+│  │  ├─think           Think类库包目录
+│  │  └─traits          系统Trait目录
+│  │
+│  ├─tpl                系统模板目录
+│  ├─base.php           基础定义文件
+│  ├─console.php        控制台入口文件
+│  ├─convention.php     框架惯例配置文件
+│  ├─helper.php         助手函数文件
+│  ├─phpunit.xml        phpunit配置文件
+│  └─start.php          框架入口文件
+│
+├─extend                扩展类库目录
+├─runtime               应用的运行时目录（可写，可定制）
+├─vendor                第三方类库目录（Composer依赖库）
+├─build.php             自动生成定义文件（参考）
+├─composer.json         composer 定义文件
+├─LICENSE.txt           授权说明文件
+├─README.md             README 文件
+├─think                 命令行入口文件
+~~~
 
-##### 更新说明：添加了短期假条的申请页面，修改了模板显示功能，可以选择显示长期假条或者短期假条，在假条列表中，新增了类型字段显示，还有查看功能，可以打开假条模板中查看，
+> router.php用于php自带webserver支持，可用于快速测试
+> 切换到public目录后，启动命令：php -S localhost:8888  router.php
+> 上面的目录结构和名称是可以改变的，这取决于你的入口文件和配置参数。
 
-##### 更新说明：修改了student和class的Controller中重复出现级别列表添加的代码，放置到前置初始化操作调用中
+## 命名规范
 
-##### 更新说明：1.更新了管理员的信息修改功能，可以修改登录用户名，用户角色，用户密码，刚刚发现修改了好多遍的值都还改不了，断点调试了几次，发现没有问题，sql语句也没有问题，后来才发现，是session的问题，要修改的话连session也需要修改掉。2. 更新了在假条申请时，如果输入不存在的学号，ajax调用失败，不会提示学号输入有误的bug，原因是，在str = res的时候，因为传回来的数组为空，导致这句话错误，js不再继续执行后面的语句，现在把这一行去掉，直接使用res来作为判断条件
+`ThinkPHP5`遵循PSR-2命名规范和PSR-4自动加载规范，并且注意如下规范：
 
-##### 更新说明：完善了界面，去除了不必要的数字显示，将菜单栏动态切换显示的加重效果写了出来，更加方便使用
+### 目录和文件
 
-##### 8-16更新说明：1，删除了功能菜单中的学期信息，因为我也不知道这个菜单里要放什么内容，2.在添加信息里新增了批量导入功能，可以导入指定格式的Excel表格，这个功能调试了很久，因为PHPExcel包的位置一直没有放对，我还写了导入数据时的动态更新进度功能，可以看哪些信息出错导入失败，导入功能还是很好玩的。3.新增了删除信息菜单，删除信息菜单包括删除学生，删除班级，删除级别，每一级的删除并不简单，删除相应的级别，对应级别里的所有班级和学生都会被删除，所以我还是验证了很多遍的，功能基本实现，能够完全删除，班级的删除也是将所有学生删除掉。4.取消了所有的搜索框和分页栏，因为觉得没什么用，全部遍历出来就好了，做分页还需要每一个都设置一遍
+*   目录不强制规范，驼峰和小写+下划线模式均支持；
+*   类库、函数文件统一以`.php`为后缀；
+*   类的文件名均以命名空间定义，并且命名空间的路径和类库文件所在路径一致；
+*   类名和类文件名保持一致，统一采用驼峰法命名（首字母大写）；
 
-##### 更新说明：整个项目经过三天的设计和完善，总算差不多了，基本的功能都通了，可以使用，假条的申请注销都没有问题，包括ajax的调用都很好用，学生信息里的下拉列表是个问题，解决了这个问题也让我想通了聊天室应该怎么用ajax，很巧妙，也就是多级的下拉列表的互动传值问题，其他的信息添加和显示都是同理，没有什么区别。第二个难点就是信息的统计，因为统计的方式比较多，涉及到每天的，昨天的，本周，上周，本月，上月，本班级，本级别等各种形式的数据统计，问题就出在了如何获取本周内所有的日期，本月内所有日期获取，解决了这个问题，信息的统计就很好办了。总体开发以及完成，手写代码可能几千，晚上已经全部打了注释，代码的样子很满意，这次模板选的很好，整体写开来也比较快，注释了几十行，方便以后的使用。就这样
+### 函数和类、属性命名
+*   类的命名采用驼峰法，并且首字母大写，例如 `User`、`UserType`，默认不需要添加后缀，例如`UserController`应该直接命名为`User`；
+*   函数的命名使用小写字母和下划线（小写字母开头）的方式，例如 `get_client_ip`；
+*   方法的命名使用驼峰法，并且首字母小写，例如 `getUserName`；
+*   属性的命名使用驼峰法，并且首字母小写，例如 `tableName`、`instance`；
+*   以双下划线“__”打头的函数或方法作为魔法方法，例如 `__call` 和 `__autoload`；
 
-##### 更新说明，新增了学生信息表，添加了学生列表页面，修改了小细节包括多下拉列表的显示，2.新增了请假申请的页面，完善了表单信息  
+### 常量和配置
+*   常量以大写字母和下划线命名，例如 `APP_PATH`和 `THINK_PATH`；
+*   配置参数以小写字母和下划线命名，例如 `url_route_on` 和`url_convert`；
 
-##### 开启了登录模式，完成了登录功能
+### 数据表和字段
+*   数据表和字段采用小写加下划线方式命名，并注意字段名不要以下划线开头，例如 `think_user` 表和 `user_name`字段，不建议使用驼峰和中文作为数据表字段命名。
 
-##### 写好了请假条的模板，已经修改了首页的信息，菜单栏等设置，上传README.md文档
+## 参与开发
+请参阅 [ThinkPHP5 核心框架包](https://github.com/top-think/framework)。
 
-##### 项目基础，上传thinkphp框架
+## 版权信息
 
-![](http://cos.rain1024.com/blog/netword/leave14.jpg)
+ThinkPHP遵循Apache2开源协议发布，并提供免费使用。
 
-![](http://cos.rain1024.com/blog/netword/leave1.jpg)
+本项目包含的第三方源码和二进制文件之版权信息另行标注。
 
-![](http://cos.rain1024.com/blog/netword/leave2.jpg)
+版权所有Copyright © 2006-2017 by ThinkPHP (http://thinkphp.cn)
 
-![](http://cos.rain1024.com/blog/netword/leave3.jpg)
+All rights reserved。
 
-![](http://cos.rain1024.com/blog/netword/leave4.jpg)
+ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 
-![](http://cos.rain1024.com/blog/netword/leave5.jpg)
-
-![](http://cos.rain1024.com/blog/netword/web51.jpg)
-
-![](http://cos.rain1024.com/blog/netword/web52.jpg)
-
-![](http://cos.rain1024.com/blog/netword/web50.jpg)
-
-![](http://cos.rain1024.com/blog/netword/web49.jpg)
-
-![](http://cos.rain1024.com/blog/netword/web48.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave6.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave7.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave8.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave9.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave10.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave11.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave12.jpg)
-
-![](http://cos.rain1024.com/blog/netword/leave13.jpg)
+更多细节参阅 [LICENSE.txt](LICENSE.txt)
