@@ -14,6 +14,7 @@ use \think\View;
 class Admin extends Common {
     public function index(){
 
+
         return \view("index");
     }
     /**
@@ -21,6 +22,7 @@ class Admin extends Common {
      */
     public function apply(){
         $admin = $_SESSION['AdminUser'];
+//        $admin = $_SESSION['AdminUser'];
 
         $flag = request('post','int','flag',0);
         if ($flag != 0){
