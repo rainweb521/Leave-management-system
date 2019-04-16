@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>{$title}</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/Public/assets/css/admin.css">
-    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/admin.css">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 
 <body data-type="generalComponents">
@@ -35,7 +35,7 @@
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
                     <div class="caption font-green bold">
-                        <span class="am-icon-code"></span> 账户设置
+                        <span class="am-icon-code"></span> 网站设置
                     </div>
                     <div class="tpl-portlet-input tpl-fz-ml">
                         <div class="portlet-input input-small input-inline">
@@ -53,7 +53,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=admin&a=apply">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php/admin/admin/title">
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="user-name" class="am-u-sm-3 am-form-label">学号</label>-->
                                     <!--<div class="am-u-sm-9">-->
@@ -74,29 +74,14 @@
                                     </div>
                                 </div>
                                 <div class="am-form-group">
-                                    <label for="a_username" class="am-u-sm-3 am-form-label">管理员姓名</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="text" name="a_username" id="a_username" value="{$admin.a_username}" placeholder="请输入管理员姓名">
-                                        <small></small>
+                                    <label for="a_username" class="am-u-sm-3 am-form-label">网站名称</label>
+                                    <div class="am-u-sm-6" style="float: left;">
+                                        <input style="float: left;" type="text" name="title" required size="10" id="title" value="{$admin.a_username}" placeholder="--请假管理系统">
+                                        <!--&#45;&#45;请假管理系统-->
+                                        <!--<small style="float: left;"></small>-->
                                     </div>
                                 </div>
-                                <div class="am-form-group">
-                                    <label for="a_status" class="am-u-sm-3 am-form-label">级别</label>
-                                    <div class="am-u-sm-9">
-                                        <select class="am-input-sm am-radius" id="a_status" name="a_status">
-                                            <if condition="$admin.a_status eq 1">
-                                                <option value="1" selected>教师</option>
-                                                <option value="2" >学工助理</option>
-                                            </if>
-                                            <if condition="$admin.a_status eq 2">
-                                                <option value="2" selected>学工助理</option>
-                                                <option value="1" >教师</option>
-                                            </if>
 
-
-                                        </select>
-                                    </div>
-                                </div>
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>-->
                                     <!--<div class="am-u-sm-9">-->
@@ -106,24 +91,7 @@
                                 <!--</div>-->
 
 
-                                <div class="am-form-group">
-                                    <label for="user-phone" class="am-u-sm-3 am-form-label">原密码</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="password" name="last_password" id="last_password" placeholder="输入原密码">
-                                    </div>
-                                </div>
-                                <div class="am-form-group">
-                                    <label for="user-phone" class="am-u-sm-3 am-form-label">新密码</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="password" name="a_password" id="a_password" placeholder="输入新密码">
-                                    </div>
-                                </div>
-                                <div class="am-form-group">
-                                    <label for="user-phone" class="am-u-sm-3 am-form-label">确认密码</label>
-                                    <div class="am-u-sm-9">
-                                        <input type="password" name="a_password2" id="a_password2" placeholder="再次输入新密码">
-                                    </div>
-                                </div>
+
 
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="begin_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title"></span></label>-->
@@ -136,7 +104,7 @@
 
                                 <div class="am-form-group">
                                     <div class="am-u-sm-9 am-u-sm-push-3">
-                                        <button type="button" class="am-btn am-btn-primary" onclick="validate()">修改信息</button>
+                                        <button type="submit" class="am-btn am-btn-primary" >修改信息</button>
                                     </div>
                                 </div>
                             </form>
@@ -151,18 +119,13 @@
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+    <script src="/public/assets/js/jquery.min.js"></script>
+    <script src="/public/assets/js/amazeui.min.js"></script>
+    <script src="/public/assets/js/app.js"></script>
 <script>
     function validate() {
-        var a_password = document.getElementById('a_password').value;
-        var a_password2 = document.getElementById('a_password2').value;
-        if (a_password != a_password2){
-            document.getElementById('state').innerHTML = '新密码与确认密码输入不一致';
-        }else{
-            document.getElementById('my_form').submit();
-        }
+
+        document.getElementById('my_form').submit();
     }
 </script>
 </body>

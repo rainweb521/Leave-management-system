@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>{$title}</title>
     <meta name="description" content="请假管理系统">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -109,7 +109,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <volist name="leave_list" id="list">
+                                    {volist name="leave_list" id="list"}
                                         <tr>
                                             <!--<td><input type="checkbox"></td>-->
                                             <!--<td>{$list.l_id}</td>-->
@@ -119,12 +119,12 @@
                                             <td class="am-hide-sm-only">{$list.l_s_class}班</td>
                                             <td class="am-hide-sm-only">{$list.l_s_phone}</td>
                                             <td class="am-hide-sm-only">{$list.l_addtime}</td>
-                                            <if condition="$list.l_status == 1">
+                                            {if condition="$list.l_status == 1"}
                                                 <td class="am-hide-sm-only">长期假条</td>
-                                            </if>
-                                            <if condition="$list.l_status == 2">
+                                            {/if}
+                                            {if condition="$list.l_status == 2"}
                                                 <td class="am-hide-sm-only">短期假条</td>
-                                            </if>
+                                            {/if}
                                             <td class="am-hide-sm-only"><a class="label label-sm " style="background-color: #01AAED" onclick="Look_Leave('{$list.l_id}')">查看</a></td>
                                             <td class="am-hide-sm-only">
                                                 <a class="label label-sm " style="background-color: #ed6b75" id="state{$list.l_id}" onclick="set_State('{$list.l_id}')">未审核</a><span id="statt{$list.l_id}">&nbsp;点击通过</span>
@@ -145,7 +145,7 @@
 
                                             </td>
                                         </tr>
-                                    </volist>
+                                    {/volist}
 
                                     </tbody>
                                 </table>
@@ -187,13 +187,13 @@
 
     function set_State(obj){
 
-        $.get("/index.php?c=leave&a=set_state&tip=1&l_id=" + obj);
+        $.get("/index.php/admin/leave/set_state?tip=0&l_id=" + obj);
         document.getElementById('state'+obj).style.backgroundColor = "#1E9FFF";
-        document.getElementById('state'+obj).innerHTML = "s审核通过";
+        document.getElementById('state'+obj).innerHTML = "审核通过";
         document.getElementById('statt'+obj).innerHTML = "";
     }
     function Look_Leave(obj){
-        location.href = "/index.php?c=leave&a=show&l_id=" + obj;
+        location.href = "/index.php/admin/leave/show?l_id=" + obj;
     }
 </script>
 </body>

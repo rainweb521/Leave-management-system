@@ -352,7 +352,7 @@ function get_Split_DateArr($data){
 }
 function get_Split_DateStr($date){
     if ($date != ''){
-        $date_arr = split('-',$date);
+        $date_arr = explode('-',$date);
         $date_str = '<u>'.$date_arr[0].'</u>年<u>'.$date_arr[1].'</u>月<u>'.$date_arr[2].'</u>日';
         return $date_str;
     }else{

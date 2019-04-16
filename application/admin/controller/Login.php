@@ -15,7 +15,14 @@ use \think\View;
 
 
 class Login extends Controller {
+
+    public function _init(){
+        $admin_model = new AdminM();
+        $config = $admin_model->get_config();
+        $this->assign('title',$config['title']);
+    }
     public function index(){
+        $this->_init();
         // 提交表单的操作，判断是否有提交
 //        $flag = request('post','int','flag',0);
         $flag = Request::instance()->post("flag",0);
@@ -41,6 +48,7 @@ class Login extends Controller {
 
     }
     public function index2(){
+        $this->_init();
         // 提交表单的操作，判断是否有提交
         $flag = request('post','int','flag',0);
         if($flag==1){

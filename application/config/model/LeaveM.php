@@ -23,8 +23,12 @@ class LeaveM extends Model{
      */
     public function get_LeaveInfo($l_id){
         $where['l_id'] = $l_id;
-        $data = $this->_db->where($where)->find();
-        return $data;
+        $data = LeaveM::where($where)->find();
+        if ($data!=null){
+            return $data->getData();
+        }else{
+            return null;
+        }
     }
     /** 添加单个数据对象
      * @param $data
@@ -34,7 +38,7 @@ class LeaveM extends Model{
 //        $where['s_card'] = $data['s_card'];
 //        $where['s_c_id'] = $data['s_c_id'];
 //        $where['s_c_id'] = $data['s_c_id'];
-        $this->_db->add($data);
+        LeaveM::save($data);
 //        $result = $this->_db->where($where)->find();
 //        if ($result==NULL){
 //            return 1;
@@ -67,7 +71,7 @@ class LeaveM extends Model{
      */
     public function save_LeaveInfo($data){
         $where['l_id'] = $data['l_id'];
-        $this->_db->where($where)->save($data);
+        LeaveM::save($data,$where);
     }
 
     /** 获取一个指定日期的请假条对象列表，data为日期参数，格式为Y-m-d，2017-8-08，

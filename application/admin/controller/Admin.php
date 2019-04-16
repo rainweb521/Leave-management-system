@@ -7,6 +7,7 @@
  */
 namespace app\admin\controller;
 
+use app\config\model\AdminM;
 use think\Controller;
 use \think\Request;
 use \think\View;
@@ -21,7 +22,8 @@ class Admin extends Common {
      *  管理员信息修改页面
      */
     public function apply(){
-        $admin = $_SESSION['AdminUser'];
+        $admin_model = new AdminM();
+        $admin = session('AdminUser');
 //        $admin = $_SESSION['AdminUser'];
 
         $flag = request('post','int','flag',0);
@@ -34,7 +36,7 @@ class Admin extends Common {
             }else {
 
                 $admin['a_password'] = request('post','str','a_password','');
-                D('Admin')->save_AdminInfo($admin);
+                $admin_model->save_AdminInfo($admin);
                 /**
                  * 刚刚发现修改了好多遍的值都还改不了，断点调试了几次，发现没有问题，sql语句也没有问题，后来才发现，是session的问题，
                  * 要修改的话连session也需要修改掉
@@ -45,12 +47,18 @@ class Admin extends Common {
             }
         }
         $this->assign('admin',$admin);
-        $this->display();
+        return \view("apply");
     }
     public function title(){
+        $admin_model = new AdminM();
+        $title = Request::instance()->post("title");
+        if ($title!=""){
+
+            $admin_model->set_config(array("title"=>$title));
+        }
 
 
-        $this->display();
+        return \view("title");
     }
 
     /**

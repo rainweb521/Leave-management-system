@@ -7,6 +7,7 @@
  */
 
 namespace app\admin\controller;
+use app\config\model\AdminM;
 use think\Controller;
 
 use \think\Request;
@@ -21,7 +22,10 @@ class Common extends Controller {
 //        $this->_initialize();
         $this->_init();
         $this->assign('header_name',get_HeaderName(session('AdminUser')));
-        $this->assign('title','请假管理系统');
+        $admin_model = new AdminM();
+        $config = $admin_model->get_config();
+//        var_dump($config);exit();
+        $this->assign('title',$config['title']);
     }
     protected function _initialize(){
         //只报告错误,忽略通知

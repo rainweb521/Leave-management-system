@@ -6,6 +6,8 @@
  * Time: 12:24 PM
  */
 namespace app\config\model;
+use app\admin\controller\Admin;
+use think\Db;
 use think\Model;
 class AdminM extends Model{
     /**
@@ -36,15 +38,28 @@ class AdminM extends Model{
      */
     public function get_AdminInfo($a_id){
         $where['a_id'] = $a_id;
-        $data = $this->_db->where($where)->find();
-        return $data;
+        $data = AdminM::where($where)->find();
+        if ($data!=null){
+            return $data->getData();
+        }else{
+            return $data;
+        }
     }
 
     public function save_AdminInfo($admin){
         $where['a_id'] = $admin['a_id'];
-        $this->_db->where($where)->save($admin);
+        AdminM::save($admin,$where);
 //        var_dump($admin);
 //        exit();
+
+    }
+
+    public function get_config(){
+        $data = Db::table('config')->where('id',1)->find();
+        return $data;
+    }
+    public function set_config($data){
+        db::table('config')->where(array("id"=>1))->update($data);
 
     }
 

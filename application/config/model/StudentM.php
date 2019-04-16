@@ -22,7 +22,11 @@ class StudentM extends Model
     public function get_StudentInfo($s_id){
         $where['s_id'] = $s_id;
         $data = StudentM::where($where)->find();
-        return $data;
+        if ($data!=null){
+            return $data->getData();
+        }else{
+            return null;
+        }
     }
 
     /** 添加单个数据对象，有重复验证功能
@@ -55,7 +59,7 @@ class StudentM extends Model
      */
     public function save_StudentInfo($data){
         $where['s_id'] = $data['s_id'];
-        $this->_db->where($where)->save($data);
+        StudentM::save($data,$where);
     }
 
     public function add_Excel($exl){

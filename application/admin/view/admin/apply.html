@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>{$title}</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=admin&a=apply">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php/admin/admin/apply">
                                 <!--<div class="am-form-group">-->
                                     <!--<label for="user-name" class="am-u-sm-3 am-form-label">学号</label>-->
                                     <!--<div class="am-u-sm-9">-->
@@ -84,15 +84,14 @@
                                     <label for="a_status" class="am-u-sm-3 am-form-label">级别</label>
                                     <div class="am-u-sm-9">
                                         <select class="am-input-sm am-radius" id="a_status" name="a_status">
-                                            <if condition="$admin.a_status eq 1">
+                                            {if condition="$admin.a_status eq 1"}
                                                 <option value="1" selected>教师</option>
                                                 <option value="2" >学工助理</option>
-                                            </if>
-                                            <if condition="$admin.a_status eq 2">
+                                            {/if}
+                                            {if condition="$admin.a_status eq 2"}
                                                 <option value="2" selected>学工助理</option>
                                                 <option value="1" >教师</option>
-                                            </if>
-
+                                            {/if}
 
                                         </select>
                                     </div>
