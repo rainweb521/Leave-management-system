@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/Public/assets/css/admin.css">
-    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/admin.css">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 <body data-type="generalComponents">
 
@@ -67,17 +67,15 @@
                     <div class="am-form-group" style="float: inherit" >
                         <select data-am-selected="{btnSize: 'sm'}" id="s_g_id" name="s_g_id" onchange="change_class()">
                             <option value="0">选择级别</option>
-                            <volist name="grade_list" id="list">
+                            {volist name="grade_list" id="list"}
                                 <option value="{$list.g_id}">{$list.g_name}</option>
-                            </volist>
+                            {/volist}
                         </select>
                     </div>
                     <div class="am-form-group" style="float: inherit">
                         <select data-am-selected="{btnSize: 'sm'}" id="s_c_id" name="s_c_id">
                             <option value="0">选择班级</option>
-                            <!--<volist name="class_list" id="list">-->
-                            <!--<option value="{$list.c_id}">{$list.c_name}</option>-->
-                            <!--</volist>-->
+
                         </select>
                     </div>
                     <div class="am-u-sm-12 " style="width: 25%">
@@ -121,7 +119,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <volist name="student_list" id="list">
+                            {volist name="student_list" id="list"}
                                 <tr>
                                     <td><input type="checkbox"></td>
                                     <td>{$list.s_id}</td>
@@ -136,12 +134,12 @@
                                     <div class="am-btn-group am-btn-group-xs">
                                     <!--<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>-->
                                     <!--<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>-->
-                                        <a href="/index.php?c=student&a=delete&s_id={$list.s_id}" style="color: red;" ><span class="am-icon-trash-o"></span> 删除</a>
+                                        <a href="/index.php/admin/student/delete?s_id={$list.s_id}" style="color: red;" ><span class="am-icon-trash-o"></span> 删除</a>
                                     </div>
                                     </div>
                                     </td>
                                 </tr>
-                            </volist>
+                            {/volist}
 
                             </tbody>
                         </table>
@@ -175,20 +173,20 @@
 </div>
 
 
-<script src="/Public/assets/js/jquery.min.js"></script>
-<script src="/Public/assets/js/amazeui.min.js"></script>
-<script src="/Public/assets/js/app.js"></script>
+<script src="/public/assets/js/jquery.min.js"></script>
+<script src="/public/assets/js/amazeui.min.js"></script>
+<script src="/public/assets/js/app.js"></script>
 <script>
 
     function get_StudentList(){
         var s_g_id = document.getElementById('s_g_id').value;
         var s_c_id = document.getElementById('s_c_id').value;
-        location.href = "/index.php?c=student&a=delete&s_g_id="+s_g_id+"&s_c_id="+s_c_id;
+        location.href = "/index.php/admin/student/delete?s_g_id="+s_g_id+"&s_c_id="+s_c_id;
     }
     function change_class(){
         var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
+        $.get("/index.php/admin/student/apply_ajax?s_g_id=" + s_g_id, function(data){
+            var res = data;//转为Object对象
             var str = '<option value="0">请选择班级</option>';
 
             for (var i=0;i<res.length;i++){

@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/Public/assets/css/admin.css">
-    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/admin.css">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 <body data-type="generalComponents">
 
@@ -129,27 +129,25 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <volist name="grade_list" id="list">
+                                    {volist name="grade_list" id="list"}
                                         <tr>
                                             <td><input type="checkbox"></td>
                                             <td>{$list.g_id}</td>
                                             <td><a href="#">{$list.g_name}</a></td>
-                                            <!--<td>{$list.day}</td>-->
-                                            <!--<td class="am-hide-sm-only">{$list.last_day}</td>-->
+
                                             <td class="am-hide-sm-only">{$list.g_addtime}</td>
-                                            <!--<td class="am-hide-sm-only">{$list.month}</td>-->
                                             <!--<td class="am-hide-sm-only">2014-9-4 7:28:47</td>-->
                                             <td>
                                                 <div class="am-btn-toolbar">
                                                     <div class="am-btn-group am-btn-group-xs">
                                                         <!--<button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>-->
                                                         <!--<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>-->
-                                                        <a href="/index.php?c=grade&a=delete&g_id={$list.g_id}" style="color: red;" ><span class="am-icon-trash-o"></span> 删除</a>
+                                                        <a href="/index.php/admin/grade/delete?g_id={$list.g_id}" style="color: red;" ><span class="am-icon-trash-o"></span> 删除</a>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
-                                    </volist>
+                                    {/volist}
 
                                     </tbody>
                                 </table>
@@ -183,9 +181,9 @@
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+    <script src="/public/assets/js/jquery.min.js"></script>
+    <script src="/public/assets/js/amazeui.min.js"></script>
+    <script src="/public/assets/js/app.js"></script>
 </body>
 
 </html>

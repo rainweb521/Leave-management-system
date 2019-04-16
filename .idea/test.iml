@@ -6,5 +6,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="filebed" />
     <orderEntry type="module" module-name="face" />
+    <orderEntry type="module" module-name="teach" />
+    <orderEntry type="module" module-name="ai" />
+    <orderEntry type="module" module-name="leave2" />
   </component>
 </module>

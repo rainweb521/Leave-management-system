@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>{$title}</title>
     <meta name="description" content="请假管理系统">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/Public/assets/css/admin.css">
-    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/admin.css">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 
 <body data-type="generalComponents">
@@ -53,7 +53,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php?c=leave&a=show">
+                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php/admin/leave/show">
                                 <div class="am-form-group">
                                     <label  class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
@@ -191,9 +191,9 @@
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+    <script src="/public/assets/js/jquery.min.js"></script>
+    <script src="/public/assets/js/amazeui.min.js"></script>
+    <script src="/public/assets/js/app.js"></script>
 <script>
 
 
@@ -206,8 +206,8 @@
 
         }
 
-        $.get("/index.php?c=leave&a=apply_ajax&l_s_card=" + l_s_card, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
+        $.get("/index.php/admin/leave/apply_ajax?l_s_card=" + l_s_card, function(data){
+            var res = data;//转为Object对象
 //            var str = res[0].s_card;
             if (res == 0){
                 document.getElementById('state').innerHTML = '该学号输入有误，未在系统中找到，请先添加学生信息';

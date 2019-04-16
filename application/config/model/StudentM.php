@@ -21,7 +21,7 @@ class StudentM extends Model
      */
     public function get_StudentInfo($s_id){
         $where['s_id'] = $s_id;
-        $data = $this->_db->where($where)->find();
+        $data = StudentM::where($where)->find();
         return $data;
     }
 
@@ -33,9 +33,9 @@ class StudentM extends Model
         $where['s_card'] = $data['s_card'];
 //        $where['s_c_id'] = $data['s_c_id'];
 //        $where['s_c_id'] = $data['s_c_id'];
-        $result = $this->_db->where($where)->find();
+        $result = StudentM::where($where)->find();
         if ($result==NULL){
-            $this->_db->add($data);
+            StudentM::save($data);
             return 0;
         }else {
             return $result['s_id'];
@@ -88,6 +88,6 @@ class StudentM extends Model
     }
     public function del_StudentInfo($s_id){
         $where['s_id'] = $s_id;
-        $this->_db->where($where)->delete();
+        StudentM::where($where)->delete();
     }
 }

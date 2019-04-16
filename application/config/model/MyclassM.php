@@ -34,7 +34,7 @@ class MyclassM extends Model{
         $where['c_g_id'] = $data['c_g_id'];
         $result = MyclassM::where($where)->find();
         if ($result==NULL){
-            MyclassM::add($data);
+            MyclassM::save($data);
             return 0;
         }else {
             return $result['c_id'];
@@ -59,7 +59,7 @@ class MyclassM extends Model{
             $data['c_g_id'] = $g_id;
             $data['c_grade'] = $g_name;
             $data['c_addtime'] = $time;
-            $c_id = MyclassM::add($data);
+            $c_id = MyclassM::save($data);
             return $c_id;
         }else {
             return $result['c_id'];

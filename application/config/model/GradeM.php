@@ -21,7 +21,7 @@ class GradeM extends Model
      */
     public function get_GradeInfo($g_id){
         $where['g_id'] = $g_id;
-        $data = $this->_db->where($where)->find();
+        $data = GradeM::where($where)->find();
         return $data;
     }
     /** 添加单个数据对象，有重复验证功能
@@ -30,9 +30,9 @@ class GradeM extends Model
      */
     public function add_GradeInfo($data){
         $where['g_name'] = $data['g_name'];
-        $result = $this->_db->where($where)->find();
+        $result = GradeM::where($where)->find();
         if ($result==NULL){
-            $this->_db->add($data);
+            GradeM::save($data);
             return 0;
         }else {
             return $result['g_id'];
@@ -62,6 +62,6 @@ class GradeM extends Model
 
     public function del_GradeInfo($g_id){
         $where['g_id'] = $g_id;
-        $this->_db->where($where)->delete();
+        GradeM::where($where)->delete();
     }
 }

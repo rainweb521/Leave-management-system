@@ -9,6 +9,7 @@
 namespace app\admin\controller;
 
 
+use app\config\model\LeaveM;
 use app\config\model\StudentM;
 
 class Leave extends Common {
@@ -17,10 +18,11 @@ class Leave extends Common {
     }
     public function index(){
 
+        $leave_model = new LeaveM();
         /**
          * 进入销假列表时，自动显示最近的十条未销假记录。
          */
-        $leave_list = D('Leave')->get_Num_LeaveList(array('l_state'=>0),10);
+        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>0),10);
         $this->assign('leave_list',$leave_list);
         return view("index");
     }

@@ -53,7 +53,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php?c=leave&a=show">
+                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php/admin/leave/show">
                                 <div class="am-form-group">
                                     <label  class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
@@ -192,7 +192,7 @@
         }
 
         $.get("/index.php/admin/leave/apply_ajax?l_s_card=" + l_s_card, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
+            var res = data;//转为Object对象
 //            var str = res[0].s_card;
             if (res == 0){
                 document.getElementById('state').innerHTML = '该学号输入有误，未在系统中找到，请先添加学生信息';

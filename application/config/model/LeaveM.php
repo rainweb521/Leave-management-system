@@ -57,7 +57,8 @@ class LeaveM extends Model{
      * @return false|mixed|\PDOStatement|string|\think\Collection
      */
     public function get_Num_LeaveList($where=NULL,$num){
-        $data = $this->_db->where($where)->limit(0,9)->select();
+//        $data = LeaveM::where($where)->limit(0,9)->select();
+        $data = LeaveM::where($where)->select();
         return $data;
     }
 

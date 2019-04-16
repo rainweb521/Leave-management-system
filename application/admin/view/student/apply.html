@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>请假管理系统</title>
+    <title>{$title}</title>
     <meta name="description" content="这是一个 index 页面">
     <meta name="keywords" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+    <link rel="icon" type="image/png" href="/public/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/public/assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="/Public/assets/css/admin.css">
-    <link rel="stylesheet" href="/Public/assets/css/app.css">
+    <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="/public/assets/css/admin.css">
+    <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 
 <body data-type="generalComponents">
@@ -52,7 +52,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php?c=student&a=apply">
+                            <form class="am-form am-form-horizontal" id="my_form" method="post" action="/index.php/admin/student/apply">
                                 <div class="am-form-group">
                                     <label  class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
@@ -90,11 +90,11 @@
                                 <div class="am-form-group">
                                     <label for="s_g_id" class="am-u-sm-3 am-form-label">级别</label>
                                     <div class="am-u-sm-9">
-                                        <select class="am-input-sm am-radius" id="s_g_id" name="s_g_id" onclick="change_class()">
+                                        <select class="am-input-sm am-radius" id="s_g_id" name="s_g_id" onchange="change_class()">
                                             <option value="" >请选择级别</option>
-                                            <volist name="grade_list" id="list">
+                                            {volist name="grade_list" id="list"}
                                                 <option value="{$list.g_id}">{$list.g_name}</option>
-                                            </volist>
+                                            {/volist}
                                         </select>
                                     </div>
                                 </div>
@@ -189,16 +189,16 @@
     </div>
 
 
-    <script src="/Public/assets/js/jquery.min.js"></script>
-    <script src="/Public/assets/js/amazeui.min.js"></script>
-    <script src="/Public/assets/js/app.js"></script>
+    <script src="/public/assets/js/jquery.min.js"></script>
+    <script src="/public/assets/js/amazeui.min.js"></script>
+    <script src="/public/assets/js/app.js"></script>
 
 <script>
 
     function change_class(){
         var s_g_id = document.getElementById('s_g_id').value;
-        $.get("/index.php?c=student&a=apply_ajax&s_g_id=" + s_g_id, function(data){
-            var res = eval("(" + data + ")");//转为Object对象
+        $.get("/index.php/admin/student/apply_ajax?s_g_id=" + s_g_id, function(data){
+            var res = data;//转为Object对象
             var str = '<option value="">请选择班级</option>';
             for (var i=0;i<res.length;i++){
                 str = str + '<option value="' + res[i].c_id + '">' + res[i].c_name + '</option>';

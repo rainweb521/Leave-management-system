@@ -21,7 +21,7 @@ class Common extends Controller {
 //        $this->_initialize();
         $this->_init();
         $this->assign('header_name',get_HeaderName(session('AdminUser')));
-        $this->assign('title','Send-Email邮件分发系统');
+        $this->assign('title','请假管理系统');
     }
     protected function _initialize(){
         //只报告错误,忽略通知
