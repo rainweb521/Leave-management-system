@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="teach" />
     <orderEntry type="module" module-name="ai" />
     <orderEntry type="module" module-name="leave2" />
+    <orderEntry type="module" module-name="manage" />
   </component>
 </module>

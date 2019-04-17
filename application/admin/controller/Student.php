@@ -62,6 +62,7 @@ class Student extends Common{
             $class = $myclass_model->get_ClassInfo($data['s_c_id']);
             $data['s_class'] = $class['c_name'];
             $data['s_state'] = 1;
+            $data['s_password'] = $data['s_card'];
             // 添加学生信息
             $result = $student_model->add_StudentInfo($data);
             // 返回前台操作的结果，是否添加成功，或者记录有重复等

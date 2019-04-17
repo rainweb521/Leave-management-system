@@ -10,12 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="icon" type="image/png" href="/Public/assets/i/favicon.png">
-  <link rel="apple-touch-icon-precomposed" href="/Public/assets/i/app-icon72x72@2x.png">
+  <link rel="icon" type="image/png" href="//public/assets/i/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="//public/assets/i/app-icon72x72@2x.png">
   <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-  <link rel="stylesheet" href="/Public/assets/css/amazeui.min.css" />
-  <link rel="stylesheet" href="/Public/assets/css/admin.css">
-  <link rel="stylesheet" href="/Public/assets/css/app.css">
+  <link rel="stylesheet" href="/public/assets/css/amazeui.min.css" />
+  <link rel="stylesheet" href="/public/assets/css/admin.css">
+  <link rel="stylesheet" href="/public/assets/css/app.css">
 </head>
 
 <body data-type="login">
@@ -34,26 +34,26 @@
 			<span style="font-size: 25px;"> 学生登陆页面</span>
 		</div>
 		<div class="am-u-sm-10 login-am-center">
-			<form class="am-form" method="post" action="/index.php?m=home&c=login&a=index2">
+			<form class="am-form" method="post" action="/index.php/index/login/index">
 				<input type="hidden" name="flag" value="1">
 				<fieldset>
 					<div class="am-form-group">
-						<input type="text" class="" name="a_username" id="doc-ipt-email-1" placeholder="输入学号">
+						<input type="text" class="" name="a_username"  required id="doc-ipt-email-1" placeholder="输入学号">
 					</div>
 					<div class="am-form-group">
-						<input type="password" name="a_password" class="" id="doc-ipt-pwd-1" placeholder="输入密码">
+						<input type="password" name="a_password" class="" required id="doc-ipt-pwd-1" placeholder="默认密码为学号">
 					</div>
 					<p><button type="submit"  class="am-btn am-btn-default">登录</button></p>
-					<p><button type="button" onclick="location.href='/index.php?m=&&m=home&c=login&a=index';"  class="am-btn am-btn-default">教师登录</button></p>
+					<p><button type="button" onclick="location.href='/index.php/admin/login/index';"  class="am-btn am-btn-default">教师登录</button></p>
 				</fieldset>
 			</form>
 		</div>
 	</div>
 </div>
 
-  <script src="/Public/assets/js/jquery.min.js"></script>
-  <script src="/Public/assets/js/amazeui.min.js"></script>
-  <script src="/Public/assets/js/app.js"></script>
+  <script src="/public/assets/js/jquery.min.js"></script>
+  <script src="/public/assets/js/amazeui.min.js"></script>
+  <script src="/public/assets/js/app.js"></script>
 </body>
 
 </html>

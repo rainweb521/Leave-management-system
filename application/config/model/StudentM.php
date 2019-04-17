@@ -28,6 +28,14 @@ class StudentM extends Model
             return null;
         }
     }
+    public function get_LoginInfo($where){
+        $data = StudentM::where($where)->find();
+        if ($data!=null){
+            return $data->getData();
+        }else{
+            return null;
+        }
+    }
 
     /** 添加单个数据对象，有重复验证功能
      * @param $data
