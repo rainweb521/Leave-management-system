@@ -23,7 +23,8 @@ class Leave extends Common {
         /**
          * 进入销假列表时，自动显示最近的十条未销假记录。
          */
-        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>0),10);
+        $admin = session("AdminUser");
+        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>0,'l_a_id'=>$admin['a_id']),10);
         $this->assign('leave_list',$leave_list);
         return view("index");
     }
@@ -32,7 +33,8 @@ class Leave extends Common {
         /**
          * 进入审核列表时，自动显示最近的十条未审核记录。
          */
-        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>2),10);
+        $admin = session("AdminUser");
+        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>2,'l_a_id'=>$admin['a_id']),10);
         $this->assign('leave_list',$leave_list);
         return view("audit");
     }

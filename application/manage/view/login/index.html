@@ -31,10 +31,10 @@
 
 		<div class="login-font">
 			<i>{$state} </i>
-			<span style="font-size: 25px;"> 学生登陆页面</span>
+			<span style="font-size: 25px;"> 管理员登陆页面</span>
 		</div>
 		<div class="am-u-sm-10 login-am-center">
-			<form class="am-form" method="post" action="/index.php/index/login/index">
+			<form class="am-form" method="post" action="/index.php/manage/login/index">
 				<input type="hidden" name="flag" value="1">
 				<fieldset>
 					<div class="am-form-group">
@@ -44,9 +44,8 @@
 						<input type="password" name="a_password" class="" required id="doc-ipt-pwd-1" placeholder="默认密码为学号">
 					</div>
 					<p><button type="submit"  class="am-btn am-btn-default">登录</button></p>
-					<p><button type="button" onclick="location.href='/index.php/index/login/register';"  class="am-btn am-btn-default">注册</button></p>
 					<p><button type="button" onclick="location.href='/index.php/admin/login/index';"  class="am-btn am-btn-default">教师登录</button></p>
-					<p><button type="button" onclick="location.href='/index.php/manage/login/index';"  class="am-btn am-btn-default">管理员登录</button></p>
+					<p><button type="button" onclick="location.href='/index.php/index/login/index';"  class="am-btn am-btn-default">学生登录</button></p>
 				</fieldset>
 			</form>
 		</div>

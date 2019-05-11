@@ -10,5 +10,7 @@
     <orderEntry type="module" module-name="ai" />
     <orderEntry type="module" module-name="leave2" />
     <orderEntry type="module" module-name="manage" />
+    <orderEntry type="module" module-name="email" />
+    <orderEntry type="module" module-name="menggu" />
   </component>
 </module>

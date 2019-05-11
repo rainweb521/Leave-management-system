@@ -126,7 +126,18 @@
                                             {/if}
                                             <td class="am-hide-sm-only"><a class="label label-sm " style="background-color: #01AAED" onclick="Look_Leave('{$list.l_id}')">查看</a></td>
                                             <td class="am-hide-sm-only">
-                                                <a class="label label-sm " style="background-color: #ed6b75" id="state{$list.l_id}" onclick="set_State('{$list.l_id}')">未注销</a><span id="statt{$list.l_id}">&nbsp;点击注销</span>
+                                                <a class="label label-sm " style="background-color: #ed6b75" id="state{$list.l_id}" >
+                                                    {if condition="$list.l_state == 2"}
+                                                    未审核
+                                                    {/if}
+                                                    {if condition="$list.l_state == 1"}
+                                                    已完成
+                                                    {/if}
+                                                    {if condition="$list.l_state == 0"}
+                                                    审核通过
+                                                    {/if}
+
+                                                </a>
 
                                                 <!--<div class="am-form-group">-->
                                                     <!--<div class="am-u-sm-9">-->
@@ -192,7 +203,7 @@
         document.getElementById('statt'+obj).innerHTML = "";
     }
     function Look_Leave(obj){
-        location.href = "/index.php/admin/leave/show?l_id=" + obj;
+        location.href = "/index.php/index/leave/show?l_id=" + obj;
     }
 </script>
 </body>

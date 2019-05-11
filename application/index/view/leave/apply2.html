@@ -53,7 +53,7 @@
 
 
                         <div class="am-u-sm-12 am-u-md-9">
-                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php/admin/leave/show">
+                            <form class="am-form am-form-horizontal" method="post" id="my_form" action="/index.php/index/leave/show">
                                 <div class="am-form-group">
                                     <label  class="am-u-sm-3 am-form-label"></label>
                                     <div class="am-u-sm-9">
@@ -63,49 +63,48 @@
                                 <div class="am-form-group">
                                     <label for="l_s_card" class="am-u-sm-3 am-form-label">学号</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_s_card" id="l_s_card" value="" placeholder="请输入学号">
-                                        <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button" onclick="get_Student()"></button>
-                                        <small>输入学号点击查询，其他信息会自动填写。</small>
+                                        <input type="text" name="l_s_card" id="l_s_card" value="{$data.s_card}" placeholder="请输入学号" readonly>
+
                                     </div>
 
                                 </div>
                                 <input type="hidden" value="1" name="flag">
-                                <input type="hidden" value="" name="l_s_id" id="l_s_id">
-                                <input type="hidden" value="" name="l_c_id" id="l_c_id">
-                                <input type="hidden" value="" name="l_g_id" id="l_g_id">
+                                <input type="hidden" value="{$data.s_id}" name="l_s_id" id="l_s_id">
+                                <input type="hidden" value="{$data.s_c_id}" name="l_c_id" id="l_c_id">
+                                <input type="hidden" value="{$data.s_g_id}" name="l_g_id" id="l_g_id">
                                 <input type="hidden" value="2" name="l_status" id="l_status">
                                 <div class="am-form-group">
                                     <label for="l_s_username" class="am-u-sm-3 am-form-label">姓名</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_s_username" value="" id="l_s_username" placeholder="请输入姓名">
+                                        <input type="text" name="l_s_username" value="{$data.s_username}" id="l_s_username" placeholder="请输入姓名" readonly>
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="l_s_grade" class="am-u-sm-3 am-form-label">级别</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_s_grade" id="l_s_grade" value="" placeholder="请输入级别,例如2015,2016">
+                                        <input type="text" name="l_s_grade" id="l_s_grade" value="{$data.s_grade}" placeholder="请输入级别,例如2015,2016" readonly>
                                         <small></small>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="l_s_class" class="am-u-sm-3 am-form-label">班级</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_s_class" id="l_s_class" value="" placeholder="请输入班级">
+                                        <input type="text" name="l_s_class" id="l_s_class" value="{$data.s_class}" placeholder="请输入班级" readonly>
                                         <small></small>
                                     </div>
                                 </div>
-                                <!--<div class="am-form-group">-->
-                                    <!--<label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>-->
-                                    <!--<div class="am-u-sm-9">-->
-                                        <!--<input type="email" id="user-email" placeholder="输入你的 / Email">-->
-                                        <!--<small></small>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                                <div class="am-form-group">
+                                    <label for="user-email" class="am-u-sm-3 am-form-label">电子邮件 / Email</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="email" id="user-email" value="{$data.s_email}" placeholder="输入你的 / Email" readonly>
+                                        <small></small>
+                                    </div>
+                                </div>
                                 <div class="am-form-group">
                                     <label for="l_s_phone" class="am-u-sm-3 am-form-label">手机号</label>
                                     <div class="am-u-sm-9">
-                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="" placeholder="输入手机号">
+                                        <input type="tel" name="l_s_phone" id="l_s_phone" value="{$data.s_phone}" placeholder="输入手机号" readonly>
                                     </div>
                                 </div>
                                 <div class="am-form-group">
@@ -168,9 +167,15 @@
                                     </div>
                                 </div>
                                 <div class="am-form-group">
+
                                     <label for="l_charge" class="am-u-sm-3 am-form-label">请假负责人</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" name="l_charge" id="l_charge" value="{$l_charge}" placeholder="" disabled>
+                                        <select class="am-input-sm am-radius" id="l_a_id" name="l_a_id" >
+                                            <option value="1" >请选择审核教师</option>
+                                            {volist name="list" id="line"}
+                                            <option value="{$line.a_id}">{$line.a_username}</option>
+                                            {/volist}
+                                        </select>
                                     </div>
                                 </div>
 

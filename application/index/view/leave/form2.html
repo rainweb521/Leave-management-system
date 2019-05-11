@@ -29,7 +29,7 @@
 </style>
 <body>
 
-<if condition="$leave.l_s_username eq ''">
+{if condition="$leave.l_s_username eq ''"}
     <div class="all" >
         <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
         <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
@@ -172,8 +172,8 @@
 
 
     </div>
-</if>
-<if condition="$leave.l_s_username neq ''">
+{/if}
+{if condition="$leave.l_s_username neq ''"}
     <div class="all" >
         <h2 style="margin-left: 28%;margin-bottom: -10px;">内蒙古农业大学</h2>
         <h2 style="margin-left: 20%">草原与资源环境学院学生请假单（存根）</h2>
@@ -315,6 +315,6 @@
 
 
     </div>
-</if>
+{/if}
 </body>
 </html>

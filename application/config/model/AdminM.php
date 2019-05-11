@@ -46,12 +46,26 @@ class AdminM extends Model{
         }
     }
 
+    public function get_AdminList($where=null){
+        $data = AdminM::where($where)->select();
+        return $data;
+
+    }
     public function save_AdminInfo($admin){
         $where['a_id'] = $admin['a_id'];
         AdminM::save($admin,$where);
 //        var_dump($admin);
 //        exit();
 
+    }
+    public function insert_AdminInfo($admin){
+        AdminM::save($admin);
+//        var_dump($admin);
+//        exit();
+
+    }
+    public function delete_AdminInfo($where){
+        AdminM::where($where)->delete();
     }
 
     public function get_config(){

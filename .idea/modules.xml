@@ -3,10 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../ai/.idea/ai.iml" filepath="$PROJECT_DIR$/../ai/.idea/ai.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/.idea/face.iml" filepath="$PROJECT_DIR$/../test/.idea/face.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../email/.idea/email.iml" filepath="$PROJECT_DIR$/../email/.idea/email.iml" />
       <module fileurl="file://$PROJECT_DIR$/../filebed/.idea/filebed.iml" filepath="$PROJECT_DIR$/../filebed/.idea/filebed.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test/.idea/leave2.iml" filepath="$PROJECT_DIR$/../test/.idea/leave2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../manage/.idea/manage.iml" filepath="$PROJECT_DIR$/../manage/.idea/manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../menggu/.idea/menggu.iml" filepath="$PROJECT_DIR$/../menggu/.idea/menggu.iml" />
       <module fileurl="file://$PROJECT_DIR$/../teach/.idea/teach.iml" filepath="$PROJECT_DIR$/../teach/.idea/teach.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/test.iml" filepath="$PROJECT_DIR$/.idea/test.iml" />
     </modules>

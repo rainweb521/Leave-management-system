@@ -9,6 +9,8 @@
 namespace app\index\controller;
 
 
+use app\admin\controller\Admin;
+use app\config\model\AdminM;
 use app\config\model\LeaveM;
 
 use app\config\model\StudentM;
@@ -26,7 +28,7 @@ class Leave extends Common {
         /**
          * 进入销假列表时，自动显示最近的十条未销假记录。
          */
-        $leave_list = $leave_model->get_Num_LeaveList(array('l_state'=>0,"l_s_id"=>$user['s_id']),10);
+        $leave_list = $leave_model->get_Num_LeaveList(array("l_s_id"=>$user['s_id']),10);
         $this->assign('leave_list',$leave_list);
         return view("index");
     }
@@ -42,13 +44,18 @@ class Leave extends Common {
     public function apply(){
         // 用于显示表单中的负责人信息
         $admin = session('AdminUser');
-        $this->assign('l_charge',$admin['a_username']);
+        $admin_model = new AdminM();
+        $this->assign('data',$admin);
+        $list = $admin_model->get_AdminList();
+        $this->assign('list',$list);
         return view("apply");
     }
     public function apply2(){
-        // 用于显示表单中的负责人信息
         $admin = session('AdminUser');
-        $this->assign('l_charge',$admin['a_username']);
+        $admin_model = new AdminM();
+        $this->assign('data',$admin);
+        $list = $admin_model->get_AdminList();
+        $this->assign('list',$list);
         return view("apply2");
     }
     public function show(){
@@ -75,11 +82,12 @@ class Leave extends Common {
                 $data['l_cause'] = request('post','str','l_cause','');
                 $data['l_charge'] = request('post','str','l_charge','');
                 $data['l_addtime'] = date("Y-m-d");
-                $data['l_state'] = 0;
+                $data['l_state'] = 2;
                 $data['l_status'] = 1;
                 $data['l_s_id'] = request('post','int','l_s_id','');
                 $data['l_c_id'] = request('post','int','l_c_id','');
                 $data['l_g_id'] = request('post','int','l_g_id','');
+                $data['l_a_id'] = request('post','int','l_a_id','');
                 // 添加请假条信息
                 $leave_model->add_LeaveInfo($data);
                 // 修改对应学生的最后请假时间
@@ -105,11 +113,12 @@ class Leave extends Common {
                 $data['l_cause'] = request('post','str','l_cause','');
                 $data['l_charge'] = request('post','str','l_charge','');
                 $data['l_addtime'] = date("Y-m-d");
-                $data['l_state'] = 0;
+                $data['l_state'] = 2;
                 $data['l_status'] = 2;
                 $data['l_s_id'] = request('post','int','l_s_id','');
                 $data['l_c_id'] = request('post','int','l_c_id','');
                 $data['l_g_id'] = request('post','int','l_g_id','');
+                $data['l_a_id'] = request('post','int','l_a_id','');
                 // 添加请假条信息
                 $leave_model->add_LeaveInfo($data);
                 // 修改对应学生的最后请假时间
