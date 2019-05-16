@@ -65,7 +65,12 @@ class LeaveM extends Model{
         $data = LeaveM::where($where)->select();
         return $data;
     }
-
+    public function get_LeaveList2($where=NULL,$num){
+        $data = LeaveM::where($where)->select();
+        $data2 = LeaveM::where($where)->limit(count($data)-$num,count($data))->select();
+//        $data = LeaveM::where($where)->select();
+        return $data2;
+    }
     /** 保存一个已经修改的数据对象
      * @param $data
      */

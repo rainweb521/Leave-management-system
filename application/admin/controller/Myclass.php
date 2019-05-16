@@ -14,7 +14,7 @@ use app\config\model\GradeM;
 use app\config\model\MyclassM;
 use app\config\model\StudentM;
 
-class MyClass extends Common
+class Myclass extends Common
 {
 
     public function index(){

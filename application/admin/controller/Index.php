@@ -60,6 +60,10 @@ class Index extends Common{
         $top['now_week'] = sizeof($leave_model->get_Week_Leave(get_Week_All_Day()));
 //        $top['last_week'] = sizeof(D('Leave')->get_Week_Leave(get_Last_Week_All_Day()));
         $top['now_month'] = sizeof($leave_model->get_Month_Leave(get_Month_All_Day()));
+
+//        显示最近请假列表
+        $leave_list = $leave_model->get_LeaveList2(array(),8);
+        $this->assign('leave_list',$leave_list);
         $this->assign('top',$top);
         return view("index");
     }
