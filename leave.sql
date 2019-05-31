@@ -11,7 +11,7 @@
  Target Server Version : 50723
  File Encoding         : utf-8
 
- Date: 04/21/2019 22:35:15 PM
+ Date: 05/31/2019 10:50:19 AM
 */
 
 SET NAMES utf8;
@@ -65,7 +65,7 @@ CREATE TABLE `grade` (
   `g_name` char(255) DEFAULT NULL COMMENT '级别的名称',
   `g_addtime` char(255) DEFAULT NULL COMMENT '级别的添加时间',
   PRIMARY KEY (`g_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Table structure for `leave`
@@ -97,8 +97,9 @@ CREATE TABLE `leave` (
   `l_s_id` int(11) DEFAULT NULL COMMENT '请假条中学生的id',
   `l_c_id` int(11) DEFAULT NULL COMMENT '请假条中学生所在班级',
   `l_g_id` int(11) DEFAULT NULL COMMENT '请假条中学生所在的级别',
+  `l_a_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`l_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 --  Table structure for `student`
@@ -119,6 +120,6 @@ CREATE TABLE `student` (
   `s_password` varchar(20) DEFAULT NULL,
   `s_email` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`s_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1775 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1778 DEFAULT CHARSET=utf8;
 
 SET FOREIGN_KEY_CHECKS = 1;
