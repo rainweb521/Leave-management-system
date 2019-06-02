@@ -62,7 +62,7 @@
 
 ##### 项目基础，上传thinkphp框架
 
-![](public/static/login.png)
+![](Public/static/login.png)
 
 ![](http://cos.rain1024.com/blog/netword/leave1.jpg)
 
