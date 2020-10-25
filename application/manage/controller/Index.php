@@ -56,6 +56,8 @@ class Index extends Common{
         $data['a_password'] = Request::instance()->post("a_password",0);
         $data['a_email'] = Request::instance()->post("a_email",0);
         $data['a_phone'] = Request::instance()->post("a_phone",0);
+        $data['a_state'] = 1;
+        $data['a_status'] = 1;
 
         $grade_model = new GradeM();
         $admin_model = new AdminM();

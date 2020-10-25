@@ -37,9 +37,9 @@ class Login extends Controller {
             $student_model = new StudentM();
             $data = $student_model->get_LoginInfo($where);
             if ($data==NULL){
-                $state = "用户名不存在";
+                $state = "用户名或密码错误";
             }else if ($data['s_password']!=$where['s_password']){
-                $state = "密码错误";
+                $state = "用户名或密码错误";
             }else{
                 session('AdminUser',$data);
 //                start_session(6000);
